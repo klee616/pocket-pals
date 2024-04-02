@@ -1,0 +1,677 @@
+[
+    {
+        "id": 1,
+        "en": {
+            "question": "At its smallest population; how many Vancouver Island Marmots were left in the wild in 2003?",
+            "choose": [
+                "Less than 30",
+                "Less than 100",
+                "Less than 150",
+                "Less than 200"
+            ],
+            "correct_answer": "Less than 30"
+        },
+        "zh": {
+            "question": "在2003年，溫哥華島土撥鼠在野外的最小族群數量是多少？",
+            "choose": [
+                "少於 30群",
+                "少於 100群",
+                "少於 150群",
+                "少於 200群"
+            ],
+            "correct_answer": "少於 30群"
+        },
+        "category": "NorthAmerican"
+    },
+    {
+        "id": 2,
+        "en": {
+            "question": "What is the average length of an adult Vancouver Island marmot?",
+            "choose": [
+                "50 to 55 centimeters",
+                "60 to 65 centimeters",
+                "65 to 70 centimeters",
+                "70 to 75 centimeters"
+            ],
+            "correct_answer": "65 to 70 centimeters"
+        },
+        "zh": {
+            "question": "成年溫哥華島土撥鼠的平均長度是多少？",
+            "choose": [
+                "50 to 55 厘米",
+                "60 to 65 厘米",
+                "65 to 70 厘米",
+                "70 to 75 厘米"
+            ],
+            "correct_answer": "65 to 70 厘米"
+        },
+        "category": "NorthAmerican"
+    },
+    {
+        "id": 3,
+        "en": {
+            "question": "How does the fur of baby marmots change as they grow?",
+            "choose": [
+                "It becomes darker",
+                "It turns white",
+                "It changes to a rusty brown",
+                "It remains the same color"
+            ],
+            "correct_answer": "It changes to a rusty brown"
+        },
+        "zh": {
+            "question": "小土撥鼠的皮毛在成長過程中發生了什麼樣的變化？",
+            "choose": [
+                "皮毛光澤變淡",
+                "皮毛轉變成白色",
+                "皮毛轉變成了銹棕色",
+                "顏色保持不變"
+            ],
+            "correct_answer": "皮毛轉變成了銹棕色"
+        },
+        "category": "NorthAmerican"
+    },
+    {
+        "id": 4,
+        "en": {
+            "question": "How many pups can a Vancouver Island marmot give birth to every other year?",
+            "choose": [
+                "1 to 3",
+                "2 to 4",
+                "3 to 5",
+                "1 to 6"
+            ],
+            "correct_answer": "1 to 6"
+        },
+        "zh": {
+            "question": "溫哥華島土撥鼠每隔一年能生多少隻幼崽？",
+            "choose": [
+                "1 to 3 隻幼崽",
+                "2 to 4 隻幼崽",
+                "3 to 5 隻幼崽",
+                "1 to 6 隻幼崽"
+            ],
+            "correct_answer": "1 to 6 隻幼崽"
+        },
+        "category": "NorthAmerican"
+    },
+    {
+        "id": 5,
+        "en": {
+            "question": "How many mature individuals of spectacled bears are estimated to be left?",
+            "choose": [
+                "500",
+                "1,000",
+                "2,500",
+                "5,000"
+            ],
+            "correct_answer": "2,500"
+        },
+        "zh": {
+            "question": "估計野外眼鏡熊存活數量還有多少？",
+            "choose": [
+                "500 隻",
+                "1,000 隻",
+                "2,500 隻",
+                "5,000 隻"
+            ],
+            "correct_answer": "2,500 隻"
+        },
+        "category": "SouthAmerican"
+    },
+    {
+        "id": 6,
+        "en": {
+            "question": "Which of the following poses a serious threat to the spectacled bear population?",
+            "choose": [
+                "Availability of food",
+                "Increased breeding rates",
+                "Habitat loss",
+                "Protected reserves"
+            ],
+            "correct_answer": "Habitat loss"
+        },
+        "zh": {
+            "question": "下列哪一項對眼鏡熊族群構成嚴重威脅？",
+            "choose": [
+                "食物的供應",
+                "提高繁殖率",
+                "棲息地的喪失",
+                "受保護儲備"
+            ],
+            "correct_answer": "棲息地的喪失"
+        },
+        "category": "SouthAmerican"
+    },
+    {
+        "id": 7,
+        "en": {
+            "question": "What is the scientific name of the spectacled bear?",
+            "choose": [
+                "Ursus arctos",
+                "Tremarctos ornatus",
+                "Ailuropoda melanoleuca",
+                "Ursus maritimus"
+            ],
+            "correct_answer": "Tremarctos ornatus"
+        },
+        "zh": {
+            "question": "眼鏡熊的英文學名是什麼？",
+            "choose": [
+                "Ursus arctos",
+                "Tremarctos ornatus",
+                "Ailuropoda melanoleuca",
+                "Ursus maritimus"
+            ],
+            "correct_answer": "Tremarctos ornatus"
+        },
+        "category": "SouthAmerican"
+    },
+    {
+        "id": 8,
+        "en": {
+            "question": "How long is the gestation period of spectacled bears?",
+            "choose": [
+                "6 to 7 months",
+                "7 to 8 months",
+                "8 to 8 1/2 months",
+                "9 to 10 months"
+            ],
+            "correct_answer": "8 to 8 1/2 months"
+        },
+        "zh": {
+            "question": "眼鏡熊的懷孕期是多久？",
+            "choose": [
+                "6 至 7 個月",
+                "7 至 8 個月",
+                "8 至 8 個半月",
+                "9 至 10 個月"
+            ],
+            "correct_answer": "8 至 8 個半月"
+        },
+        "category": "SouthAmerican"
+    },
+    {
+        "id": 9,
+        "en": {
+            "question": "What is a characteristic feature of wild hamsters' fur?",
+            "choose": [
+                "Reddish-brown or grey color",
+                "Long and silky texture",
+                "Spotted patterns",
+                "Bright neon colors"
+            ],
+            "correct_answer": "Reddish-brown or grey color"
+        },
+        "zh": {
+            "question": "野生倉鼠的皮毛有什麼特色？",
+            "choose": [
+                "紅棕色或灰色",
+                "質地長而絲滑",
+                "斑點圖案",
+                "明亮的霓虹色"
+            ],
+            "correct_answer": "紅棕色或灰色"
+        },
+        "category": "Europe"
+    },
+    {
+        "id": 10,
+        "en": {
+            "question": "What is the maximum length a hamster can reach?",
+            "choose": [
+                "20 inches",
+                "24 inches",
+                "14 inches",
+                "30 inches"
+            ],
+            "correct_answer": "14 inches"
+        },
+        "zh": {
+            "question": "倉鼠的最大長度是多少？",
+            "choose": [
+                "20 英吋",
+                "24 英吋",
+                "14 英吋",
+                "30 英吋"
+            ],
+            "correct_answer": "14 英吋"
+        },
+        "category": "Europe"
+    },
+    {
+        "id": 11,
+        "en": {
+            "question": "How do wild hamsters prefer to live?",
+            "choose": [
+                "In large groups",
+                "In pairs",
+                "Solitary",
+                "With other rodent species"
+            ],
+            "correct_answer": "Solitary"
+        },
+        "zh": {
+            "question": "野生倉鼠喜歡怎樣的生活？",
+            "choose": [
+                "群體生活",
+                "成雙成對",
+                "獨居",
+                "與其他囓齒動物種類共存"
+            ],
+            "correct_answer": "獨居"
+        },
+        "category": "Europe"
+    },
+    {
+        "id": 12,
+        "en": {
+            "question": "What is the conservation status of the common hamster?",
+            "choose": [
+                "Endangered",
+                "Vulnerable",
+                "Critically endangered",
+                "Least concern"
+            ],
+            "correct_answer": "Critically endangered"
+        },
+        "zh": {
+            "question": "野生倉鼠的保護狀況如何？",
+            "choose": [
+                "瀕危",
+                "易危",
+                "極度瀕危",
+                "暫無危機"
+            ],
+            "correct_answer": "極度瀕危"
+        },
+        "category": "Europe"
+    },
+    {
+        "id": 13,
+        "en": {
+            "question": "What is a distinctive feature of giant pandas' appearance?",
+            "choose": [
+                "Brown fur",
+                "Striped pattern",
+                "Black-and-white coloration",
+                "Long tail"
+            ],
+            "correct_answer": "Black-and-white coloration"
+        },
+        "zh": {
+            "question": "大熊貓的外貌有什麼顯著特徵？",
+            "choose": [
+                "棕色毛皮",
+                "條紋圖案",
+                "黑白色彩",
+                "長尾巴"
+            ],
+            "correct_answer": "黑白色彩"
+        },
+        "category": "Asia"
+    },
+    {
+        "id": 14,
+        "en": {
+            "question": "How long can mature male giant pandas grow?",
+            "choose": [
+                "Up to 1 meter",
+                "Up to 1.5 meters",
+                "Up to 1.8 meters",
+                "Up to 2 meters"
+            ],
+            "correct_answer": "Up to 1.8 meters"
+        },
+        "zh": {
+            "question": "成年雄性大貓熊身長可達到多少米？",
+            "choose": [
+                "長達1米",
+                "長達1.5米",
+                "長達1.8米",
+                "長達2米"
+            ],
+            "correct_answer": "長達1.8米"
+        },
+        "category": "Asia"
+    },
+    {
+        "id": 15,
+        "en": {
+            "question": "What has been a significant factor contributing to the rebound of giant panda populations?",
+            "choose": [
+                "Increased hunting",
+                "Habitat loss",
+                "Conservation efforts",
+                "Pollution"
+            ],
+            "correct_answer": "Conservation efforts"
+        },
+        "zh": {
+            "question": "大熊貓數量回升的重要因素是什麼？",
+            "choose": [
+                "增加狩獵",
+                "棲息地的喪失",
+                "良好的保育成果",
+                "環境污染"
+            ],
+            "correct_answer": "Conservation efforts"
+        },
+        "category": "Asia"
+    },
+    {
+        "id": 16,
+        "en": {
+            "question": "What is the main reason giant pandas remain vulnerable despite population rebounds?",
+            "choose": [
+                "Climate change",
+                "Disease outbreaks",
+                "Predation",
+                "Relatively small population numbers"
+            ],
+            "correct_answer": "Relatively small population numbers"
+        },
+        "zh": {
+            "question": "儘管數量回升，大熊貓仍然脆弱的主要原因是什麼？",
+            "choose": [
+                "氣候變遷",
+                "疾病爆發",
+                "被捕食",
+                "數量相對較少"
+            ],
+            "correct_answer": "數量相對較少"
+        },
+        "category": "Asia"
+    },
+    {
+        "id": 17,
+        "en": {
+            "question": "What is the distinguishing feature of the numbat's coat?",
+            "choose": [
+                "Yellow stripes",
+                "White spots",
+                "Reddish-brown hue with white stripes",
+                "Dark brown coloration"
+            ],
+            "correct_answer": "Reddish-brown hue with white stripe"
+        },
+        "zh": {
+            "question": "食蟻獸的皮毛有什麼顯著特徵？",
+            "choose": [
+                "黃色條紋",
+                "白點”",
+                "紅棕色調，帶有白色條紋",
+                "深棕色"
+            ],
+            "correct_answer": "紅棕色調，帶有白色條紋"
+        },
+        "category": "Australia"
+    },
+    {
+        "id": 18,
+        "en": {
+            
+            "question": "What makes the numbat unique among Australian marsupials?",
+            "choose": [
+                "Nocturnal behavior",
+                "Diurnal behavior",
+                "Arboreal habitat",
+                "Large size"
+            ],
+            "correct_answer": "Diurnal behavior"
+        },
+        "zh": {
+            "question": "是什麼讓食蟻獸在澳洲有袋類動物中獨一無二？",
+            "choose": [
+                "夜間行為",
+                "晝夜行為",
+                "樹棲棲息地",
+                "大尺寸"
+            ],
+            "correct_answer": "晝夜行為"
+        },
+        "category": "Australia"
+    },
+    {
+        "id": 19,
+        "en": {
+            "question": "How many young does a numbat typically give birth to each year?",
+            "choose": [
+                "Two",
+                "Three",
+                "Four",
+                "Five"
+            ],
+            "correct_answer": "Four"
+        },
+        "zh": {
+            "question": "食蟻獸通常每年產下多少隻幼崽？",
+            "choose": [
+                "2隻幼崽",
+                "3隻幼崽",
+                "4隻幼崽",
+                "5隻幼崽"
+            ],
+            "correct_answer": "4隻幼崽"
+        },
+        "category": "Australia"
+    },
+    {
+        "id": 20,
+        "en": {
+            "question": "What is the conservation status of the numbat?",
+            "choose": [
+                "Least concern",
+                "Vulnerable",
+                "Endangered",
+                "Critically endangered"
+            ],
+            "correct_answer": "Endangered"
+        },
+        "zh": {
+            "question": "食蟻獸的保育狀況如何？",
+            "choose": [
+                "暫無危機",
+                "易危",
+                "瀕危",
+                "極度瀕危"
+            ],
+            "correct_answer": "瀕危"
+        },
+        "category": "Australia"
+    },
+    {
+        "id": 21,
+        "en": {
+            "question": "What is the scientific name of the African wild dog?",
+            "choose": [
+                "Canis lupus",
+                "Lycaon pictus",
+                "Panthera leo",
+                "Acinonyx jubatus"
+            ],
+            "correct_answer": "Lycaon pictus"
+        },
+        "zh": {
+            "question": "非洲野狗的英文學名是什麼？",
+            "choose": [
+                "Canis lupus",
+                "Lycaon pictus",
+                "Panthera leo",
+                "Acinonyx jubatus"
+            ],
+            "correct_answer": "Lycaon pictus"
+        },
+        "category": "Africa"
+    },
+    {
+        "id": 22,
+        "en": {
+            
+            "question": "How many toes does the African wild dog have on each foot?",
+            "choose": [
+                "Three",
+                "Four",
+                "Five",
+                "Six"
+            ],
+            "correct_answer": "Four"
+        },
+        "zh": {
+           
+            "question": "非洲野狗每隻腳有幾隻腳？",
+            "choose": [
+                "3隻腳",
+                "4隻腳",
+                "5隻腳",
+                "6隻腳"
+            ],
+            "correct_answer": "4隻腳"
+        },
+        "category": "Africa"
+    },
+    {
+        "id": 23,
+        "en": {
+            "question": "What is the average size of an African wild dog litter?",
+            "choose": [
+                "Two young",
+                "Four young",
+                "Six young",
+                "Eight young"
+            ],
+            "correct_answer": "Two young"
+        },
+        "zh": {
+            "question": "非洲野犬一窩的有多少隻幼崽？",
+            "choose": [
+                "2隻幼崽",
+                "4隻幼崽",
+                "6隻幼崽",
+                "8隻幼崽"
+            ],
+            "correct_answer": "2隻幼崽"
+        },
+        "category": "Africa"
+    },
+    {
+        "id": 24,
+        "en": {
+            "question": "What is one method mentioned in the article to mitigate conflicts between wild dogs and humans?",
+            "choose": [
+                "Capturing and relocating wild dogs",
+                "Extermination of wild dog populations",
+                "Establishing protected areas and wildlife corridors",
+                "Encouraging wild dogs to prey on domestic livestock"
+            ],
+            "correct_answer": "Establishing protected areas and wildlife corridors"
+        },
+        "zh": {
+            "question": "文章中提到的緩解野狗與人類衝突的方法是什麼？",
+            "choose": [
+                "捕獲和轉移野狗",
+                "消滅野狗種群",
+                "建立保護區和保護野生動物",
+                "鼓勵野狗捕食家畜"
+            ],
+            "correct_answer": "建立保護區和保護野生動物"
+        },
+        "category": "Africa"
+    },
+    {
+        "id": 25,
+        "en": {
+            "question": "What is the scientific name of the royal penguin?",
+            "choose": [
+                "Eudyptes chrysolophus",
+                "Eudyptes schlegeli",
+                "Eudyptes robustus",
+                "Eudyptes moseleyi"
+            ],
+            "correct_answer": "Eudyptes schlegeli"
+        },
+        "zh": {
+            "question": "皇家企鵝的英文學名是什麼？",
+            "choose": [
+                "Eudyptes chrysolophus",
+                "Eudyptes schlegeli",
+                "Eudyptes robustus",
+                "Eudyptes moseleyi"
+            ],
+            "correct_answer": "Eudyptes schlegeli"
+        },
+        "category": "Alaska"
+    },
+    {
+        "id": 26,
+        "en": {
+            "question": "What is the main distinguishing feature of juvenile royal penguins?",
+            "choose": [
+                "Large size",
+                "Black head",
+                "Single stripe of yellow feathers above each eye",
+                "Long crest of feathers"
+            ],
+            "correct_answer": "Single stripe of yellow feathers above each eye"
+        },
+        "zh": {
+            "question": "幼年皇家企鵝的主要特徵是什麼？",
+            "choose": [
+                "大尺寸",
+                "黑頭",
+                "每隻眼睛上方有單根黃色羽毛",
+                "長羽毛冠"
+            ],
+            "correct_answer": "每隻眼睛上方有單根黃色羽毛"
+        },
+        "category": "Alaska"
+    },
+    {
+        "id": 27,
+        "en": {
+            "question": "How many breeding pairs are estimated to be in the large colony near the southern tip of Macquarie Island?",
+            "choose": [
+                "Less than 100,000",
+                "Around 250,000",
+                "Over 500,000",
+                "Approximately 400,000"
+            ],
+            "correct_answer": "Over 500,000"
+        },
+        "zh": {
+            "question": "麥格理島南端附近的大群落中估計有多少對繁殖對？",
+            "choose": [
+                "少於100,000",
+                "大約 250,000",
+                "超過 500,000",
+                "大約 400,000"
+            ],
+            "correct_answer": "Over 500,000"
+        },
+        "category": "Alaska"
+    },
+    {
+        "id": 28,
+        "en": {
+            "question": "What urgent conservation efforts are needed to protect royal penguins?",
+            "choose": [
+                "Protecting their breeding grounds from commercial fishing",
+                "Introducing invasive predators to control population size",
+                "Encouraging tourism in penguin colonies",
+                "Conducting scientific research without interruption"
+            ],
+            "correct_answer":"Protecting their breeding grounds from commercial fishing"
+        },
+        "zh": {
+            "question": "需要採取哪些緊急保護措施來保護皇家企鵝？",
+            "choose": [
+                "保護它們的繁殖地免受商業捕魚的影響",
+                "引入入侵性捕食者來控制族群規模",
+                "鼓勵企鵝棲息地的旅遊業",
+                "不間斷地進行科學研究"
+            ],
+            "correct_answer":"保護它們的繁殖地免受商業捕魚的影響"
+        },
+        "category": "Alaska"
+    }
+]
