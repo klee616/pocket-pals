@@ -1,9 +1,45 @@
 .selected{
-    background-color: blue;
-    color:white;
+    background-color: var(--highlight-green);
+    width: fit-content;
 }
 
 .unselected{
-    background-color: white;
+    background-color: none;
     color:black;
+}
+
+.confirm {
+background-color: var(--button-style-1);
+ color: white;
+ border: none;
+ width: 20vh;
+ height: 6vh;
+ font-size: 30px;
+ border-radius: 20px;
+ margin-top: 5vh;
+}
+
+.confirm:hover {
+    background-color: #a94c30;
+}
+
+.li {
+    list-style-type: none;
+}
+
+.answer {
+    list-style-type: none;
+    font-family: Arial;
+    font-weight: 100;
+}
+
+.answer:hover {
+    background-color: #64cb54 ;
+    width: fit-content;
+}
+
+.question {
+    list-style-type: none;
+    font-family: Arial;
+    margin-bottom: 5vh;
 }

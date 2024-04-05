@@ -1,0 +1,20 @@
+.answer {
+    font-family: arial;
+    font-weight: 100;
+    margin-bottom: 5vh;
+}
+
+.question {
+    margin-bottom: 1vh;
+    font-family: arial;
+}
+
+.results {
+    font-family: arial;
+    font-style: italic;
+}
+
+.answerList {
+    font-family: arial;
+    font-size: 60px;
+}

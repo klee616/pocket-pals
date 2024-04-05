@@ -1,6 +1,6 @@
 import { useState } from "react";
 import style from './Question.module.css';
-import {useRouter} from 'next/router'
+import { useRouter } from 'next/router'
 
 export default function Question({ data, callBack }) {
     const [option, setOption] = useState(null);
@@ -31,16 +31,17 @@ export default function Question({ data, callBack }) {
         <>
             {data && (<>
                 <ul>
-                    <li>{data[locale].question}
+                    <li className={style.question}>{data[locale].question}</li>
+                    <li className={style.li}>
                         <ul>
                             {data[locale] && data[locale].choose.map((item, inx) => {
-                                return (<><li key={inx}>
+                                return (<><li className={style.answer} key={inx}>
                                     <div className={optionStyle[inx]} onClick={() => changeAnswer(inx)}>{item}</div>
                                 </li></>)
                             })}
                         </ul>
                     </li>
-                    <li><button onClick={() => { submitAnswer() }} disabled={!isEnable} > Confirm </button></li>
+                    <li className={style.li}><button className={style.confirm} onClick={() => { submitAnswer() }} disabled={!isEnable} > Confirm </button></li>
                 </ul>
             </>)}
         </>
