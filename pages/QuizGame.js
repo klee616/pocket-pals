@@ -37,7 +37,6 @@ export default function Home({ dir }) {
       </header>
       <main className={`${styles.main}`}>
         <h1>
-            
         <Quiz type={name} />
         </h1>
       </main>

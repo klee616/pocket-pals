@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "en": {
+            "question": "At its smallest population; how many Vancouver Island Marmots were left in the wild in 2003?",
+            "choose": [
+                "Less than 30",
+                "Less than 100",
+                "Less than 150",
+                "Less than 200"
+            ],
+            "correct_answer": "Less than 30"
+        },
+        "zh": {
+            "question": "在2003年，溫哥華島土撥鼠在野外的最小族群數量是多少？",
+            "choose": [
+                "少於 30群",
+                "少於 100群",
+                "少於 150群",
+                "少於 200群"
+            ],
+            "correct_answer": "少於 30群"
+        },
+        "category": "NorthAmerican"
+    },
+    {
+        "id": 2,
+        "en": {
+            "question": "What is the average length of an adult Vancouver Island marmot?",
+            "choose": [
+                "50 to 55 centimeters",
+                "60 to 65 centimeters",
+                "65 to 70 centimeters",
+                "70 to 75 centimeters"
+            ],
+            "correct_answer": "65 to 70 centimeters"
+        },
+        "zh": {
+            "question": "成年溫哥華島土撥鼠的平均長度是多少？",
+            "choose": [
+                "50 to 55 厘米",
+                "60 to 65 厘米",
+                "65 to 70 厘米",
+                "70 to 75 厘米"
+            ],
+            "correct_answer": "65 to 70 厘米"
+        },
+        "category": "NorthAmerican"
+    },
+    {
+        "id": 3,
+        "en": {
+            "question": "How does the fur of baby marmots change as they grow?",
+            "choose": [
+                "It becomes darker",
+                "It turns white",
+                "It changes to a rusty brown",
+                "It remains the same color"
+            ],
+            "correct_answer": "It changes to a rusty brown"
+        },
+        "zh": {
+            "question": "小土撥鼠的皮毛在成長過程中發生了什麼樣的變化？",
+            "choose": [
+                "皮毛光澤變淡",
+                "皮毛轉變成白色",
+                "皮毛轉變成了銹棕色",
+                "顏色保持不變"
+            ],
+            "correct_answer": "皮毛轉變成了銹棕色"
+        },
+        "category": "NorthAmerican"
+    }
+]

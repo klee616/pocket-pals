@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import questionData from '@/data/question.json';
+import questionData from '@/data/question2.json';
 import Question from '@/Components/Question';
 import QuizResult from '@/Components/QuizResult';
 import {useRouter} from 'next/router'
