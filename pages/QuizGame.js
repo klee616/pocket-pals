@@ -13,8 +13,7 @@ export default function Home({ dir }) {
   const title = intl.formatMessage({ id: "page.home.head.title" });
 
   const router = useRouter();
-  const [name, setName] = useState(" router.query");
-
+  const category = router.query.category;
   return (
     <>
       <Head>
@@ -36,9 +35,9 @@ export default function Home({ dir }) {
         </div>
       </header>
       <main className={`${styles.main}`}>
-        <h1>
-        <Quiz type={name} />
-        </h1>
+        <h1>Quiz
+        </h1>{category}
+        <Quiz category={category} />
       </main>
     </>
   );
