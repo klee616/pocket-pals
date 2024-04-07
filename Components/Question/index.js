@@ -30,7 +30,7 @@ export default function Question({ data, callBack }) {
     return (
         <>
             {data && (<>
-                <ul>
+                <ul key="-1">
                     <li className={style.question}>{data[locale].question}</li>
                     <li className={style.li}>
                         <ul>

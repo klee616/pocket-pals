@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import questionData from '@/data/question.json';
+import { useRouter } from "next/router";
 import Question from '@/Components/Question';
 import QuizResult from '@/Components/QuizResult';
 
@@ -7,7 +8,6 @@ import QuizResult from '@/Components/QuizResult';
 export default function Qiiz({ category = "all" }) {
     console.log([...questionData] );
     const data = [...questionData].filter((item) =>  item.category.toLowerCase() == category.toLowerCase() );
-    console.log( [...questionData].filter((item) =>  item.category.toLowerCase() == category.toLowerCase() ));
     const [resultData, setResultData] = useState({
         current: 0,
         totalOfCorrectAnswers: 0,
@@ -15,6 +15,7 @@ export default function Qiiz({ category = "all" }) {
         questionList: []
     });
 
+    const { locale } = useRouter();
     const getAnswer = (ans) => {
         let currentOfQuestion = data[resultData.current];
         currentOfQuestion[locale].answer = ans;
