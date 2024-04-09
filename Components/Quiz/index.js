@@ -6,8 +6,8 @@ import QuizResult from '@/Components/QuizResult';
 
 
 export default function Qiiz({ category = "all" }) {
-    console.log([...questionData] );
-    const data = [...questionData].filter((item) =>  item.category.toLowerCase() == category.toLowerCase() );
+    console.log([...questionData]);
+    const data = [...questionData].filter((item) => item.category.toLowerCase() == category.toLowerCase());
     const [resultData, setResultData] = useState({
         current: 0,
         totalOfCorrectAnswers: 0,
@@ -32,8 +32,11 @@ export default function Qiiz({ category = "all" }) {
 
 
     return (<>
+
+
         {resultData.current < data.length && (<>
-            <Question data={data[resultData.current]} callBack={getAnswer} /></>
+            <Question data={data[resultData.current]} callBack={getAnswer} />
+        </>
         )}
 
         {resultData.questionList.length == data.length &&

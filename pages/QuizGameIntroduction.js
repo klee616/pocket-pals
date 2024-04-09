@@ -1,8 +1,10 @@
+
 import { useRouter } from "next/router";
 import Quiz from "@/Components/Quiz";
 import { useState } from "react";
 import { FormattedMessage, useIntl } from "react-intl";
 import HeadArea from "@/Components/HeadArea";
+import Category from "@/Components/Category";
 
 export default function Home({ dir }) {
   const { locales } = useRouter();
@@ -18,8 +20,9 @@ export default function Home({ dir }) {
     
       <HeadArea title={title} description={metaDescription} />
       <main >
-        <h1>Quiz - {category}</h1>
-        <Quiz category={category} />
+        <h1>Animal Quiz Topic</h1>
+
+
       </main>
     </>
   );
