@@ -1,0 +1,26 @@
+.progressBarBackground{
+    background-color: #D9D9D9;
+    width: 237px;
+    height: 15px;
+    border-radius: 15px;
+}
+
+.progressStatus{
+    background-color: #fd0303;
+    height: 15px;
+    border-radius: 15px;
+}
+
+.progressBarContainer{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon{
+    
+}
