@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
-import questionData from '@/data/question2.json';
+import questionData from '@/data/question.json';
+import { useRouter } from "next/router";
 import Question from '@/Components/Question';
 import QuizResult from '@/Components/QuizResult';
-import {useRouter} from 'next/router'
 
 
-export default function Qiiz({ type = "all" }) {
-    const [data, setData] = useState(questionData);
-
+export default function Qiiz({ category = "all" }) {
+    console.log([...questionData]);
+    const data = [...questionData].filter((item) => item.category.toLowerCase() == category.toLowerCase());
     const [resultData, setResultData] = useState({
         current: 0,
         totalOfCorrectAnswers: 0,
@@ -16,36 +16,27 @@ export default function Qiiz({ type = "all" }) {
     });
 
     const { locale } = useRouter();
-
-console.log(locale);
     const getAnswer = (ans) => {
         let currentOfQuestion = data[resultData.current];
-
         currentOfQuestion[locale].answer = ans;
-        console.log(currentOfQuestion[locale].correct_answer);
-        currentOfQuestion[locale].answer = ans;
-
-        if (currentOfQuestion[locale].answer == currentOfQuestion[locale].correct_answer) {
-            setResultData(prevState => ({
-                ...resultData,
-                totalOfCorrectAnswers: resultData.totalOfCorrectAnswers + 1,
-                current: resultData.current + 1,
-                questionList: [...resultData.questionList, currentOfQuestion[locale]]
-            }));
-        } else {
-            setResultData(prevState => ({
-                ...resultData,
-                totalOfWrongAnswers: resultData.totalOfWrongAnswers + 1,
-                current: resultData.current + 1,
-                questionList: [...resultData.questionList, currentOfQuestion[locale]]
-            }));
-        }
+        let { totalOfCorrectAnswers, totalOfWrongAnswers } = resultData;
+        (currentOfQuestion[locale].answer == currentOfQuestion[locale].correct_answer) ? totalOfCorrectAnswers++ : totalOfWrongAnswers++;
+        setResultData(prevState => ({
+            ...resultData,
+            totalOfCorrectAnswers: totalOfCorrectAnswers,
+            totalOfWrongAnswers: totalOfWrongAnswers,
+            current: resultData.current + 1,
+            questionList: [...resultData.questionList, currentOfQuestion[locale]]
+        }));
     };
 
 
     return (<>
+
+
         {resultData.current < data.length && (<>
-            <Question data={data[resultData.current]} callBack={getAnswer} /></>
+            <Question data={data[resultData.current]} callBack={getAnswer} />
+        </>
         )}
 
         {resultData.questionList.length == data.length &&

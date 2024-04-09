@@ -4,10 +4,10 @@ import { useRouter } from 'next/router'
 
 export default function Question({ data, callBack }) {
     const [option, setOption] = useState(null);
-    const { locale } = useRouter();
+    const {locale } = useRouter();
     const [isEnable, setIsEnable] = useState(false);
     const [optionStyle, setOptionStyle] = useState([style.unselected, style.unselected, style.unselected, style.unselected]);
-
+const [answer, setAnswer] = useState("");
 
     const submitAnswer = () => {
         callBack(option);
@@ -26,24 +26,29 @@ export default function Question({ data, callBack }) {
     const resetStyle = () => {
         setOptionStyle([style.unselected, style.unselected, style.unselected, style.unselected]);
     }
-
     return (
         <>
             {data && (<>
-                <ul>
-                    <li className={style.question}>{data[locale].question}</li>
-                    <li className={style.li}>
-                        <ul>
-                            {data[locale] && data[locale].choose.map((item, inx) => {
-                                return (<><li className={style.answer} key={inx}>
-                                    <div className={optionStyle[inx]} onClick={() => changeAnswer(inx)}>{item}</div>
-                                </li></>)
-                            })}
-                        </ul>
-                    </li>
-                    <li className={style.li}><button className={style.confirm} onClick={() => { submitAnswer() }} disabled={!isEnable} > Confirm </button></li>
-                </ul>
+                <form onSubmit={(e) => { e.preventDefault }}>
+                    <ul key="-1">
+                        <li className={style.question}>{data[locale].question}</li>
+                        <li className={style.li}>
+                            <ul>
+                                { 
+                                data[locale].choose.map((item, inx) => {
+                                    return (<>
+                                      <li className={style.answer} key={inx}>
+                                      <input type="radio" name={`answer${data}`} id={`answer${inx}`} onClick={()=>changeAnswer(inx)} onSelect={()=>changeAnswer(inx)} />  <label for={`answer${inx}`}>{item}</label>
+                                        </li></>)
+                                })
+                                }
+                            </ul>
+                        </li>
+                        <li className={style.li}><button className={style.confirm} onClick={() => { submitAnswer() }} disabled={!isEnable} tabIndex="2" > Confirm </button></li>
+                    </ul>
+                </form>
             </>)}
+
         </>
     );
 }
