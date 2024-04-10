@@ -1,0 +1,38 @@
+.answer {
+    font-family: arial;
+    font-weight: 100;
+    margin-bottom: 5vh;
+}
+
+.question {
+    margin-bottom: 1vh;
+    font-size: 30px;
+    margin-left: 2vh;
+}
+
+.correct {
+    font-family: arial;
+    font-style: italic;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.quizResults {
+    font-size: 15px;
+      display: flex;
+      margin-left: 2vh;
+}
+
+.answerResults {
+    display: flex;
+    margin-left: 2vh;
+    width: fit-content;
+}
+
+.results {
+    font-family: arial;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
