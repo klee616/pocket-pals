@@ -3,7 +3,7 @@ import styles from "@/styles/Home.module.css";
 import { useRouter } from "next/router";
 import { FormattedMessage, useIntl } from "react-intl";
 import Link from "next/link";
-
+import Header from "@/Components/Header/"
 
 export default function Home({ dir }) {
   const { locales } = useRouter();
@@ -30,6 +30,7 @@ export default function Home({ dir }) {
           ))}
         </div>
       </header>
+      <Header/>
       <main className={`${styles.main}`}>
         <h1>
           <FormattedMessage id="page.home.title" value={{ b: (info) => <b>{info}</b> }} />
