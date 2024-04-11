@@ -1,5 +1,9 @@
 .header {
     display: flex;
     justify-content: center;
+    margin-top: 5vh;
+}
+
+.main {
     margin-top: 10vh;
 }
