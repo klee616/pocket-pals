@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 import { useRouter } from "next/router";
 import { FormattedMessage, useIntl } from "react-intl";
 import Link from "next/link";
+import Footer from "@/Components/Footer/"
 
 
 export default function Home({ dir }) {
@@ -34,7 +35,9 @@ export default function Home({ dir }) {
         <h1>
           <FormattedMessage id="page.home.title" value={{ b: (info) => <b>{info}</b> }} />
         </h1>
+        <Footer/>
       </main>
+      
     </>
   );
 }
