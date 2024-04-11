@@ -1,0 +1,10 @@
+.answer {
+    list-style-type: none;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.answer:hover {
+    background-color: #64cb54 ;
+    width: fit-content;
+}

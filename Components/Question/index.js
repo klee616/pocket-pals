@@ -3,6 +3,7 @@ import style from './Question.module.css';
 import { useRouter } from 'next/router';
 import { Patrick_Hand } from 'next/font/google';
 import { Sarabun } from "next/font/google";
+import QuestionSelection from "../QuestionSelection";
 
 const patrickHand = Patrick_Hand({
     weight: '400',
@@ -52,11 +53,11 @@ export default function Question({ data, callBack }) {
         setOptionStyle([style.unselected, style.unselected, style.unselected, style.unselected]);
 
     }
-     const handleQuestionSelection = (event, index) => {
-            if (event.key === "Enter") {
-                changeAnswer(index);
-            }
+    const handleQuestionSelection = (event, index) => {
+        if (event.key === "Enter") {
+            changeAnswer(index);
         }
+    }
 
     return (
         <>
@@ -69,16 +70,13 @@ export default function Question({ data, callBack }) {
                                 {data[locale].choose.map((item, inx) => {
                                     return (
                                         <>
-                                            <li className={`${style.answer} ${patrickHand.className}`} key={inx}>
-                                                <input type="radio"
-                                                       name={`answer${data}`}
-                                                       id={`answer${inx}`}
-                                                       onClick={() => changeAnswer(inx)}
-                                                       tabIndex="0"
-                                                       onKeyDown={(event) => handleQuestionSelection(event, inx)}
-                                                     />
-                                                <label for={`answer${inx}`} >{item}</label>
-                                            </li>
+                                            <QuestionSelection
+                                                key={inx}
+                                                id={`answer${inx}`}
+                                                item={item}
+                                                callback={() => changeAnswer(inx)}
+                                                tabIndex={1} 
+                                            />
                                         </>
                                     )
                                 })
