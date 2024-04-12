@@ -1,19 +1,10 @@
 import style from './questionSelection.module.css';
 import { Patrick_Hand } from 'next/font/google';
-
     const patrickHand = Patrick_Hand({
         weight: '400',
         subsets: ['latin'],
     });
-
-export default function QuestionSelection({ id, item, callback, tabIndex, onKeyDown }) {
-
-    const handleKeyDown = (event) => {
-        if (event.key === "Enter") {
-            callback();
-        }
-    };
-
+export default function QuestionSelection({ id, item, callback, checked, tabIndex }) {
     
     return (
         <>
@@ -21,9 +12,10 @@ export default function QuestionSelection({ id, item, callback, tabIndex, onKeyD
                 <input
                     type='radio'
                     id={id}
+                    name={`question`}
                     tabIndex={tabIndex}
-                    onKeyDown={handleKeyDown}
-                    onClick={callback}
+                    onChange={callback}
+                    checked={checked}
                 />
                 <label for={id}>{item}</label>
             </div>

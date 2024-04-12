@@ -1,11 +1,23 @@
 .answer {
     list-style-type: none;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 1.5rem;
     margin: 10px;
+    width: 80%;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+.answer:hover {
+    width: 80%;
+}
+.answer label{
+    width: 80%;
+    display: inline-block;
+    cursor: pointer;
 }
 
-.answer:hover {
+.answer:has(label:hover){
     background-color: #64cb54 ;
-    width: fit-content;
+    cursor: pointer;
 }
