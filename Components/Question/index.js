@@ -58,7 +58,8 @@ export default function Question({ data, callBack }) {
     return (
         <>
             {data && (<>
-                <form onSubmit={(e) => { e.preventDefault }}>
+                <div className={`content-font-style ${style.question}`}>{data[locale].question}</div>
+                <form onSubmit={(e) => { e.preventDefault()}} id="quizForm" className={style.questionForm}>
                     {data[locale].choose.map((item, inx) => {
                         return (
                             <>
@@ -66,7 +67,7 @@ export default function Question({ data, callBack }) {
                                     key={inx}
                                     id={`answer${inx}`}
                                     item={item}
-                                    checked={item==option}
+                                    checked={item == option}
                                     callback={() => changeAnswer(item)}
                                     tabIndex={1}
                                 />
@@ -74,10 +75,8 @@ export default function Question({ data, callBack }) {
                         )
                     })
                     }
-
-      <Button name="Confirm" onClick={submitAnswer} disabled={!isEnable} />
-                    <button className={`${style.confirm} ${patrickHand.className}`} onClick={submitAnswer} disabled={!isEnable} tabIndex="2"> Confirm </button>
                 </form>
+                    <Button name="Next !" onClick={submitAnswer} disabled={!isEnable} />
             </>)}
 
         </>

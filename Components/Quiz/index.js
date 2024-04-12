@@ -33,7 +33,10 @@ export default function Qiiz({ category = "all" }) {
 
 
     return (<>
+
         <ProgressBar current={resultData.current  + 1} total={data.length} />
+
+        <h1 className={`header_font`}>Question {resultData.current  + 1}</h1>
         {resultData.current < data.length && (<>
             <Question data={data[resultData.current]} callBack={getAnswer} />
         </>

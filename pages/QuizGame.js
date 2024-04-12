@@ -22,7 +22,6 @@ export default function Home({ dir }) {
       <HeadArea title={title} description={metaDescription} />
       <Header/>
       <main className={style.main} >
-        <h1 className={style.header}>Quiz - {category}</h1>
         <Quiz category={category} />
       </main>
       <Footer/>
