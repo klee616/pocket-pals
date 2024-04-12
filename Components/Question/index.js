@@ -19,46 +19,36 @@ export default function Question({ data, callBack }) {
     const [option, setOption] = useState(null);
     const { locale } = useRouter();
     const [isEnable, setIsEnable] = useState(false);
-    const [optionStyle, setOptionStyle] = useState([style.unselected, style.unselected, style.unselected, style.unselected]);
-    const [answer, setAnswer] = useState("");
-
-
-    useEffect(() => {
-        function handleKeyDown(event) {
-            if (event.key === "Enter" && isEnable) {
-                submitAnswer();
-            }
-        }
-        document.addEventListener("keydown", handleKeyDown);
-        return () => {
-            document.removeEventListener("keydown", handleKeyDown);
-        };
-    }, [isEnable]);
 
     const submitAnswer = () => {
         callBack(option);
         setIsEnable(false);
         setOption(null);
-        resetStyle();
+
+    }
+
+    const OnFocusOut = () => {
+        let currentElement = $get(currentElementId); // ID set by OnFocusIn 
+        let currentIndex = currentElement.tabIndex;
+        let setIndex = currentIndex - 1;
+        let tabbables = document.querySelectorAll(".tabable");
+        for(let i=0; i<tabbables.length; i++) { //loop through each element
+            if(tabbables[i].tabIndex == (setIndex)) { //check the tabindex to see if it's the element we want
+                tabbables[i].focus(); //if it's the one we want, focus it and exit the loop
+                break;
+            }
+        }
     }
     const changeAnswer = (item) => {
         setOption(item);
         setIsEnable(true);
     }
-    const resetStyle = () => {
-        setOptionStyle([style.unselected, style.unselected, style.unselected, style.unselected]);
-
-    }
-    const handleQuestionSelection = (event, index) => {
-        if (event.key === "Enter") {
-            changeAnswer(index);
-        }
-    }
 
     return (
         <>
-            {data && (<>
-                <form onSubmit={(e) => { e.preventDefault }}>
+            { (<>
+                <div className={`content-font-style ${style.question}`}>{data[locale].question}</div>
+                <form onSubmit={(e) => { e.preventDefault() }} id="quizForm" className={style.questionForm}>
                     {data[locale].choose.map((item, inx) => {
                         return (
                             <>
@@ -66,18 +56,16 @@ export default function Question({ data, callBack }) {
                                     key={inx}
                                     id={`answer${inx}`}
                                     item={item}
-                                    checked={item==option}
-                                    callback={() => changeAnswer(item)}
+                                    checked={item == option}
+                                    callback={changeAnswer}
                                     tabIndex={1}
                                 />
                             </>
                         )
                     })
                     }
-
-      <Button name="Confirm" onClick={submitAnswer} disabled={!isEnable} />
-                    <button className={`${style.confirm} ${patrickHand.className}`} onClick={submitAnswer} disabled={!isEnable} tabIndex="2"> Confirm </button>
                 </form>
+                <Button name="Next !" onClick={submitAnswer} disabled={!isEnable} />
             </>)}
 
         </>

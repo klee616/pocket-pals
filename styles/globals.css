@@ -4,10 +4,15 @@
   --web-color-2: #13644D;
   --web-color-3: #FFC53A;
   --web-color-4: #E46D05;
+  --web-color-5: #ABE4A2;
+  --web-color-6: #F69E9C;
   --white: #FFFFFF;
 
+  --main-color:var(--web-color-1);
   --button-background-color:var(--web-color-4);
-  --button-font-color:var(--white)
+  --button-font-color:var(--white);
+  --correct-answer-background-color: var(--web-color-5);
+  --wrong-answer-background-color: var(--web-color-6);
 
 }
 
@@ -16,7 +21,7 @@ body {
   width: 430px;
   height: 932px;
   margin: auto;
-  padding: 0px;
+  padding:0px 0px;
   background-color: var(--main-color);
   border: 1px solid #fff;
   font-family: "Sarabun", sans-serif;
@@ -26,10 +31,29 @@ body {
 }
 
 
-.h1-font-style-bigger {
+.parmary-font {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.secondary-font {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h1-font-style {
   font-family: "Sarabun", sans-serif;
   font-size: 2.25rem;
   font-weight: 600;
+  font-style: normal;
+}
+
+.header_font{
+  font-family: "Sarabun", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -41,7 +65,7 @@ body {
 }
 
 .dropdown-list-font-style {
-  font-family: "Sarabun", sans-serif;
+  font-family:  "Sarabun", sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
   font-style: normal;
@@ -76,7 +100,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
 .button-font-style-2 {
   font-family: "Patrick Hand", cursive;
   font-size: 1.5rem;
@@ -95,19 +118,29 @@ body {
   font-family: "Sarabun", sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  font-style: normal;
-}
+  font-style: normal;}
 
 .content-font-style {
   font-family: "Sarabun", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
-  font-style: normal;
-}
+  font-style: normal;}
 
 .label-font-style {
   font-family: "Sarabun", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   font-style: normal;
+}
+
+.contrast-image{
+  width: 250px;
+}
+
+.typography-demo p{
+  width: 100%;
+  margin-bottom: 0px;
+}
+.icon{
+  width: 100px;
 }

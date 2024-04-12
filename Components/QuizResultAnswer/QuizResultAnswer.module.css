@@ -1,0 +1,16 @@
+.question{    margin: 15px 0px 5px;
+}
+
+.answer{
+    width: 100%;
+    display: block;
+    margin: 5px 0px 20px;
+}
+
+.correct{
+    background-color: var(--correct-answer-background-color);
+}
+
+.wrong{
+    background-color: var(--wrong-answer-background-color);
+}
