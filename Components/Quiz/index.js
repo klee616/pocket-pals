@@ -3,7 +3,7 @@ import questionData from '@/data/question.json';
 import { useRouter } from "next/router";
 import Question from '@/Components/Question';
 import QuizResult from '@/Components/QuizResult';
-import ProgressBar from '../ProgressBar';
+import ProgressBar from '@/Components/ProgressBar';
 
 
 export default function Qiiz({ category = "all" }) {
@@ -33,7 +33,7 @@ export default function Qiiz({ category = "all" }) {
 
 
     return (<>
-
+        <ProgressBar current={resultData.current} total={data.length} />
         {resultData.current < data.length && (<>
             <Question data={data[resultData.current]} callBack={getAnswer} />
         </>
