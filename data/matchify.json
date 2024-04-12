@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "groupName": "A",
+        "parent": {
+            "en": "a",
+            "zh": "a"
+        },
+        "child": {
+            "en": "a description",
+            "zh": "a description"
+        }
+    },
+    {
+        "id": 2,
+        "groupName": "B",
+        "parent": {
+            "en": "b",
+            "zh": "b"
+        },
+        "child": {
+            "en": "B description",
+            "zh": "B description"
+        }
+    },
+    {
+        "id": 3,
+        "groupName": "C",
+        "parent": {
+            "en": "c",
+            "zh": "c"
+        },
+        "child": {
+            "en": "C description",
+            "zh": "C description"
+        }
+    }
+]
