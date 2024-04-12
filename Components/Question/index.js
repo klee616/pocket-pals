@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { Patrick_Hand } from 'next/font/google';
 import { Sarabun } from "next/font/google";
 import QuestionSelection from "../QuestionSelection";
-
+import Button from "@/Components/Button";
 const patrickHand = Patrick_Hand({
     weight: '400',
     subsets: ['latin'],
@@ -74,6 +74,8 @@ export default function Question({ data, callBack }) {
                         )
                     })
                     }
+
+      <Button name="Confirm" onClick={submitAnswer} disabled={!isEnable} />
                     <button className={`${style.confirm} ${patrickHand.className}`} onClick={submitAnswer} disabled={!isEnable} tabIndex="2"> Confirm </button>
                 </form>
             </>)}
