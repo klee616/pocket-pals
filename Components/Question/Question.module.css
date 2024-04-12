@@ -11,16 +11,13 @@
     position: relative;
 }
 .confirm {
-background-color: var(--button-style-1);
- color: white;
- border: none;
- width: 20vh;
- height: 6vh;
- font-size: 30px;
- border-radius: 20px;
-position: absolute;
-bottom: 10vh; 
-right: 13.5vh;
+    background-color: var(--button-style-1);
+    color: white;
+    border: none;
+    height: 6vh;
+    font-size: 30px;
+    border-radius: 20px;
+    margin: 0px auto;
 }
 
 .confirm:hover {

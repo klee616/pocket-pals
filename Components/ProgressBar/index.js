@@ -1,5 +1,4 @@
 import style from './ProgressBar.module.css';
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 export default function ProgressBar({ current, total, type = 'step' }) {
@@ -17,7 +16,7 @@ export default function ProgressBar({ current, total, type = 'step' }) {
 
     }
 
-    return (<>{current} {persent}
+    return (<>
         <div className={style.progressBarContainer}>
             <Image src={imagePath} className='Icon' width="30" height="30" alt={alt} />
             <div className={style.progressBarBackground}>

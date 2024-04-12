@@ -6,4 +6,6 @@
   padding: 6rem;
   min-height: 100vh;
   background-color: var(--main-color);
+  width: 430px;
+  
 }

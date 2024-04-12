@@ -42,11 +42,7 @@ export default function Question({ data, callBack }) {
         resetStyle();
     }
     const changeAnswer = (item) => {
-        console.log(data[locale]['choose'][item]);
-        for (let i = 0; i < data[locale]['choose'].length; i++) {
-            (i == item) ? optionStyle[i] = optionStyle[item] = style.selected : optionStyle[i] = style.unselected;
-        }
-        setOption(data[locale]['choose'][item]);
+        setOption(item);
         setIsEnable(true);
     }
     const resetStyle = () => {
@@ -63,32 +59,22 @@ export default function Question({ data, callBack }) {
         <>
             {data && (<>
                 <form onSubmit={(e) => { e.preventDefault }}>
-                    <ul key="-1">
-                        <li className={`${style.question} ${sarabun.className}`}>{data[locale].question}</li>
-                        <li className={style.li}>
-                            <ul>
-                                {data[locale].choose.map((item, inx) => {
-                                    return (
-                                        <>
-                                            <QuestionSelection
-                                                key={inx}
-                                                id={`answer${inx}`}
-                                                item={item}
-                                                callback={() => changeAnswer(inx)}
-                                                tabIndex={1} 
-                                            />
-                                        </>
-                                    )
-                                })
-                                }
-                            </ul>
-                        </li>
-                        <li className={style.li}>
-                            <div className="confirmContainer">
-                                <button className={`${style.confirm} ${patrickHand.className}`} onClick={submitAnswer} disabled={!isEnable} tabIndex="2"> Confirm </button>
-                            </div>
-                        </li>
-                    </ul>
+                    {data[locale].choose.map((item, inx) => {
+                        return (
+                            <>
+                                <QuestionSelection
+                                    key={inx}
+                                    id={`answer${inx}`}
+                                    item={item}
+                                    checked={item==option}
+                                    callback={() => changeAnswer(item)}
+                                    tabIndex={1}
+                                />
+                            </>
+                        )
+                    })
+                    }
+                    <button className={`${style.confirm} ${patrickHand.className}`} onClick={submitAnswer} disabled={!isEnable} tabIndex="2"> Confirm </button>
                 </form>
             </>)}
 
