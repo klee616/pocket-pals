@@ -1,8 +1,13 @@
 :root {
-  --main-color: #B9E4C9;
-  --secondary-color: #356859;
-  --highlight-green: #5EEA47;
-  --button-style-1: #CF6241;
+
+  --web-color-1: #B9E4C9;
+  --web-color-2: #13644D;
+  --web-color-3: #FFC53A;
+  --web-color-4: #E46D05;
+  --white: #FFFFFF;
+
+  --button-background-color:var(--web-color-4);
+  --button-font-color:var(--white)
 
 }
 
@@ -17,6 +22,7 @@ body {
   font-family: "Sarabun", sans-serif;
   font-weight: 100;
   font-style: normal;
+  overflow: scroll;
 }
 
 
