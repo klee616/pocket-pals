@@ -11,13 +11,13 @@ export default function QuestionSelection({ id, item, callback, checked, tabInde
             <div className={`${style.answer} ${patrickHand.className}`}>
                 <input
                     type='radio'
-                    id={id}
+                    id={`question${id}`}
                     name={`question`}
                     tabIndex={tabIndex}
-                    onChange={callback}
+                    onChange={()=>callback(item)}
                     checked={checked}
                 />
-                <label for={id}>{item}</label>
+                <label for={`question${id}`}>{item}</label>
             </div>
 
         </>

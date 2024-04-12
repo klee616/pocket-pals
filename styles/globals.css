@@ -4,11 +4,15 @@
   --web-color-2: #13644D;
   --web-color-3: #FFC53A;
   --web-color-4: #E46D05;
+  --web-color-5: #ABE4A2;
+  --web-color-6: #F69E9C;
   --white: #FFFFFF;
 
   --main-color:var(--web-color-1);
   --button-background-color:var(--web-color-4);
   --button-font-color:var(--white);
+  --correct-answer-background-color: var(--web-color-5);
+  --wrong-answer-background-color: var(--web-color-6);
 
 }
 
@@ -124,7 +128,7 @@ body {
 
 .label-font-style {
   font-family: "Sarabun", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   font-style: normal;
 }

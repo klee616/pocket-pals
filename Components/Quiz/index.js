@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Question from '@/Components/Question';
 import QuizResult from '@/Components/QuizResult';
 import ProgressBar from '@/Components/ProgressBar';
+import Button from '@/Components/Button';
 
 
 export default function Qiiz({ category = "all" }) {
@@ -33,18 +34,19 @@ export default function Qiiz({ category = "all" }) {
 
 
     return (<>
-
+        {resultData.current < data.length && (<>
         <ProgressBar current={resultData.current  + 1} total={data.length} />
 
         <h1 className={`header_font`}>Question {resultData.current  + 1}</h1>
-        {resultData.current < data.length && (<>
             <Question data={data[resultData.current]} callBack={getAnswer} />
         </>
         )}
 
         {resultData.questionList.length == data.length &&
             (
-                <><QuizResult resultData={resultData} /></>
+                <><QuizResult resultData={resultData} />
+                <Button name="Play Again !" onClick={()=>{}}/>
+                </>
             )
         }
     </>)
