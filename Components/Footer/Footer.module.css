@@ -1,8 +1,10 @@
 .block{
     display: flex;
-    background-color: #FD5523;
-    width: 400px;
+    background-color:var(--web-color-4);
+    width: 430px;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: nowrap;
+    padding: 10px 0px;
+    margin: 10px 0px 0px;
 }
