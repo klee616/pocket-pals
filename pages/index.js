@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 import { useRouter } from "next/router";
 import { FormattedMessage, useIntl } from "react-intl";
 import Link from "next/link";
+import Header from "@/Components/Header/"
 
 
 export default function Home({ dir }) {
@@ -22,6 +23,7 @@ export default function Home({ dir }) {
         <link rel="icon" href="/favicon.ico" hrefLang="zh" />
       </Head>
       <header>
+      <Header></Header>
         <div>
           {[...locales].sort().map((locale) => (
             <Link key={locale} href="/" locale={locale}>
