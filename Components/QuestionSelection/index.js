@@ -1,14 +1,9 @@
-import style from './questionSelection.module.css';
-import { Patrick_Hand } from 'next/font/google';
-    const patrickHand = Patrick_Hand({
-        weight: '400',
-        subsets: ['latin'],
-    });
+import style from './QuestionSelection.module.css'
 export default function QuestionSelection({ id, item, callback, checked, tabIndex }) {
     
     return (
         <>
-            <div className={`${style.answer} ${patrickHand.className}`}>
+            <div className={`${style.answer} `}>
                 <input
                     type='radio'
                     id={`question${id}`}
