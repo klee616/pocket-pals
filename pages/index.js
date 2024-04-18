@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 import { FormattedMessage, useIntl } from "react-intl";
 import Link from "next/link";
 import Footer from "@/Components/Footer/"
+import SideMenuBar from "@/Components/SideMenuBar/"
+import Header from "@/Components/Header/"
 
 
 export default function Home({ dir }) {
@@ -24,6 +26,8 @@ export default function Home({ dir }) {
       </Head>
       <header>
         <div>
+          <Header/>
+         
           {[...locales].sort().map((locale) => (
             <Link key={locale} href="/" locale={locale}>
               <div>{locale}</div>
