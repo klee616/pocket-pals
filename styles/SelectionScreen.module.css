@@ -12,28 +12,21 @@
 .title {
   font-family: Heavitas;
   color: var( --web-color-2);
-  text-align: left;
+  text-align: center;
   font-size: 50px;
   margin-bottom: 0;
-  margin-left: 2vh;
-}
-
-.subtitleContainer {
-  display: flex;
-  justify-content:center;
-  flex-direction: column;
-  align-items: center;
 }
 
 .subtitle {
-  height: 40px;
-  margin-top: 6vh;
-  align-items: center;
-  width: 70%;
+ text-align: center;
+ align-items: center;
+ width: 80%;
+ margin-top: 0;
+ color: var( --web-color-2);
 }
-
-.mascot {
-margin-top: 40%;
+.subtitleContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .button {
@@ -41,10 +34,9 @@ margin-top: 40%;
   background-color: var(  --web-color-4);
   color: white;
   border-radius: 20px;
-  height: 6vh;
-  margin-top: 3vh;
-  width: 60%;
-
+  width: 40vh;
+  height: 9vh;
+  margin-top: 20px;
 }
 
 .button:hover {
@@ -52,8 +44,9 @@ margin-top: 40%;
   background-color:#e44c05;
   color: white;
   border-radius: 20px;
-  height: 6vh;
-  margin-top: 3vh;
+  width: 40vh;
+  height: 9vh;
+  margin-top: 20px;
 }
 
 .buttonContainer {
