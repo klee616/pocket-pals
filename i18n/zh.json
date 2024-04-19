@@ -1,7 +1,16 @@
 {
-    "page.home.head.title": "中文標題",
-    "page.home.head.meta.description": "這個Meta描述",
-    "page.home.title": "標題1",
-    "page.home.description": "描述",
-    "page.button.submit": "提交"
+    "page.home.head.title": "POCKET PALS",
+    "page.home.head.meta.description": "兒童動物學習應用程式",
+    "page.home.title": "POCKET PALS",
+    "page.home.description": "兒童動物學習應用程式",
+    "page.home.label.nickname":"暱稱",
+    "page.home.submit": "確認 !",
+    "page.selection.screen.head.title": "POCKET PALS",
+    "page.selection.screen.head.meta.description": "兒童動物學習應用程式",
+    "page.selection.screen.title": "POCKET PALS",
+    "page.selection.screen.description": "兒童動物學習應用程式",
+    "page.selection.screen.welcome":"你好,",
+    "page.selection.screen.learn": "學習 !",
+    "page.selection.screen.quiz": "小測驗 !",
+    "page.selection.screen.mix.and.match": "配對遊戲 !"
 }
