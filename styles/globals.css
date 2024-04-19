@@ -30,6 +30,11 @@ body {
   overflow: scroll;
 }
 
+@font-face {
+  font-family: "Heavitas";
+  src: local("Heavitas"), 
+    url("../fonts/Heavitas.ttf"), format("truetype");
+}
 
 .parmary-font {
   font-family: "Sarabun", sans-serif;
@@ -57,7 +62,7 @@ body {
   font-style: normal;
 }
 
-.description-font-style {
+.description-font-styles {
   font-family: "Patrick Hand", cursive;
   font-size: 1.5rem;
   font-weight: 400;
