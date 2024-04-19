@@ -1,0 +1,58 @@
+.overlap{
+    width: 430px;
+    height: 932px;
+    position: absolute;
+    background: rgba(66,66,66,0.8);
+    z-index: 1;
+}
+
+.sideMenubarContainer{
+    position: sticky;
+    background: var(--web-color-6);
+    z-index: 2;
+    width: 230px;
+    float: right;
+    height: 932px;
+    overlay: auto;
+    animation: slide-in 1s both;
+}
+
+.sideMenu{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+
+.menu{
+    display: block;
+    width: 100%;
+}
+
+.menu a{
+    display: block;
+    padding: 5px 10px ;
+    width: 100%;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.menu a:hover{
+    color: #cccccc;
+}
+
+
+@keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    
+    to {
+      transform: translateX(0);
+    }
+  }

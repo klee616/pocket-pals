@@ -1,18 +1,46 @@
-.bar{
+.bar {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #356859;
+    background-color: var(--web-color-2);
 }
 
-.logo{
+.logo {
     border-radius: 50%;
     padding: 10px
 }
 
-.menu{
+.menu {
     padding: 10px;
     padding-top: 18px;
     padding-right: 18px;
+}
+
+.sideMenu {
+    display: flex;
+    width: 200px;
+    height: 300px;
+    background: var(--web-color-7);
+    margin-left: 53.4%;
+}
+
+.menus {
+    padding-top: 15rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.texts {
+    font-family: "Sarabun", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-style: normal;
+    list-style-type: none;
+}
+
+
+.search{
+    padding-right: 20px;
+    margin-top: 23px;
 }

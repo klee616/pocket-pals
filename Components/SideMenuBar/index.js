@@ -7,8 +7,6 @@ export default function SideMenuBar({ setIsShowSideMenuBar }) {
         console.log(e.target);
         const topLevelChild = document.getElementById('menu_container');
         console.log(!topLevelChild.contains(e.target));
-
-        document.querySelector({style.sideMenubarContainer}).cs
         if (!topLevelChild.contains(e.target)) {
             setIsShowSideMenuBar(false);
         }

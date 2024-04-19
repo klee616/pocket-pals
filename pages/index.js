@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import { FormattedMessage, useIntl } from "react-intl";
 import HeadArea from "@/Components/HeadArea";
 import Link from "next/link";
+import Footer from "@/Components/Footer/"
+import Header from "@/Components/Header/"
 import Image from 'next/image';
 import { useState } from "react";
 
@@ -26,6 +28,8 @@ export default function Home({ dir }) {
       <HeadArea title={title} description={description} />
       <header>
         <div>
+          <Header/>
+         
           {[...locales].sort().map((locale) => (
             <Link key={locale} href="/" locale={locale}>
               <div>{locale}</div>
