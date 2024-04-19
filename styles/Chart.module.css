@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    width: 430px;
+    height: calc(934px - 177px);
+  overflow: scroll;
+  }
+  
