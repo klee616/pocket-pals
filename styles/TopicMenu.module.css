@@ -1,0 +1,41 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    width: 430px;
+    height: calc(934px - 177px);
+  overflow: scroll;
+  }
+
+.headingContainer {
+    margin-top: 2vh;
+}
+
+.title {
+    text-align: center;
+}
+.subtitle {
+    text-align: center;
+}
+.filterContainer {
+    display: flex;
+    justify-self: left;
+    width: 70%;
+    margin-top: 2vh;
+}
+
+.filter {
+    border: transparent;
+    background-color: transparent;
+}
+.topicContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.topic {
+   border: transparent;
+   background-color: transparent;
+}

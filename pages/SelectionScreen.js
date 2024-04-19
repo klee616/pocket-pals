@@ -35,9 +35,9 @@ export default function SelectionScreen({ dir }) {
         <Image src="./image/Mascot.svg" width={500} height={400} />
 
         <div className={styles.buttonContainer}>
-          <button className={`button-font-style-1 ${styles.button}`}><Link href="/">Learn!</Link></button>
-          <button className={`button-font-style-1 ${styles.button}`}><Link href="/QuizGame">Quiz!</Link></button>
-          <button className={`button-font-style-1 ${styles.button}`}><Link href="/SelectQuizTopic">Mix and Match!</Link></button>
+          <button className={`button-font-style-1 ${styles.button}`}><Link href="/TopicMenuArticle">Learn!</Link></button>
+          <button className={`button-font-style-1 ${styles.button}`}><Link href="/TopicMenuQuiz">Quiz!</Link></button>
+          <button className={`button-font-style-1 ${styles.button}`}><Link href="/TopicMenuMixMatch">Mix and Match!</Link></button>
         </div>
       </main>
     </>
