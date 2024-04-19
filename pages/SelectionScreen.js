@@ -2,42 +2,45 @@ import styles from "@/styles/SelectionScreen.module.css";
 import { useRouter } from "next/router";
 import { FormattedMessage, useIntl } from "react-intl";
 import HeadArea from "@/Components/HeadArea";
-import Link from "next/link";
 import Image from 'next/image';
+import { useState, useEffect } from "react";
+import Button from "@/Components/Button";
 
 export default function SelectionScreen({ dir }) {
-  const { locales } = useRouter();
+  const { locale } = useRouter();
   const intl = useIntl();
+  const router = useRouter();
+  
 
-  const title = intl.formatMessage({ id: "page.home.head.title" });
-  const description = intl.formatMessage({ id: "page.home.head. description" });
+  const headTitle = intl.formatMessage({ id: "page.selection.screen.head.title" });
+  const headDescription = intl.formatMessage({ id: "page.selection.screen.head.description" });
+  const title = intl.formatMessage({id: "page.selection.screen.title"});
+  const description = intl.formatMessage({ id: "page.selection.screen.description" });
+
+ 
+  const buttonSubmit = (target)=>{
+    router.push(locale + target);
+  }
+  const [ nickName, setNickName ] = useState("");
+  useEffect(() => {
+    setNickName(window.sessionStorage.getItem("nickname"));
+  }, [])
   return (
     <>
-      <HeadArea title={title} description={description} />
-      <header>
-        <div>
-          {[...locales].sort().map((locale) => (
-            <Link key={locale} href="/" locale={locale}>
-              <div>{locale}</div>
-            </Link>
-          ))}
-        </div>
-      </header>
-
+      <HeadArea title={headTitle} description={headDescription} />
       <main className={`${styles.main}`}>
         <div className={styles.heading}>
-          <h1 className={styles.title}>Pocket Pals</h1>
+          <h1 className={styles.title}>{title}</h1>
           <div className={styles.subtitleContainer}>
-            <p className={`description-font-styles ${styles.subtitle}`}>An Animal Learning App for Kids!</p>
+            <p className={`description-font-styles ${styles.subtitle}`}>{description} <br />{intl.formatMessage({id: "page.selection.screen.welcome"})} {nickName} !</p>
           </div>
         </div>
-
-        <Image src="./image/Mascot.svg" width={500} height={400} />
+        <Image src="/image/Mascot.svg" width={500} height={400} alt="Logo" />
 
         <div className={styles.buttonContainer}>
-          <button className={`button-font-style-1 ${styles.button}`}><Link href="/">Learn!</Link></button>
-          <button className={`button-font-style-1 ${styles.button}`}><Link href="/QuizGame">Quiz!</Link></button>
-          <button className={`button-font-style-1 ${styles.button}`}><Link href="/SelectQuizTopic">Mix and Match!</Link></button>
+          <Button name={intl.formatMessage({id: "page.selection.screen.learn"})} onClick={()=>buttonSubmit('/Learn')} />
+          <Button name={intl.formatMessage({id: "page.selection.screen.quiz"})} onClick={()=>buttonSubmit('/SelectQuizTopic')} />
+          <Button name={intl.formatMessage({id: "page.selection.screen.mix.and.match"})} onClick={()=>buttonSubmit('/MixAndMatchGame')} />
         </div>
       </main>
     </>

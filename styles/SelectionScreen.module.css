@@ -1,12 +1,15 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  min-height: calc(934px -177px);
   background-color: var(--main-color);
   width: 430px;
-  
+  row-gap: 60px;
+  flex-wrap: nowrap;
+  align-content: center;
+  overflow: hidden;
+
 }
 
 .title {
@@ -51,6 +54,8 @@
 
 .buttonContainer {
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
 }

@@ -1,7 +1,16 @@
 {
-    "page.home.head.title": "English Title",
-    "page.home.head.meta.description": "This is meta description",
-    "page.home.title": "Header Title",
-    "page.home.description": "Description",
-    "page.button.submit": "submit"
+    "page.home.head.title": "POCKET PALS",
+    "page.home.head.meta.description": "An Animal Learning App For Kids",
+    "page.home.title": "POCKET PALS",
+    "page.home.description": "An Animal Learning App For Kids",
+    "page.home.label.nickname": "Nick Name",
+    "page.home.submit": "Confirm !",
+    "page.selection.screen.head.title": "POCKET PALS",
+    "page.selection.screen.head.meta.description": "An Animal Learning App For Kids",
+    "page.selection.screen.title": "POCKET PALS",
+    "page.selection.screen.description": "An Animal Learning App For Kids",
+    "page.selection.screen.welcome":"Weclome,",
+    "page.selection.screen.learn": "Learn !",
+    "page.selection.screen.quiz": "Quiz !",
+    "page.selection.screen.mix.and.match": "Mix and Match !"
 }
