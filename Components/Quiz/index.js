@@ -7,7 +7,6 @@ import ProgressBar from '@/Components/ProgressBar';
 import Button from '@/Components/Button';
 
 export default function Qiiz({ category = "all" }) {
-    const cookieStore = cookies()
 
     const data = [...questionData].filter((item) => item.category.toLowerCase() == category.toLowerCase());
     const [resultData, setResultData] = useState({
