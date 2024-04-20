@@ -6,9 +6,9 @@ import QuizResult from '@/Components/QuizResult';
 import ProgressBar from '@/Components/ProgressBar';
 import Button from '@/Components/Button';
 
-
 export default function Qiiz({ category = "all" }) {
-    console.log([...questionData]);
+    const cookieStore = cookies()
+
     const data = [...questionData].filter((item) => item.category.toLowerCase() == category.toLowerCase());
     const [resultData, setResultData] = useState({
         current: 0,
@@ -16,6 +16,11 @@ export default function Qiiz({ category = "all" }) {
         totalOfWrongAnswers: 0,
         questionList: []
     });
+
+    const [ nickName, setNickName ] = useState("");
+    useEffect(() => {
+      setNickName(window.sessionStorage.getItem("nickname"));
+    }, []);
 
     const { locale } = useRouter();
     const getAnswer = (ans) => {
