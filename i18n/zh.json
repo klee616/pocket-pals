@@ -12,5 +12,7 @@
     "page.selection.screen.welcome":"你好,",
     "page.selection.screen.learn": "學習 !",
     "page.selection.screen.quiz": "小測驗 !",
-    "page.selection.screen.mix.and.match": "配對遊戲 !"
+    "page.selection.screen.mix.and.match": "配對遊戲 !",
+    "page.article.label":"顯示所有顯目",
+    "page.article.button1":"選擇遊戲 !"
 }
