@@ -2,6 +2,7 @@
     {
         "id": 1,
         "cover_images": "/image/Vancouver_Island_Marmots.jpeg",
+        "categoryMenuImage" :  "/image/Panda.png",
         "category": "NorthAmerican",
         "en": {
             "name": "Vancouver Island Marmots",
@@ -49,6 +50,7 @@
     {
         "id": 2,
         "cover_images": "/image/Spectacled_Bears.jpeg",
+        "categoryMenuImage" :  "/image/Bear.png",
         "category": "SouthAmerican",
         "en": {
             "name": "The spectacled bear",
@@ -94,6 +96,7 @@
     {
         "id": 3,
         "cover_images": "/image/Common_Hamsters.jpeg",
+        "categoryMenuImage" :  "/image/Hamster.png",
         "category": "Europe",
         "en": {
             "name": "Common Hamster",
@@ -145,6 +148,7 @@
     {
         "id": 4,
         "cover_images": "/image/Giant_panda.jpeg",
+        "categoryMenuImage" :  "/image/Panda.png",
         "category": "Asia",
         "en": {
             "name": "Giant panda",
@@ -192,6 +196,7 @@
     {
         "id": 5,
         "cover_images": "/image/Numbat.jpeg",
+        "categoryMenuImage" :  "/image/numbat.png",
         "category": "Australia",
         "en": {
             "name": "Numbat",
@@ -239,6 +244,7 @@
     {
         "id": 6,
         "cover_images": "/image/African_Dogs.jpeg",
+        "categoryMenuImage" :  "/image/Panda.png",
         "category": "African",
         "en": {
             "name": "African Dogs",
@@ -288,6 +294,7 @@
     {
         "id": 7,
         "cover_images": "/image/Royal_Penguin.jpeg",
+        "categoryMenuImage" :  "/image/penguin.png",
         "category": "Alaska",
         "en": {
             "name": "Royal Penguin",
