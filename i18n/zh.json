@@ -14,5 +14,9 @@
     "page.selection.screen.quiz": "小測驗 !",
     "page.selection.screen.mix.and.match": "配對遊戲 !",
     "page.article.label":"顯示所有顯目",
-    "page.article.button1":"選擇遊戲 !"
+    "page.article.button1":"選擇遊戲 !",
+    "page.learn.head.title": "POCKET PALS - 選擇學習主題",
+    "page.learn.head.meta.description": "An Animal 兒童動物學習應用程式 - 選擇學習主題",
+    "page.learn.title": "選擇學習主題",
+    "page.learn.description": "選擇學習主題"
 }
