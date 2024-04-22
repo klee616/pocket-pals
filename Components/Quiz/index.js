@@ -7,7 +7,7 @@ import ProgressBar from '@/Components/ProgressBar';
 import Button from '@/Components/Button';
 
 export default function Qiiz({ category = "all" }) {
-
+    const router = useRouter();
     const data = [...questionData].filter((item) => item.category.toLowerCase() == category.toLowerCase());
     const [resultData, setResultData] = useState({
         current: 0,
@@ -49,7 +49,7 @@ export default function Qiiz({ category = "all" }) {
         {resultData.questionList.length == data.length &&
             (
                 <><QuizResult resultData={resultData} />
-                <Button name="Play Again !" onClick={()=>{}}/>
+                <Button name="Play Again !" onClick={()=>{router.push('/Quiz')}}/>
                 </>
             )
         }

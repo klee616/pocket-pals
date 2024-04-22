@@ -22,5 +22,13 @@
     "page.learn.head.title": "POCKET PALS - Select Learning Topic",
     "page.learn.head.meta.description": "An Animal Learning App For Kids - Select Learning Topic",
     "page.learn.title": "Select Learning Topic",
-    "page.learn.description": "Select a Topic to Learn"
+    "page.learn.description": "Select a Topic to Learn",
+    "page.quiz.head.title": "POCKET PALS - Select Quiz Topic",
+    "page.quiz.head.description": "An Animal Learning App For Kids - Select Quiz Topic",
+    "page.quiz.title": "Select Quiz Topic",
+    "page.quiz.description": "Select a Quiz to Learn",
+    "page.quiz.game.introduction.head.title": "POCKET PALS - Game Introduction ",
+    "page.quiz.game.introduction.head.description": "An Animal Learning App For Kids -  Game Introduction",
+    "page.quiz.game.introduction.title": " Game Introduction",
+    "page.quiz.game.introduction.description": "An Animal Learning App For Kids -  Game Introduction"
 }

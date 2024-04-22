@@ -18,5 +18,13 @@
     "page.learn.head.title": "POCKET PALS - 選擇學習主題",
     "page.learn.head.meta.description": "An Animal 兒童動物學習應用程式 - 選擇學習主題",
     "page.learn.title": "選擇學習主題",
-    "page.learn.description": "選擇學習主題"
+    "page.learn.description": "選擇學習主題",
+    "page.quiz.head.title": "POCKET PALS - 選擇小測驗題目",
+    "page.quiz.head.meta.description": "An Animal 兒童動物學習應用程式 - 選擇小測驗題目",
+    "page.quiz.title": "選擇小測驗題目",
+    "page.quiz.description": "選擇小測驗題目",
+    "page.quiz.game.introduction.head.title": "POCKET PALS - 遊戲簡介",
+    "page.quiz.game.introduction.head.description": "An Animal Learning App For Kids - 遊戲簡介",
+    "page.quiz.game.introduction.title": "遊戲簡介",
+    "page.quiz.game.introduction.description": "An Animal Learning App For Kids -  遊戲簡介"
 }
