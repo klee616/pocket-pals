@@ -8,6 +8,7 @@ import Button from "@/Components/Button";
 
 export default function Home({ dir }) {
   const { locale } = useRouter();
+  const { locales } = useRouter();
   const intl = useIntl();
   const router = useRouter();
 

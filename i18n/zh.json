@@ -26,5 +26,21 @@
     "page.quiz.game.introduction.head.title": "POCKET PALS - 遊戲簡介",
     "page.quiz.game.introduction.head.description": "An Animal Learning App For Kids - 遊戲簡介",
     "page.quiz.game.introduction.title": "遊戲簡介",
-    "page.quiz.game.introduction.description": "An Animal Learning App For Kids -  遊戲簡介"
+    "page.quiz.game.introduction.description": "An Animal Learning App For Kids -  遊戲簡介",
+    "side.menu.setting":"設定",
+    "side.menu.developer":"開發人員",
+    "side.menu.about":"關於我們",
+    "side.menu.history":"記錄",
+    "side.menu.close":"關閉",
+    "page.setting.head.title": "POCKET PALS - 遊戲設定",
+    "page.setting.head.description": "An Animal Learning App For Kids -  遊戲設定",
+    "page.setting.title": "遊戲設定",
+    "page.setting.volume":"音樂開關",
+    "page.setting.sound.effect":"遊戲音效",
+    "page.setting.font.size":"文字大小",
+    "page.setting.language":"顯示文字",
+    "button.confirm":"確認",
+    "page.setting.big":"大",
+    "page.setting.middle":"中",
+    "page.setting.small":"小"
 }

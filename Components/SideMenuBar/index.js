@@ -1,8 +1,12 @@
 import style from './SideMenuBar.module.css'
 import Link from 'next/link';
+import { useRouter } from "next/router";
+import { FormattedMessage, useIntl } from "react-intl";
 
 export default function SideMenuBar({ setIsShowSideMenuBar }) {
 
+    const { locale } = useRouter();
+    const intl = useIntl();
     const closeSideMenuBar = (e) => {
         console.log(e.target);
         const topLevelChild = document.getElementById('menu_container');
@@ -11,29 +15,29 @@ export default function SideMenuBar({ setIsShowSideMenuBar }) {
             setIsShowSideMenuBar(false);
         }
     }
-const handleClick = (e)=>{
-    e.preventDefault();
-    setIsShowSideMenuBar(false);
-}
+    const handleClick = (e) => {
+        e.preventDefault();
+        setIsShowSideMenuBar(false);
+    }
 
     return (<>
         <div id='overlap' className={style.overlap} onClick={closeSideMenuBar}>
             <div id='menu_container' className={style.sideMenubarContainer}>
                 <ul className={style.sideMenu}>
                     <li className={`menu-font-style ${style.menu}`}>
-                        <Link href="/">Settings</Link>
+                        <Link href="/Setting" locale={locale}>{intl.formatMessage({ id: "side.menu.setting" })}</Link>
                     </li>
                     <li className={`menu-font-style ${style.menu}`}>
-                        <Link href="/">About</Link>
+                        <Link href="/About" locale={locale}>{intl.formatMessage({ id: "side.menu.about" })}</Link>
                     </li>
                     <li className={`menu-font-style ${style.menu}`}>
-                        <Link href="/">Developer</Link>
+                        <Link href="/Developer" locale={locale}>{intl.formatMessage({ id: "side.menu.developer" })}</Link>
                     </li>
                     <li className={`menu-font-style ${style.menu}`}>
-                        <Link href="/">History</Link>
+                        <Link href="/History" locale={locale}>{intl.formatMessage({ id: "side.menu.history" })}</Link>
                     </li>
                     <li className={`menu-font-style ${style.menu}`}>
-                        <Link href="/" onClick={handleClick}>Close</Link>
+                        <Link href="/" onClick={handleClick}>{intl.formatMessage({ id: "side.menu.close" })}</Link>
                     </li>
                 </ul>
             </div>
