@@ -30,5 +30,18 @@
     "page.quiz.game.introduction.head.title": "POCKET PALS - Game Introduction ",
     "page.quiz.game.introduction.head.description": "An Animal Learning App For Kids -  Game Introduction",
     "page.quiz.game.introduction.title": " Game Introduction",
-    "page.quiz.game.introduction.description": "An Animal Learning App For Kids -  Game Introduction"
+    "page.quiz.game.introduction.description": "An Animal Learning App For Kids -  Game Introduction",
+    "side.menu.setting":"Settings",
+    "side.menu.developer":"Developer",
+    "side.menu.about":"About Us",
+    "side.menu.history":"Game History",
+    "side.menu.close":"close",
+    "page.setting.head.title": "POCKET PALS - Apps Setting",
+    "page.setting.head.description": "An Animal Learning App For Kids -  Apps Setting",
+    "page.setting.title": "Apps Setting",
+    "page.setting.volume":"Volume",
+    "page.setting.sound.effect":"Sound Effect",
+    "page.setting.font.size":"font Size",
+    "page.setting.language":"Display Language",
+    "button.confirm":"Confirm"
 }
