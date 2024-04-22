@@ -2,12 +2,13 @@ import { useState, useEffect } from "react";
 export default function CallAPI() {
   const [animals, setAnimals] = useState(["Marmot", "Spectacled Bear", "Teddy Bear Hamster", "Giant panda", "Numbat", "African Wild Dog", "Royal Penguin"]);
   const [resultList, setResultList] = useState([]);
+  const apiKey =  process.env.NEXT_PUBLIC_API_KEY;
+  console.log(apiKey);
   const callAPI = async (animal) => {
     try {
       const res = await fetch(
         `https://api.api-ninjas.com/v1/animals?name=` + animal, {
-        headers: { 'X-Api-Key': "G4R5Q6eIcdrnEqBxzuPZX2TWl4PipIeWrg0IFiPN" }
-        // headers: { 'X-Api-Key': process.env.PUBLIC_API_KEY  }
+        headers: { 'X-Api-Key': apiKey }
       }
       );
       const data = await res.json();
