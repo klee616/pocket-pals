@@ -1,4 +1,4 @@
-import styel from './Chart.module.css';
+import style from './Chart.module.css';
 import questionData from '@/data/aza_mle_2018.json';
 import { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2'
@@ -42,19 +42,19 @@ export default function Chart({ }) {
                     label: "Female Over All Size",
                     data: avgFemaleOverAllSizeList,
                     borderColor: 'rgb(53, 162, 235)',
-                    backgroundColor: 'rgba(53, 162, 235, 0.4)'
+                    backgroundColor: 'rgba(163, 5, 247, 0.5)'
                 },
                 {
                     label: "Total Over All Size",
                     data: avgTotalOverAllSizeList,
                     borderColor: 'rgb(103, 162, 235)',
-                    backgroundColor: 'rgba(103, 162, 235, 0.4)'
+                    backgroundColor: 'rgba(33, 5, 247, 0.8)'
                 },
                 {
                     label: "Male Over All Size",
                     data: avgMaleOverAllSieList,
                     borderColor: 'rgb(153, 162, 235)',
-                    backgroundColor: 'rgba(153, 162, 235, 0.4)'
+                    backgroundColor: 'rgba(247, 5, 29, 0.8)'
                 }
             ]
         });
@@ -66,7 +66,7 @@ export default function Chart({ }) {
                 },
                 title: {
                     display: true,
-                    text: "The avg"
+                    text: "Average Sizes"
                 }
             },
             maintainAspectRatio: true,
@@ -75,6 +75,12 @@ export default function Chart({ }) {
     }, []);
 
     return (<>
-        <Bar data={chartData} options={chartOptions} style={{ width: '80%', height: '100%' }} />
+    
+    <div className={style.Container}>
+    <h2 className={style.text}>Charts</h2>
+    <div className={style.chart}>
+        <Bar data={chartData} options={chartOptions} style={{ width: '80%', height: '500px' }} />
+        </div>
+        </div>
     </>)
 }
