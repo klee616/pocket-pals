@@ -1,0 +1,34 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    width: 430px;
+    height: calc(934px - 177px);
+  overflow: scroll;
+  }
+
+.headingContainer {
+    margin-top: 2vh;
+}
+
+.title {
+    text-align: center;
+}
+.subtitle {
+    text-align: center;
+}
+.button {
+    margin: 1vh;
+}
+
+.button2 {
+    margin: 1vh;
+    display: none !important;
+}
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   margin-bottom: 10vh;
+}
