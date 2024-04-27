@@ -2,7 +2,7 @@
     {
         "id": 1,
         "cover_images": "/image/Vancouver_Island_Marmots.jpeg",
-        "categoryMenuImage" :  "/image/Panda.png",
+        "categoryMenuImage" :  "/image/Beaver.png",
         "category": "NorthAmerican",
         "en": {
             "name": "Vancouver Island Marmots",
@@ -244,7 +244,7 @@
     {
         "id": 6,
         "cover_images": "/image/African_Dogs.jpeg",
-        "categoryMenuImage" :  "/image/Panda.png",
+        "categoryMenuImage" :  "/image/Africandogs.png",
         "category": "African",
         "en": {
             "name": "African Dogs",
@@ -294,7 +294,7 @@
     {
         "id": 7,
         "cover_images": "/image/Royal_Penguin.jpeg",
-        "categoryMenuImage" :  "/image/penguin.png",
+        "categoryMenuImage" :  "/image/Penguin.png",
         "category": "Alaska",
         "en": {
             "name": "Royal Penguin",
