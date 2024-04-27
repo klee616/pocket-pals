@@ -56,6 +56,9 @@ export default function Article({ article }) {
                 </>)
             })
         }
-        <Button name={buttonLabel} onClick={() => buttonSubmit('/')} />
+        <Button name={buttonLabel} onClick={() => router.push({
+            pathname: `/QuizGameIntroduction`,
+            query: { category: article.category },
+        })} />
     </>)
 }
