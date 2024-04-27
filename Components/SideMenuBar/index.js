@@ -28,9 +28,6 @@ export default function SideMenuBar({ setIsShowSideMenuBar }) {
                         <Link href="/Setting" locale={locale}>{intl.formatMessage({ id: "side.menu.setting" })}</Link>
                     </li>
                     <li className={`menu-font-style ${style.menu}`}>
-                        <Link href="/About" locale={locale}>{intl.formatMessage({ id: "side.menu.about" })}</Link>
-                    </li>
-                    <li className={`menu-font-style ${style.menu}`}>
                         <Link href="/Developer" locale={locale}>{intl.formatMessage({ id: "side.menu.developer" })}</Link>
                     </li>
                     <li className={`menu-font-style ${style.menu}`}>
