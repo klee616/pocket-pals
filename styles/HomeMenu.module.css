@@ -1,13 +1,15 @@
-.main {
+.main{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--main-color);
-    width: 430px;
-    height: calc(934px - 177px);
-  overflow: scroll;
-  }
+    flex-wrap: nowrap;
+    justify-content: flex-start;;
+    align-items: flex-start;
+    padding: 2rem 2rem;
+    height: var(--main-height);
+    overflow: scroll;
+    text-align: center;
+}
+
 
 .headingContainer {
     margin-top: 2vh;
@@ -25,7 +27,12 @@
     margin: 1vh;
 }
 .options {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-   margin-bottom: 10vh;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: stretch;
+   justify-content: center;
+   align-items: stretch;
+   row-gap: 10px;
+   column-gap: 20px;
 }

@@ -1,0 +1,29 @@
+.menuLink{
+    display: flex;
+    width: 135px;
+    height: 180px;
+    background-color: var(--web-color-8);
+    border: 3px solid var(--web-color-2);
+    border-radius: 30px;
+    padding: 1rem;
+    color: var(--black);
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menuLink:hover{
+    background-color: var(  --web-color-4);
+    border: 3px solid var(--web-color-7);
+}
+
+
+.name{
+    width: 100%;
+    height: fit-content;
+}

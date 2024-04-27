@@ -15,7 +15,7 @@ export default function Footer(){
     />
     </Link>
 
-    <Link href={`/SelectionScreen`}>
+    <Link href={`/HomeMenu`}>
     <Image
       src="/image/beaver.svg"
       alt="Picture of the author"
