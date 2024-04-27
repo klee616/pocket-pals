@@ -40,7 +40,20 @@
 }
 
 
-.search{
-    padding-right: 20px;
-    margin-top: 23px;
+.searchBar{
+    text-align: left;
+    color: var(--web-color-2);
+}
+
+.bars{
+    margin-left: 50px;
+    width: 300px;
+    margin-top: 28px;
+}
+
+.Search{
+    background-color: white;
+    position: absolute;
+    margin-right: 100px;
+    border-radius: 2px;
 }
