@@ -34,6 +34,12 @@ export default function SideMenuBar({ setIsShowSideMenuBar }) {
                         <Link href="/History" locale={locale}>{intl.formatMessage({ id: "side.menu.history" })}</Link>
                     </li>
                     <li className={`menu-font-style ${style.menu}`}>
+                        <Link href="/CallAPI" locale={locale}>Call API</Link>
+                    </li>
+                    <li className={`menu-font-style ${style.menu}`}>
+                        <Link href="/AnimalChart" locale={locale}>Chart</Link>
+                    </li>
+                    <li className={`menu-font-style ${style.menu}`}>
                         <Link href="/" onClick={handleClick}>{intl.formatMessage({ id: "side.menu.close" })}</Link>
                     </li>
                 </ul>

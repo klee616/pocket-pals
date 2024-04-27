@@ -1,4 +1,8 @@
+import style from "@/styles/CallApi.module.css";
 import { useState, useEffect } from "react";
+import Footer from "@/Components/Footer/"
+import Header from "@/Components/Header/"
+import HeadArea from "@/Components/HeadArea";
 export default function CallAPI() {
   const [animals, setAnimals] = useState(["Marmot", "Spectacled Bear", "Teddy Bear Hamster", "Giant panda", "Numbat", "African Wild Dog", "Royal Penguin"]);
   const [resultList, setResultList] = useState([]);
@@ -20,12 +24,16 @@ export default function CallAPI() {
   }
   return (
     <>
-      <div>
+    <HeadArea title="Animals API" description="Animals informaiton" />
+    <Header />
+    <div className={style.main}>
+        <h1>Animals API</h1>
+       <div className={style.buttonList}>
         {animals.map((animal, index) => {
-          return (<><button onClick={() => callAPI(animal)} key={index}>{animal}</button></>);
+          return (<><button className={style.filterButton} onClick={() => callAPI(animal)} key={index}>{animal}</button></>);
 
         })}
-      </div>
+        </div>
       {resultList && resultList.map((animal, index) => {
         console.log(animal)
         let taxonomyList = [];
@@ -37,7 +45,7 @@ export default function CallAPI() {
           characteristicsList.push({key:item, value:animal.characteristics[item]});
         }
         return (<>
-          <div key={index}>
+          <div key={index} style={{'text-align':"left"}}> 
             <p>Name : {animal.name} </p>
             <p>Taxonomy :
               {taxonomyList.map((item, key) => {  return (<>{item.key} - {item.value}<br /></>) })}
@@ -53,6 +61,8 @@ export default function CallAPI() {
         </>);
       })
       }
+      </div>
+        <Footer />
     </>
   );
 }
