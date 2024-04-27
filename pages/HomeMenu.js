@@ -1,7 +1,7 @@
 import styles from "@/styles/HomeMenu.module.css";
 import { useRouter } from "next/router";
 import { FormattedMessage, useIntl } from "react-intl";
-import Link from "next/link";
+import MenuButton from "@/Components/MenuButton/";
 import Footer from "@/Components/Footer/"
 import Header from "@/Components/Header/"
 import HeadArea from "@/Components/HeadArea";
@@ -10,42 +10,43 @@ import Image from "next/image";
 export default function HomeMenu({ dir }) {
   const { locales } = useRouter();
   const intl = useIntl();
+  const router = useRouter()
 
-  const title = intl.formatMessage({ id: "page.home.head.title" });
-  const description = intl.formatMessage({ id: "page.home.head. description" });
+  const headTitle = intl.formatMessage({ id: "page.home.head.title" });
+  const headDescription = intl.formatMessage({ id: "page.home.head.description" });
+  const title = intl.formatMessage({id: "page.home.title"});
+  const description = intl.formatMessage({ id: "page.home.description" });
   return (
     <>
-      <HeadArea title={title} description={description} />
-      <Header />
-      <main className={`${styles.main}`}>
-        <div className={styles.headingContainer}>
-          <h1 className={styles.title}>
-            Home Page
-          </h1>
-          <p className={styles.subtitle}>Read or Play!</p>
-        </div>
+      
+      <HeadArea title={headTitle} description={headDescription} />
+        <Header />
+        <div className={styles.main}>
+            <h1>{title}</h1>
+            <p>{description}</p>
 
         <div className={styles.options}>
-          <button className={styles.button} >
-            <Link href={"/TopicMenuQuiz"}>
-              <img src="./image/Buttons/Quiz.svg" width={180} height={200} />
-            </Link>
+        <MenuButton  name="Quiz" image="/image/Panda.png" href="/Quiz" />
+<MenuButton  name="Mix and Match" image="/image/Hamster.png" href="/HomeMenu" />
+<MenuButton  name="Learn" image="/image/Bear.png" href="/Learn" />
+<MenuButton  name="Setting" image="/image/numbat.png" href="/Setting" />
+
+
+
+          {/* <button className={styles.button} onClick={() => router.push('/Quiz')} >
+              <Image src="/image/Panda.png" width={180} height={200}  alt="Quiz"/>
           </button>
-          <button className={styles.button} >
-            <Link href={"/TopicMenuMixMatch"}>
-            <img src="./image/Buttons/MixMatch.svg" width={180} height={200} />
-            </Link>
+          <button className={styles.button} onClick={() => router.push('/HomeMenu')} >
+            <Image src="/image/Panda.png" width={180} height={200}   alt="Mix and Match"/>
           </button>
-          <button className={styles.button} >
-            <Link href={"/TopicMenuArticle"}>
-            <img src="./image/Buttons/Article.svg" width={180} height={200} />
-            </Link>
+          <button className={styles.button} onClick={() => router.push('/Learn')} >
+            <Image src="/image/Buttons/Article.svg" width={180} height={200}   alt="Learn"/>
           </button>
-          <button className={styles.button} >
-            <img src="./image/Buttons/Settings.svg" width={180} height={200} />
-          </button>
+          <button className={styles.button} onClick={() => router.push('/Setting')} >
+            <Image src="/image/Buttons/Settings.svg" width={180} height={200} alt="Setting"/>
+          </button> */}
         </div>
-      </main>
+      </div>
       <Footer />
     </>
   );
