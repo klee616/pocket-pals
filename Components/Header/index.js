@@ -21,17 +21,8 @@ export default function Header() {
             />
             
             <form className={style.bars}>
-          <label className= {style.searchBar}></label>
-          <input
-            type="text"
-          />
-          <Image
-                src="/image/Searchicons.png"
-                alt="Search Icon"
-                width={20}
-                height={20}
-                className={style.Search}
-            />
+          <input type="text" name='search' id='search' className={style.searchInputBox}/>
+          
           </form>
 
             <Image
