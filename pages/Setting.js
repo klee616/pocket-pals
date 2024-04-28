@@ -53,14 +53,16 @@ export default function Quiz({ }) {
             <form action={`/`} onSubmit={(e) => e.preventDefault()}>
                 <div>
                     <label for="volume">{intl.formatMessage({ id: "page.setting.volume" })}</label>
-                    <div className='control'>{sound}
+                    <div className={style.toggleswitch}>{sound}
                         <input type='checkbox' id='volume' name='volume' value='volume' checked={sound} onClick={(e) => { setSound(e.target.checked) }} />
+                        <span className={style.slider}></span>
                     </div>
                 </div>
                 <div>
                     <label for="soundEffect">{intl.formatMessage({ id: "page.setting.sound.effect" })}</label>
-                    <div className='control'>{soundEffect}
+                    <div className={style.toggleswitch}>{soundEffect}
                         <input type='checkbox' id='soundEffect' name='soundEffect' value='soundEffect' checked={soundEffect} onClick={(e) => { setSoundEffect(e.target.checked) }} />
+                        <span className={style.slider}></span>
                     </div>
                 </div>
                 <div>
