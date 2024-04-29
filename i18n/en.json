@@ -50,5 +50,9 @@
     "page.developer.head.title": "POCKET PALS - Developer ",
     "page.developer.head.description": "An Animal Learning App For Kids -  Developer",
     "page.developer.title": " Developer",
-    "page.developer.description": "Developer"
+    "page.developer.description": "Developer",
+    "page.quiz.question":"Question",
+    "page.quiz.play.again":"Play again !",
+    "page.quiz.next":"Nex !",
+    "page.quiz.result":"結果"
 }

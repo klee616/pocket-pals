@@ -43,7 +43,7 @@ export default function Quiz({ }) {
             {
                 menuData.map((item, index) => {
                     return (<>
-                        <CategoryButton key={index} name={item.name} category={item.category} image={item.image} href={{ pathname: '/QuizGameIntroduction', query: { category: item.category } }} />
+                        <CategoryButton key={index} name={item.name} category={item.region} image={item.image} href={{ pathname: '/QuizGameIntroduction', query: { category: item.category } }} />
                     </>);
                 })}
         </div>

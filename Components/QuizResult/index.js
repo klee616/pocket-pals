@@ -1,18 +1,13 @@
 import style from "./QuizResult.module.css";
-import { Sarabun } from "next/font/google";
 import QuizResultAnswer from "../QuizResultAnswer";
-
-const sarabun = Sarabun({
-    weight: ['400', '700'],
-    style: ['italic', 'normal'],
-    subsets: ['latin'],
-});
+import { useIntl } from "react-intl";
 
 export default function QuizResult({ resultData }) {
+    const intl = useIntl();
     return (<>
         {resultData && (<>
 
-            <h1 className={`header_font ${style.header}`}>Result</h1>
+            <h1 className={`header_font ${style.header}`}>{intl.formatMessage({ id: "page.quiz.result" })}</h1>
             <div className={`header_font ${style.scores}`}>
                 {resultData.totalOfCorrectAnswers} / {resultData.current}
             </div>
