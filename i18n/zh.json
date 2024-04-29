@@ -46,6 +46,9 @@
     "page.developer.head.title": "POCKET PALS - 開發人員 ",
     "page.developer.head.description": "An Animal Learning App For Kids -  開發人員",
     "page.developer.title": " 開發人員",
-    "page.developer.description": "開發人員"
-
+    "page.developer.description": "開發人員",
+    "page.quiz.question":"問題",
+    "page.quiz.play.again":"再嚟多次 !",
+    "page.quiz.next":"下一題",
+    "page.quiz.result":"遊戲分數"
 }
