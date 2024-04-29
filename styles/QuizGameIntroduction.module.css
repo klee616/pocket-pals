@@ -8,3 +8,11 @@
     height: var(--main-height);
     overflow: scroll;
 }
+
+.listed {
+    list-style-type: none;
+}
+
+.list {
+    margin-top: 2vh;
+}
