@@ -65,6 +65,9 @@
 
 .mascot {
   margin-top: 40px;
+  animation-name: scale-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .buttonContainer {
@@ -76,4 +79,11 @@
 .label {
   text-align: left;
   color: var(--web-color-2);
+}
+
+@keyframes scale-in-out {
+  0% {scale:100%;}
+  48% {scale:120%;}
+  52% {scale:120%;}
+  100% {scale:100%;}
 }

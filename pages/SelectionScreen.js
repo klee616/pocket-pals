@@ -35,7 +35,7 @@ export default function SelectionScreen({ dir }) {
             <p className={`description-font-styles ${styles.subtitle}`}>{description} <br />{intl.formatMessage({id: "page.selection.screen.welcome"})} {nickName} !</p>
           </div>
         </div>
-        <Image src="/image/Mascot.svg" width={500} height={400} alt="Logo" />
+        <Image src="/image/Mascot.svg" className={styles.mascot} width={500} height={400} alt="Logo" />
 
         <div className={styles.buttonContainer}>
         
