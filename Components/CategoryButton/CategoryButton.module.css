@@ -1,0 +1,42 @@
+.category_link{
+    display: block;
+    width: 330px;
+    height: 126px;
+    background-color: var(  --web-color-8);
+    border: 3px solid var(--web-color-2);
+    border-radius: 30px;
+    padding: 1rem;
+    color: var(--black);
+    position: relative;
+    margin-bottom: 20px;
+}
+.category_link:hover{
+    background-color: var(  --web-color-4);
+    border: 3px solid var(--web-color-7);
+}
+
+
+.information{
+    float: left;
+    z-index: 1;
+    position: relative;
+}
+
+.categoryImage{
+   
+    float: right;
+    overflow: overlay;
+    right: 30px;
+    top: 13px;
+    position: absolute;
+    z-index: 0;
+}
+
+.category{
+    margin-bottom: 1rem;
+}
+
+.name{
+    width: 180px;
+    min-height: 87px;
+}

@@ -5,9 +5,11 @@ import Question from '@/Components/Question';
 import QuizResult from '@/Components/QuizResult';
 import ProgressBar from '@/Components/ProgressBar';
 import Button from '@/Components/Button';
+import { useIntl } from "react-intl";
 
 export default function Qiiz({ category = "all" }) {
-
+    const intl = useIntl();
+    const router = useRouter();
     const data = [...questionData].filter((item) => item.category.toLowerCase() == category.toLowerCase());
     const [resultData, setResultData] = useState({
         current: 0,
@@ -41,7 +43,7 @@ export default function Qiiz({ category = "all" }) {
         {resultData.current < data.length && (<>
         <ProgressBar current={resultData.current  + 1} total={data.length} />
 
-        <h1 className={`header_font`}>Question {resultData.current  + 1}</h1>
+        <h1 className={`header_font`}>{intl.formatMessage({ id: "page.quiz.question" })} {resultData.current  + 1}</h1>
             <Question data={data[resultData.current]} callBack={getAnswer} />
         </>
         )}
@@ -49,7 +51,7 @@ export default function Qiiz({ category = "all" }) {
         {resultData.questionList.length == data.length &&
             (
                 <><QuizResult resultData={resultData} />
-                <Button name="Play Again !" onClick={()=>{}}/>
+                <Button name={intl.formatMessage({ id: "page.quiz.play.again" })} onClick={()=>{router.push('/Quiz')}}/>
                 </>
             )
         }

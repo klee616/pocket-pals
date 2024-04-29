@@ -1,9 +1,10 @@
-.main {
+.main{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;;
     align-items: flex-start;
-    margin-top: 2rem;
-    padding: 0px 2rem;
+    padding: 2rem 2rem;
+    height: var(--main-height);
+    overflow: scroll;
 }

@@ -1,0 +1,13 @@
+.selector{
+    width:80%;
+    margin-bottom: 2rem;
+}
+
+.selector select{
+    width: 100%;
+    background: var(--web-color-2);
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: var(--gray);
+    font-size: 1rem;
+}

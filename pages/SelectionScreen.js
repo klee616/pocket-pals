@@ -35,12 +35,14 @@ export default function SelectionScreen({ dir }) {
             <p className={`description-font-styles ${styles.subtitle}`}>{description} <br />{intl.formatMessage({id: "page.selection.screen.welcome"})} {nickName} !</p>
           </div>
         </div>
-        <Image src="/image/Mascot.svg" width={500} height={400} alt="Logo" />
+        <Image src="/image/Mascot.svg" className={styles.mascot} width={500} height={400} alt="Logo" />
 
         <div className={styles.buttonContainer}>
+        
           <Button name={intl.formatMessage({id: "page.selection.screen.learn"})} onClick={()=>buttonSubmit('/Learn')} />
-          <Button name={intl.formatMessage({id: "page.selection.screen.quiz"})} onClick={()=>buttonSubmit('/SelectQuizTopic')} />
+          <Button name={intl.formatMessage({id: "page.selection.screen.quiz"})} onClick={()=>buttonSubmit('/Quiz')} />
           <Button name={intl.formatMessage({id: "page.selection.screen.mix.and.match"})} onClick={()=>buttonSubmit('/MixAndMatchGame')} />
+
         </div>
       </main>
     </>

@@ -40,7 +40,30 @@
 }
 
 
-.search{
+.searchBar {
+    text-align: left;
+    color: var(--web-color-2);
+}
+
+.bars {
+    margin: auto;
+    width: 300px;
+    padding: 0 30px;
+}
+
+.search {
+    background-color:var(--white);
+    position: absolute;
+    margin-right: 100px;
+    border-radius: 2px;
+}
+
+.searchInputBox {
+    width: 187px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 20px;
     padding-right: 20px;
-    margin-top: 23px;
+    background: var(--white) url(/image/Searchicons.png) no-repeat scroll 187px 7px;
+    background-size: 20px;
 }

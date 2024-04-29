@@ -2,20 +2,20 @@
     {
         "id":1,
         "name": "Kam Shing Lee, Timothy",
-        "images":"timorthy.jpg",
+        "images":"timothy.png",
         "description":"My name is Kam Shing Lee, Timothy and I am a D3 student. I come from Hong Kong, before I came from Vancouver, I was a web developer.  so, I have an experience for the developer backend software. For example, Java, Javascript, and DBMS. On the other hand, Design is my weakness, for that reason, I want to improve design skill in this course, and how to use the design software, For example, Photoshop, Figma, After effect."
     },
 
     {
         "id":2,
         "name": "Jennica Sask",
-        "images":"jennica.jpg",
+        "images":"jennica.png",
         "description":"I'm Jennica and I draw and occasionally take online commissions if I have the time to do it. Otherwise I enjoy learning about computers and even built my own tower. My hobbies include video games and reading but mostly video games nowadays since I don't have the time to invest in a book.  I hope that when I finished this course I have a good understanding on how to create a working product from nothing and can be used in the real world. I'm expecting to learn on the process of creating a functional product starting from conception, planning, developing and finally finishing so I can use that knowledge not only for my career but in general projects too. "
     },
     {
         "id":3,
         "name": "Gavin Pahal",
-        "images":"gavin.jpg",
-        "description":"My name is Gavin and I am a D3 student. My hobbies are basketball and combat sports. In my free time, I tend to write music and play my guitar; I have gotten better at the guitar during the winter break which helps me practice patience. Personally I prefer playing basketball over watching it because it's boring and slow paced, playing basketball I enjoy being competitive. I enjoy design and coding equally, creating simply java script after spending hours on it, is always fun because you look back and understand what you created is always a nice satisfaction. \n Fun fact: I am very shy, I tend to push myself with talking to random people because I enjoy being uncomfortable. I hate small talk so that's what I usually do when I am out because it's uncomfortable. "
+        "images":"gavin.png",
+        "description":"My name is Gavin and I am a D3 student. My hobbies are singing, basketball and combat sports. In my free time, I tend to write music and play my guitar; I have gotten better at the guitar during the winter break which helps me practice patience. Personally I prefer playing basketball over watching it because it's boring and slow paced, playing basketball I enjoy being competitive. I enjoy design and coding equally, creating simply java script after spending hours on it, is always fun because you look back and understand what you created is always a nice satisfaction. \n Fun fact: I am very shy, I tend to push myself with talking to random people because I enjoy being uncomfortable. I hate small talk so that's what I usually do when I am out because it's uncomfortable. "
     }
 ]

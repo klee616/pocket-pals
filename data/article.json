@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "cover_images": "",
+        "cover_images": "/image/Vancouver_Island_Marmots.jpeg",
+        "categoryMenuImage" :  "/image/Topics/Beaver.png",
         "category": "NorthAmerican",
         "en": {
             "name": "Vancouver Island Marmots",
@@ -9,7 +10,7 @@
             "article": [
                 {
                     "section": "Characteristic",
-                    "Content": [
+                    "content": [
                         "Vancouver Island marmots are really easy to spot because of their lovely chocolate brown fur, which stands out with white patches on their nose, chin, forehead, and chest.",
                         "When baby marmots are born, they have a dark brownish-black coat, but as they grow, their fur changes to a rusty brown during the summer and then back again when it's time for hibernation. These color changes in their fur make it simple to tell the different ages of marmots when you see them outside.",
                         "Marmots are like little digging machines! They have big teeth, sharp claws, and strong muscles in their shoulders and legs to help them dig. When they're all grown up, Vancouver Island marmots can be as long as 65 to 70 centimeters from their nose to the end of their fluffy tail. Female marmots usually weigh between 4.5 and 5.5 kilograms, while the boys can weigh up to 7.5 kilograms. During hibernation, both boys and girls lose a lot of weight—sometimes up to a third of their body mass! This means they can look quite different from when they first wake up in spring to when they're ready to sleep again in winter."
@@ -17,7 +18,7 @@
                 },
                 {
                     "section": "Conservation status",
-                    "Content": [
+                    "content": [
                         "The Vancouver Island Marmot is an extraordinary creature found exclusively on Vancouver Island and holds the title of one of the world's most endangered mammals. Through remarkable teamwork, efforts have been made to boost the wild population in recent years. In 2003, the marmot population hit a critical low with fewer than 30 individuals remaining in the wild. However, by 2021, this number had surged to over 200—a significant improvement.",
                         "These marmots reside in subalpine meadows where they graze on small plants during the spring and summer seasons. They have the unique ability to give birth to 1 to 6 pups every other year. What's truly remarkable is their hibernation period, which spans a whopping 7 months of the year. This makes them one of the few mammals that spend more time hibernating than they do awake. Presently, these marmots can be found inhabiting 20 to 30 mountain meadows on Vancouver Island."
                     ]
@@ -30,7 +31,7 @@
             "article": [
                 {
                     "section": "特徵",
-                    "Content": [
+                    "content": [
                         "溫哥華島土撥鼠非常容易被發現，因為它們有可愛的巧克力棕色皮毛，鼻子、下巴、前額和胸部都有白色斑點，非常引人注目。",
                         "當小土撥鼠出生時，它們有深棕黑色的皮毛，但隨著它們的成長，它們的皮毛在夏天會變成鐵鏽棕色，然後在冬眠時又變回來。皮毛的這些顏色變化讓事情變得簡單當你在外面看到土撥鼠時，可以分辨出它們的不同年齡。",
                         "土撥鼠就像小型挖土機！它們有大牙齒、鋒利的爪子，肩膀和腿部有強壯的肌肉來幫助它們挖掘。當它們長大後，溫哥華島土撥鼠的身長可達65 至70公分。這意味著它們從春天第一次醒來到冬天準備再次入睡時的樣子可能會大不相同。"
@@ -38,7 +39,7 @@
                 },
                 {
                     "section": "保護狀況",
-                    "Content": [
+                    "content": [
                         "溫哥華島土撥鼠是一種僅在溫哥華島發現的非凡生物，擁有世界上最瀕臨滅絕的哺乳動物之一的稱號。近年來，透過卓越的團隊合作，我們為增加野生種群做出了努力。",
                         "這些土撥鼠生活在亞高山草甸，在春季和夏季以小植物為食。它們具有獨特的能力，每隔一年產下1 至6 隻幼崽。真正引人注目的是它們的冬眠期，長達7 年之久。"
                     ]
@@ -48,7 +49,8 @@
     },
     {
         "id": 2,
-        "cover_images": "",
+        "cover_images": "/image/Spectacled_Bears.jpeg",
+        "categoryMenuImage" :  "/image/Topics/Bear.png",
         "category": "SouthAmerican",
         "en": {
             "name": "The spectacled bear",
@@ -56,14 +58,14 @@
             "article": [
                 {
                     "section": "Characteristic",
-                    "Content": [
+                    "content": [
                         "This bear is known for its adept climbing abilities. As an adult, it typically stands at about 64 cm (approximately 25 inches) at the shoulder and ranges in length from 1.2 to 1.8 meters (4 to 6 feet), with a tail measuring about 7 cm (3 inches). Its fur is shaggy and can vary in color from dark brown to black. A distinctive feature of the spectacled bear is the presence of whitish to yellowish marks that often partially or completely encircle the eyes, resembling spectacles. These markings can extend down the neck and onto the chest.",
                         "In captivity, litters of one to three cubs have been recorded after a gestation period of 8 to 8 1/2 months. Spectacled bears have an average lifespan of about 20 years in the wild, although they can live up to 36 years in captivity."
                     ]
                 },
                 {
                     "section": "Conservation status",
-                    "Content": [
+                    "content": [
                         "Due to the dwindling number of isolated populations, spectacled bears face a grave risk of extinction. These bears, also known as Andean bears, are categorized as a vulnerable species, confronting serious threats such as habitat loss, habitat fragmentation, and conflicts with humans. The limited understanding of spectacled bears in their natural habitats hampers our capacity to formulate effective conservation strategies.",
                         "Remarkably, spectacled bears represent the sole bear species in South America, with possibly as few as 2,500 mature individuals left. This alarming statistic underscores the urgent need for concerted conservation efforts to safeguard their survival."
                     ]
@@ -76,14 +78,14 @@
             "article": [
                 {
                     "section": "特徵",
-                    "Content": [
+                    "content": [
                         "這隻熊以其熟練的攀爬能力而聞名。成年後，它的肩高通常約為 64 厘米（約 25 英寸），長度範圍為 1.2 至 1.8 米（4 至 6 英尺），尾巴長大約7 厘米（3 英吋）。",
                         "在圈養條件下，在8 至8 1/2 個月的妊娠期後，記錄到可產下一至三隻幼崽。眼鏡熊在野外的平均壽命約為20 年，但圈養條件下它們的壽命可達36 年」"
                     ]
                 },
                 {
                     "section": "保護狀況",
-                    "Content": [
+                    "content": [
                         "由於與世隔絕的族群數量不斷減少，眼鏡熊面臨嚴重的滅絕風險。這些熊也被稱為安第斯熊，被歸類為脆弱物種，面臨著棲息地喪失、棲息地破碎化以及與人類衝突等嚴重威脅對眼鏡熊自然棲息地的了解有限，阻礙了我們制定有效保護策略的能力。",
                         "值得注意的是，眼鏡熊是南美洲唯一的熊種，成年個體可能只剩下 2,500 隻。這一令人震驚的統計數據強調了迫切需要採取協調一致的保護措施來保障它們的生存。"
                     ]
@@ -93,7 +95,8 @@
     },
     {
         "id": 3,
-        "cover_images": "",
+        "cover_images": "/image/Common_Hamsters.jpeg",
+        "categoryMenuImage" :  "/image/Topics/Hamster.png",
         "category": "Europe",
         "en": {
             "name": "Common Hamster",
@@ -101,7 +104,7 @@
             "article": [
                 {
                     "section": "Characteristic",
-                    "Content": [
+                    "content": [
                         "When you hear the word \"hamster,\" you might immediately picture those adorable little pets that are popular around the world. However, out of the 20 species of hamsters that exist, only five of them are actually domesticated.",
                         "In the wild, there are 15 species of hamsters found across Europe and western Asia. These small rodents have sturdy bodies, short tails, and small, fluffy ears. Typically, wild hamsters have fur that is reddish-brown or grey, with their underbody fur often displaying a different color, ranging from black to grey or white.",
                         "Even the largest species of hamster are still quite small animals, measuring no more than 34 centimeters (or 14 inches) in length. The smallest species, the dwarf desert hamsters, have bodies that are only 5 to 10 centimeters long (about two to four inches).",
@@ -110,7 +113,7 @@
                 },
                 {
                     "section": "Conservation status",
-                    "Content": [
+                    "content": [
                         "The common hamster (Cricetus cricetus) has been classified as critically endangered on the IUCN Red List since 2019. Previously considered least concern, their population has dramatically declined over the past decade. Shockingly, wild hamsters have been experiencing a 50% reduction in their numbers annually, which could lead to a decrease of at least 99% over the next 10 years.",
                         "These alarming declines in hamster populations highlight the urgent need for conservation efforts to save them from extinction. Without intervention, the common hamster could vanish within less than 30 years.",
                         "Similarly, the golden hamster (Mesocricetus auratus), also known as the Syrian hamster, is listed as endangered, further emphasizing the precarious state of these small mammals."
@@ -124,7 +127,7 @@
             "article": [
                 {
                     "section": "特徵",
-                    "Content": [
+                    "content": [
                         "當您聽到“倉鼠”這個詞時，您可能會立即想到那些在世界各地流行的可愛小寵物。 然而，在現存的 20 種倉鼠中，只有 5 種被真正馴化。",
                         "在野外，歐洲和西亞發現了 15 種倉鼠。 這些小型囓齒動物有堅固的身體、短尾巴和小而毛茸茸的耳朵。 通常，野生倉鼠的皮毛是紅棕色或灰色的，其身體下部的皮毛通常呈現不同的顏色，從黑色到灰色或白色。",
                         "即使是最大的倉鼠品種也仍然是相當小的動物，長度不超過 34 公分（或 14 英寸）。 最小的物種是矮沙漠倉鼠，其身體只有 5 至 10 厘米長（約 2 至 4 英寸）。",
@@ -133,7 +136,7 @@
                 },
                 {
                     "section": "保護狀況",
-                    "Content": [
+                    "content": [
                         "自 2019 年以來，普通倉鼠 (Cricetus cricetus) 在 IUCN 紅色名錄中被列為極度瀕危物種。 令人震驚的是，野生倉鼠的數量每年減少 50%，這可能導致未來 10 年減少至少 99%。",
                         "倉鼠數量的驚人下降凸顯了迫切需要採取保護措施來拯救它們免於滅絕。 如果不進行幹預，普通倉鼠可能會在不到 30 年內消失。",
                         "同樣，金倉鼠（Mesocricetus auratus），也稱為敘利亞倉鼠，被列為瀕危物種，進一步強調了這些小型哺乳動物的不穩定狀態。"
@@ -144,7 +147,8 @@
     },
     {
         "id": 4,
-        "cover_images": "",
+        "cover_images": "/image/Giant_panda.jpeg",
+        "categoryMenuImage" :  "/image/Topics/Panda.png",
         "category": "Asia",
         "en": {
             "name": "Giant panda",
@@ -152,7 +156,7 @@
             "article": [
                 {
                     "section": "Characteristic",
-                    "Content": [
+                    "content": [
                         "The giant panda, scientifically known as Ailuropoda melanoleuca, is a bear distinguished by its striking black-and-white coloration. These pandas are primarily found in bamboo forests nestled within the mountains of central China. Their unique appearance, characterized by a bulky body, round face, and captivating black-and-white fur, has earned them admiration from people worldwide.",
                         "Mature males can grow up to 1.8 meters (6 feet) in length and weigh over 100 kilograms (220 pounds), while females are typically smaller. Their distinct features include round black ears and eye patches against a white face and neck, with black limbs, tail, legs, and shoulders contrasting against their white torso. Pandas have a distinctive waddling gait due to their rear paws pointing inward.",
                         "These charismatic creatures are known for their playful behavior, often observed somersaulting, rolling, and dust-bathing. Despite their somewhat clumsy climbing skills, pandas can readily ascend trees, and they likely possess swimming capabilities, although this is inferred from their bear-like characteristics. An interesting anatomical feature of pandas is their enlarged wrist bone, which functions similar to a thumb, allowing them to manipulate food with remarkable dexterity."
@@ -160,7 +164,7 @@
                 },
                 {
                     "section": "Conservation status",
-                    "Content": [
+                    "content": [
                         "Giant pandas serve as a living testament to the possibility of saving threatened animal species. Until 2016, they were listed as endangered on the IUCN Red List, but thanks to extensive conservation efforts led by China, their status was downgraded to vulnerable.",
                         "Over the past three decades, China's dedicated conservation initiatives have significantly reduced the threats posed by hunting, habitat loss, and human development to giant pandas. As a result, their population has begun to rebound. However, despite this positive trend, giant pandas remain vulnerable due to their still relatively small population numbers. Continued conservation efforts are essential to ensure their long-term survival."
                     ]
@@ -173,7 +177,7 @@
             "article": [
                 {
                     "section": "特徵",
-                    "Content": [
+                    "content": [
                         "大熊貓，科學上稱為 Ailuropoda melanoleuca，是一種以其引人注目的黑白顏色而聞名的熊。這些熊貓主要生活在中國中部山區的竹林中。它們的外觀獨特，其特徵是體型龐大圓圓的臉龐，迷人的黑白皮毛，讓它們贏得了全世界人民的欽佩。",
                         "「成熟雄性的身長可達1.8 公尺（6 英尺），體重超過100 公斤（220 磅），而雌性通常較小。它們的顯著特徵包括圓形黑色耳朵和眼罩，白色的臉和脖子上有黑色的斑點。",
                         "「這些充滿魅力的生物以其頑皮的行為而聞名，經常被觀察到翻筋斗、打滾和沐浴灰塵。儘管大熊貓的攀爬技巧有些笨拙，但它們可以輕鬆地爬樹，而且它們可能具有游泳能力，儘管這是從它們的熊類中推斷出來的。"
@@ -181,7 +185,7 @@
                 },
                 {
                     "section": "保護狀況",
-                    "Content": [
+                    "content": [
                         "大貓熊是拯救受威脅動物物種的可能性的活生生證明。 直到2016年，它們才被世界自然保護聯盟紅色名錄列為瀕危物種，但由於中國主導的廣泛保育工作，它們的地位被降級為易危。",
                         "過去三十年來，中國致力於保護大熊貓的舉措顯著減少了狩獵、棲息地喪失和人類開發對大熊貓造成的威脅。 結果，他們的人口開始反彈。 然而，儘管有這種積極的趨勢，但由於大熊貓的數量仍然相對較少，因此仍然脆弱。 持續的保育工作對於確保其長期生存至關重要。"
                     ]
@@ -191,7 +195,8 @@
     },
     {
         "id": 5,
-        "cover_images": "",
+        "cover_images": "/image/Numbat.jpeg",
+        "categoryMenuImage" :  "/image/Topics/numbat.png",
         "category": "Australia",
         "en": {
             "name": "Numbat",
@@ -199,14 +204,14 @@
             "article": [
                 {
                     "section": "Characteristic",
-                    "Content": [
+                    "content": [
                         "The numbat, scientifically known as Myrmecobius fasciatus, is a marsupial mammal belonging to the family Myrmecobiidae, and it stands as the sole living representative of this family.",
                         "Found in woodlands across Australia, the numbat is unique among Australian marsupials as it is active during the day, making it diurnal. It possesses a compact body and a small, pointed head with an elongated snout. The combined length of its head and body ranges from approximately 20 to 27 centimeters (about 8 to 11 inches), while its bushy tail measures between 13 and 20 centimeters (5 to 8 inches). The numbat's coat typically displays a reddish-brown hue, darkening towards the rump, with seven or eight distinctive white stripes stretching from behind the forelegs to the rump, where they are most prominent. It boasts a set of small teeth, including extra molars, resulting in a total tooth count of 50 to 52. Equipped with a long, sticky tongue and strong-clawed forefeet designed for digging, the numbat utilizes these features to forage for termites during the day. Unlike many other marsupials, the numbat lacks a pouch, and typically gives birth to four young each year."
                     ]
                 },
                 {
                     "section": "Conservation status",
-                    "Content": [
+                    "content": [
                         "The numbat is classified as an endangered species due to its dwindling population. Once widespread throughout Australia, it now survives in only two naturally occurring populations, which are located in the Dryandra and Perup woodlands in the southwestern corner of Western Australia. This decline can be attributed in part to extensive predation by introduced domestic cats and red foxes (Vulpes vulpes), as well as habitat loss.",
                         "Efforts to mitigate the decline of the numbat include the introduction of small populations of captively bred animals into various locations across the country.",
                         "Despite its endangered status, the numbat holds the distinction of being the official animal emblem of the Australian state of Western Australia."
@@ -220,14 +225,14 @@
             "article": [
                 {
                     "section": "特徵",
-                    "Content": [
+                    "content": [
                         "食蟻獸，科學上稱為 Myrmecobius fasciatus，是一種有袋類哺乳動物，屬於食蟻獸科，是該科唯一現存的代表。",
-                        "「食蟻獸生活在澳洲各地的林地中，在澳洲有袋動物中是獨一無二的，因為它在白天活動，因此是晝夜動物。它的身體緊湊，頭部小而尖，鼻子細長。它的頭部和身體的總長度食蟻獸的毛髮長度約為20 至27 厘米（約8 至11 英寸），而其濃密的尾巴長度在13 至20 厘米（5 至8 英寸）之間，食蟻獸的皮毛通常呈紅棕色，向臀部逐漸變暗，有7 個皮毛。總數為50 至52 顆。袋，通常每年產下四隻幼崽。",
+                        "「食蟻獸生活在澳洲各地的林地中，在澳洲有袋動物中是獨一無二的，因為它在白天活動，因此是晝夜動物。它的身體緊湊，頭部小而尖，鼻子細長。它的頭部和身體的總長度食蟻獸的毛髮長度約為20 至27 厘米（約8 至11 英寸），而其濃密的尾巴長度在13 至20 厘米（5 至8 英寸）之間，食蟻獸的皮毛通常呈紅棕色，向臀部逐漸變暗，有7 個皮毛。總數為50 至52 顆。袋，通常每年產下四隻幼崽。"
                     ]
                 },
                 {
                     "section": "保護狀況",
-                    "Content": [
+                    "content": [
                         "「食蟻獸因其數量不斷減少而被列為瀕臨滅絕的物種。它曾經廣泛分佈於澳大利亞各地，現在僅在兩個自然存在的種群中生存，這兩個種群位於西澳大利亞西南角的Dryandra 和Perup 林地。",
                         "「減緩食蟻獸數量下降的努力包括將少量圈養動物引入全國各地。」",
                         "儘管食蟻獸處於瀕危狀態，但它仍然是澳大利亞西澳大利亞州的官方動物標誌。"
@@ -238,7 +243,8 @@
     },
     {
         "id": 6,
-        "cover_images": "",
+        "cover_images": "/image/African_Dogs.jpeg",
+        "categoryMenuImage" :  "/image/Topics/Africandogs.png",
         "category": "African",
         "en": {
             "name": "African Dogs",
@@ -246,7 +252,7 @@
             "article": [
                 {
                     "section": "Characteristic",
-                    "Content": [
+                    "content": [
                         "The African wild dog, scientifically known as Lycaon pictus, is a carnivorous mammal native to Africa, distinguished from other members of the dog family (Canidae) by having only four toes on each foot. Its coat is characterized by short, sparse fur irregularly blotched with yellow, black, and white patterns.",
                         "Measuring approximately 76–102 cm (30–41 inches) in length, excluding its 31–41-cm tail, the African wild dog stands about 60 cm (24 inches) tall at the shoulder and weighs around 16–23 kg (35–50 pounds). It possesses long limbs, a broad flat head, a short muzzle, and large erect ears.",
                         "Living in packs comprising 15 to 60 or more individuals, the African wild dog inhabits regions of Africa situated south and east of the Sahara, particularly favoring grasslands. It primarily preys on antelopes and other larger game but has faced persecution in settled areas due to occasional attacks on domestic livestock.",
@@ -255,7 +261,7 @@
                 },
                 {
                     "section": "Conservation status",
-                    "Content": [
+                    "content": [
                         "Conservation efforts aimed at protecting wild dogs involve the establishment of protected areas and safeguarding critical wildlife corridors. Organizations such as the World Wildlife Fund (WWF) are actively involved in this endeavor, focusing on the creation and preservation of vital wildlife corridors connecting major game reserves in southern Tanzania and northern Mozambique. Additionally, initiatives are underway to mitigate conflicts between wild dogs and humans.",
                         "The African Wildlife Foundation (AWF) plays a crucial role in conservation by educating local communities on the importance of preserving wild dogs and empowering them to participate in conservation efforts. Through education and community engagement, AWF aims to foster a sense of stewardship among local community members towards protecting African wild dogs and their habitats."
                     ]
@@ -268,7 +274,7 @@
             "article": [
                 {
                     "section": "特徵",
-                    "Content": [
+                    "content": [
                         "「非洲野狗，科學上稱為Lycaon pictus，是一種原產於非洲的肉食性哺乳動物，與狗科（犬科）其他成員的區別在於每隻腳只有四個腳趾。其皮毛的特徵是短而稀疏的皮毛，不規則地分佈在一起。",
                         "「非洲野狗身長約 76-102 公分（30-41 英吋），不包括 31-41 公分的尾巴，站立時肩高約 60 公分（24 英吋），體重約 16-23 公斤（35 英吋）。 – 50 磅）。",
                         "「非洲野狗生活在由 15 至 60 隻或更多個體組成的群體中，棲息在撒哈拉以南和以東的非洲地區，特別喜歡草原。它主要捕食羚羊和其他大型動物，但由於偶爾會襲擊家畜。",
@@ -277,7 +283,7 @@
                 },
                 {
                     "section": "保護狀況",
-                    "Content": [
+                    "content": [
                         "「旨在保護野狗的保育工作涉及建立保護區和保護重要的野生動物走廊。世界自然基金會（WWF）等組織積極參與這項工作，重點關注連接主要野生動物的重要野生動物走廊的創建和保護坦尚尼亞南部和莫三比克北部的保護區。",
                         "「非洲野生動物基金會(AWF) 在保育方面發揮著至關重要的作用，它教育當地社區了解保護野狗的重要性，並賦予他們參與保育工作的權力。透過教育和社區參與，AWF 旨在培養當地社區的管理意識。"
                     ]
@@ -287,7 +293,8 @@
     },
     {
         "id": 7,
-        "cover_images": "",
+        "cover_images": "/image/Royal_Penguin.jpeg",
+        "categoryMenuImage" :  "/image/Topics/Penguin.png",
         "category": "Alaska",
         "en": {
             "name": "Royal Penguin",
@@ -295,7 +302,7 @@
             "article": [
                 {
                     "section": "Characteristic",
-                    "Content": [
+                    "content": [
                         "The royal penguin, scientifically known as Eudyptes schlegeli, is a species of crested penguin belonging to the genus Eudyptes within the order Sphenisciformes. It is recognized by its distinctive features, including a large orange-colored bill, a pale face, a black head, and a long crest of yellow-orange feathers extending from the forehead along the sides and top of the head. While some royal penguins migrate as far as Australia, Tasmania, and New Zealand during winter, breeding populations are confined to Macquarie Island and its nearby islets.",
                         "Royal penguins are often mistaken for macaroni penguins (Eudyptes chrysolophus), and some experts argue that the royal penguin is a subspecies of the macaroni penguin.",
                         "Measuring up to 70 cm (about 28 inches) in height, royal penguins rank among the tallest members of the Eudyptes genus. Adults typically weigh between 4 and 6 kg (about 9 to 13 pounds), with males being slightly larger than females. Juveniles are smaller than adults and feature a single stripe of yellow feathers above each eye. Chicks are covered in down of brownish gray and white."
@@ -303,7 +310,7 @@
                 },
                 {
                     "section": "Conservation status",
-                    "Content": [
+                    "content": [
                         "Despite the existence of smaller colonies on Macquarie Island and its neighboring rocky islets, the majority of royal penguins are part of a single large colony located near the southern tip of the island. This colony consists of over 500,000 breeding pairs. Despite its large size, the species is classified as vulnerable on the International Union for Conservation of Nature's Red List of Threatened Species.",
                         "The vulnerability of royal penguins stems from their tendency to congregate in a very small area for breeding purposes. This behavior exposes them to significant risks, including extreme weather events, the introduction of aggressive invasive predators, and other unpredictable occurrences such as large oil spills, which could potentially lead to their extinction.",
                         "Ecologists are concerned about the impact of nearby commercial fishing activities and the effects of climate change on the royal penguin population. These factors could potentially reduce the availability of krill, fish, and other prey in the area, further threatening the survival of the species. Urgent conservation efforts are needed to protect royal penguins and mitigate the risks they face from both human activities and environmental changes."
@@ -317,7 +324,7 @@
             "article": [
                 {
                     "section": "特徵",
-                    "Content": [
+                    "content": [
                         "皇家企鵝，科學上稱為Eudyptes schlegeli，是鳳頭企鵝的一種，屬於企鵝目Eudyptes 屬。 它具有鮮明的特徵，包括橙色的大嘴、蒼白的臉、黑色的頭部，以及從前額沿頭兩側和頂部延伸的長長的黃橙色羽毛冠。 雖然一些皇家企鵝在冬季遷徙至澳洲、塔斯馬尼亞和紐西蘭，但繁殖族群僅限於麥覺理島及其附近的小島。",
                         "皇家企鵝經常被誤認為是馬可羅尼企鵝（Eudyptes chrysolophus），一些專家認為皇家企鵝是馬可羅尼企鵝的亞種。",
                         "皇家企鵝身高可達 70 公分（約 28 吋），是企鵝屬中最高的成員之一。 成年人的體重通常在 4 至 6 公斤（約 9 至 13 磅）之間，雄性略大於雌性。 幼鳥比成鳥小，每隻眼睛上方都有一條黃色羽毛。 小雞身上覆蓋著棕灰色和白色的絨毛。"
@@ -325,7 +332,7 @@
                 },
                 {
                     "section": "保護狀況",
-                    "Content": [
+                    "content": [
                         "儘管麥格理島及其鄰近的岩石小島上存在較小的企鵝群，但大多數皇家企鵝都是位於島嶼南端附近的單一大群落的一部分。 這個群體由超過 50 萬個繁殖對組成。 儘管體型龐大，但該物種在國際自然保護聯盟的瀕危物種紅色名錄中仍被列為易危物種。",
                         "皇家企鵝的脆弱性源自於它們傾向於聚集在一個非常小的區域內進行繁殖。 這種行為使它們面臨重大風險，包括極端天氣事件、侵略性入侵掠食者的引入以及其他不可預測的事件，例如大規模石油洩漏，這可能會導致它們的滅絕。",
                         "生態學家擔心附近商業捕魚活動的影響以及氣候變遷對皇家企鵝族群的影響。 這些因素可能會減少該地區磷蝦、魚類和其他獵物的供應，進一步威脅該物種的生存。 需要採取緊急保護措施來保護皇家企鵝並減輕它們因人類活動和環境變化而面臨的風險。"

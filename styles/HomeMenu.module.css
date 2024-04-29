@@ -1,0 +1,38 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;;
+    align-items: flex-start;
+    padding: 2rem 2rem;
+    height: var(--main-height);
+    overflow: scroll;
+    text-align: center;
+}
+
+
+.headingContainer {
+    margin-top: 2vh;
+}
+
+.title {
+    text-align: center;
+}
+.subtitle {
+    text-align: center;
+}
+.button {
+    border: transparent;
+    background-color: transparent;
+    margin: 1vh;
+}
+.options {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: stretch;
+   justify-content: center;
+   align-items: stretch;
+   row-gap: 10px;
+   column-gap: 20px;
+}

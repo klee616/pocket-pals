@@ -1,21 +1,12 @@
 import { useState, useEffect } from "react";
 import style from './Question.module.css';
 import { useRouter } from 'next/router';
-import { Patrick_Hand } from 'next/font/google';
-import { Sarabun } from "next/font/google";
 import QuestionSelection from "../QuestionSelection";
 import Button from "@/Components/Button";
-const patrickHand = Patrick_Hand({
-    weight: '400',
-    subsets: ['latin'],
-});
-
-const sarabun = Sarabun({
-    weight: '400',
-    subsets: ['latin'],
-});
+import { useIntl } from "react-intl";
 
 export default function Question({ data, callBack }) {
+    const intl = useIntl();
     const [option, setOption] = useState(null);
     const { locale } = useRouter();
     const [isEnable, setIsEnable] = useState(false);
@@ -65,7 +56,7 @@ export default function Question({ data, callBack }) {
                     })
                     }
                 </form>
-                <Button name="Next !" onClick={submitAnswer} disabled={!isEnable} />
+                <Button name={intl.formatMessage({ id: "page.quiz.next" })} onClick={submitAnswer} disabled={!isEnable} />
             </>)}
 
         </>
