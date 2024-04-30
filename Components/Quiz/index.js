@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import questionData from '@/data/question.json';
 import { useRouter } from "next/router";
 import Question from '@/Components/Question';
@@ -6,23 +6,18 @@ import QuizResult from '@/Components/QuizResult';
 import ProgressBar from '@/Components/ProgressBar';
 import Button from '@/Components/Button';
 import { useIntl } from "react-intl";
-import { setCookie, getCookie, hasCookie, deleteCookie } from 'cookies-next';
 
 export default function Qiiz({ category = "all" }) {
     const intl = useIntl();
     const router = useRouter();
     const data = [...questionData].filter((item) => item.category.toLowerCase() == category.toLowerCase());
     const [resultData, setResultData] = useState({
+        category:category,
         current: 0,
         totalOfCorrectAnswers: 0,
         totalOfWrongAnswers: 0,
         questionList: []
     });
-
-    const [nickName, setNickName] = useState("");
-    useEffect(() => {
-        setNickName(window.sessionStorage.getItem("nickname"));
-    }, []);
 
     const { locale } = useRouter();
     const getAnswer = (ans) => {
@@ -37,18 +32,7 @@ export default function Qiiz({ category = "all" }) {
             current: resultData.current + 1,
             questionList: [...resultData.questionList, currentOfQuestion[locale]]
         }));
-        console.log(resultData.questionList.length == data.length);
-        if (resultData.questionList.length + 1 == data.length) {
-            saveResultInCookies();
-        }
     };
-
-    const saveResultInCookies = async () => {
-        let historyRecord = getCookie('historyRecord');
-        let historyRecordList = historyRecord ? JSON.parse(historyRecord) : [];
-        historyRecordList.push({ name: nickName, category: category, date: new Date(), scores: Math.round(resultData.totalOfCorrectAnswers / data.length * 100) })
-        setCookie('historyRecord', historyRecordList);
-    }
 
     return (<>
         {resultData.current < data.length && (<>
