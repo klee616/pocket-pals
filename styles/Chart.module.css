@@ -6,6 +6,7 @@
     background-color: var(--main-color);
     width: 430px;
     height: calc(934px - 177px);
-  overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   
