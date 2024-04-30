@@ -26,8 +26,8 @@ export default function Home({ dir }) {
       <Header />
       <div className={style.main}>
         <h1>{title}</h1>
+        <div className={style.content}>
         <Image />
-        <div>
           <ul className={style.listed}>
             <li className={style.list}>How to Play.</li>
             <li className={style.list}>You have to answer 4 questions.</li>
