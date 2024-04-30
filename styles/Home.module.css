@@ -87,3 +87,9 @@
   52% {scale:120%;}
   100% {scale:100%;}
 }
+
+.errorMsg{
+  color: red;
+  display: block;
+  height: 20px;
+}

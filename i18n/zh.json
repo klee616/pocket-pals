@@ -5,6 +5,8 @@
     "page.home.description": "兒童動物學習應用程式",
     "page.home.label.nickname":"暱稱",
     "page.home.submit": "確認 !",
+    "page.home.nickname.error.message":"請輸入暱稱.",
+    "page.home.nickname.invalid.error.message":"第一個字元必須是字母。",
     "page.selection.screen.head.title": "POCKET PALS",
     "page.selection.screen.head.description": "兒童動物學習應用程式",
     "page.selection.screen.title": "POCKET PALS",

@@ -5,6 +5,8 @@
     "page.home.description": "An Animal Learning App For Kids",
     "page.home.label.nickname": "Nick Name",
     "page.home.submit": "Confirm !",
+    "page.home.nickname.error.message":"Please enter the nickname.",
+    "page.home.nickname.invalid.error.message":"The first character must be alphabet.",
     "page.selection.screen.head.title": "POCKET PALS",
     "page.selection.screen.head.description": "An Animal Learning App For Kids",
     "page.selection.screen.title": "POCKET PALS",
