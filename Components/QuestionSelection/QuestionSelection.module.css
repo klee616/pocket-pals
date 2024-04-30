@@ -1,13 +1,13 @@
-.answer {
+.answer{
     list-style-type: none;
     font-weight: 100;
     font-size: 1.5rem;
     margin: 10px;
-    width: 80%;
+    width: 90%;
     padding: 5px 10px;
     display: inline-block;
     border-radius: 20px;
-}
+    }
 .answer:hover {
     width: 80%;
 }
