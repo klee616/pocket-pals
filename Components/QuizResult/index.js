@@ -24,7 +24,7 @@ export default function QuizResult({ resultData }) {
            }
         });
         if (!isRecord) {
-            historyRecordList.push({ id: resultData.id, name: nickName, category: resultData.category, date: new Date(), scores: Math.round(resultData.totalOfCorrectAnswers / resultData.current * 100) })
+            historyRecordList.push({ id: resultData.id, name: nickName, topic: resultData.topic, date: new Date(), scores: Math.round(resultData.totalOfCorrectAnswers / resultData.current * 100) })
 
             setCookie('historyRecord', historyRecordList);
         }

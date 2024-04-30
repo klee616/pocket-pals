@@ -3,28 +3,17 @@ import Header from '@/Components/Header';
 import HeadArea from '@/Components/HeadArea';
 import Footer from '@/Components/Footer';
 import style from '@/styles/Article.module.css';
-import articleData from '@/data/article.json';
-import { useState, useEffect, use } from 'react';
-import { useRouter } from "next/router";
-import { FormattedMessage, useIntl } from "react-intl";
 import { useSearchParams } from 'next/navigation'
+import { ArticleUntil } from '@/utils/ArticleUtil';
 
 export default function AnimalArticle() {
-    const { locale } = useRouter();
-    const intl = useIntl();
-    const router = useRouter();
     const searchParams = useSearchParams();
-    const query = router.query;
-    const category = searchParams.get("category");
-    const [topic, setTopic] = useState(articleData.filter((item) => item.category == category)[0]);
+    const articleId = searchParams.get("articleId");
+    const {getArticleById} = ArticleUntil();;
+    const topic =  getArticleById(articleId);
     
-    useEffect( 
-        ()=>{
-            let article = articleData.filter((item) => item.category == category)[0];
-            setTopic(article);
-            console.log(article);
-        }
-        ,[])
+    console.log(articleId)
+    console.log(topic)
     return (<>
         <HeadArea title="" description="" />
         <Header />

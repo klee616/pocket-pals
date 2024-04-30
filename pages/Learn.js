@@ -41,7 +41,7 @@ export default function Learn({ }) {
             {
                 menuData.filter(filter).map((item, index) => {
                     return (<>
-                        <CategoryButton key={index} name={item.name} category={item.region} image={item.image} href={{ pathname: '/AnimalArticle', query: { category: item.category } }} />
+                        <CategoryButton key={index} name={item.name} category={item.region} image={item.image} href={{ pathname: '/AnimalArticle', query: { articleId: item.id } }} />
                     </>);
                 })}
         </div>
