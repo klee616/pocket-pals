@@ -6,8 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function QuizResult({ resultData }) {
     const intl = useIntl();
-    const [nickName, setNickName] = useState(window.sessionStorage.getItem("nickname"));
-
+    const [nickName, setNickName] = useState();
 
     useEffect(() => {
         setNickName(window.sessionStorage.getItem("nickname"));
@@ -24,7 +23,7 @@ export default function QuizResult({ resultData }) {
            }
         });
         if (!isRecord) {
-            historyRecordList.push({ id: resultData.id, name: nickName, topic: resultData.topic, date: new Date(), scores: Math.round(resultData.totalOfCorrectAnswers / resultData.current * 100) })
+            historyRecordList.push({ id: resultData.id, name: window.sessionStorage.getItem("nickname"), topic: resultData.topic, date: new Date(), scores: Math.round(resultData.totalOfCorrectAnswers / resultData.current * 100) })
 
             setCookie('historyRecord', historyRecordList);
         }
