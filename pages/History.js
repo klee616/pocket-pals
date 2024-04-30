@@ -12,8 +12,8 @@ import { ArticleUntil } from '@/utils/ArticleUtil';
 export default function History() {
     const intl = useIntl();
     const [categoryFilter, setCategoryFilter] = useState('all');
-    const { getCategoryList } = ArticleUntil();
-    const [menuData, setMenuData] = useState(getCategoryList);
+    const { getAllTopicList, getTopicNamebyId } = ArticleUntil();
+    const [menuData, setMenuData] = useState(getAllTopicList);
 
     const headTitle = intl.formatMessage({ id: "page.history.head.title" });
     const headDescription = intl.formatMessage({ id: "page.history.head.description" });
@@ -23,7 +23,7 @@ export default function History() {
 
 
     const historyFilter = (item) => {
-        if (item.category == categoryFilter || categoryFilter == "all") {
+        if (item.topic == categoryFilter || categoryFilter == "all") {
             return true;
         } else {
             return false;
@@ -64,7 +64,7 @@ export default function History() {
                             return (<>
                                 <tr key={index}>
                                     <td>{item.name}</td>
-                                    <td>{item.category}</td>
+                                    <td>{getTopicNamebyId(item.topic)}</td>
                                     <td>{item.date.substring(0, 10)}</td>
                                     <td>{item.scores}</td>
                                 </tr>

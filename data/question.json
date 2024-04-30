@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "article_id": 1,
         "en": {
             "question": "At its smallest population; how many Vancouver Island Marmots were left in the wild in 2003?",
             "choose": [
@@ -25,6 +26,7 @@
     },
     {
         "id": 2,
+        "article_id": 1,
         "en": {
             "question": "What is the average length of an adult Vancouver Island marmot?",
             "choose": [
@@ -49,6 +51,7 @@
     },
     {
         "id": 3,
+        "article_id": 1,
         "en": {
             "question": "How does the fur of baby marmots change as they grow?",
             "choose": [
@@ -73,6 +76,7 @@
     },
     {
         "id": 4,
+        "article_id": 1,
         "en": {
             "question": "How many pups can a Vancouver Island marmot give birth to every other year?",
             "choose": [
@@ -97,6 +101,7 @@
     },
     {
         "id": 5,
+        "article_id": 2,
         "en": {
             "question": "How many mature individuals of spectacled bears are estimated to be left?",
             "choose": [
@@ -121,6 +126,7 @@
     },
     {
         "id": 6,
+        "article_id": 2,
         "en": {
             "question": "Which of the following poses a serious threat to the spectacled bear population?",
             "choose": [
@@ -145,6 +151,7 @@
     },
     {
         "id": 7,
+        "article_id": 2,
         "en": {
             "question": "What is the scientific name of the spectacled bear?",
             "choose": [
@@ -169,6 +176,7 @@
     },
     {
         "id": 8,
+        "article_id": 2,
         "en": {
             "question": "How long is the gestation period of spectacled bears?",
             "choose": [
@@ -193,6 +201,7 @@
     },
     {
         "id": 9,
+        "article_id": 3,
         "en": {
             "question": "What is a characteristic feature of wild hamsters' fur?",
             "choose": [
@@ -217,6 +226,7 @@
     },
     {
         "id": 10,
+        "article_id": 3,
         "en": {
             "question": "What is the maximum length a hamster can reach?",
             "choose": [
@@ -241,6 +251,7 @@
     },
     {
         "id": 11,
+        "article_id": 3,
         "en": {
             "question": "How do wild hamsters prefer to live?",
             "choose": [
@@ -265,6 +276,7 @@
     },
     {
         "id": 12,
+        "article_id": 3,
         "en": {
             "question": "What is the conservation status of the common hamster?",
             "choose": [
@@ -289,6 +301,7 @@
     },
     {
         "id": 13,
+        "article_id": 4,
         "en": {
             "question": "What is a distinctive feature of giant pandas' appearance?",
             "choose": [
@@ -313,6 +326,7 @@
     },
     {
         "id": 14,
+        "article_id": 4,
         "en": {
             "question": "How long can mature male giant pandas grow?",
             "choose": [
@@ -337,6 +351,7 @@
     },
     {
         "id": 15,
+        "article_id": 4,
         "en": {
             "question": "What has been a significant factor contributing to the rebound of giant panda populations?",
             "choose": [
@@ -361,6 +376,7 @@
     },
     {
         "id": 16,
+        "article_id": 4,
         "en": {
             "question": "What is the main reason giant pandas remain vulnerable despite population rebounds?",
             "choose": [
@@ -385,6 +401,7 @@
     },
     {
         "id": 17,
+        "article_id": 5,
         "en": {
             "question": "What is the distinguishing feature of the numbat's coat?",
             "choose": [
@@ -409,6 +426,7 @@
     },
     {
         "id": 18,
+        "article_id": 5,
         "en": {
             
             "question": "What makes the numbat unique among Australian marsupials?",
@@ -434,6 +452,7 @@
     },
     {
         "id": 19,
+        "article_id": 5,
         "en": {
             "question": "How many young does a numbat typically give birth to each year?",
             "choose": [
@@ -458,6 +477,7 @@
     },
     {
         "id": 20,
+        "article_id": 5,
         "en": {
             "question": "What is the conservation status of the numbat?",
             "choose": [
@@ -482,6 +502,7 @@
     },
     {
         "id": 21,
+        "article_id": 6,
         "en": {
             "question": "What is the scientific name of the African wild dog?",
             "choose": [
@@ -506,6 +527,7 @@
     },
     {
         "id": 22,
+        "article_id": 6,
         "en": {
             
             "question": "How many toes does the African wild dog have on each foot?",
@@ -532,6 +554,7 @@
     },
     {
         "id": 23,
+        "article_id": 6,
         "en": {
             "question": "What is the average size of an African wild dog litter?",
             "choose": [
@@ -556,6 +579,7 @@
     },
     {
         "id": 24,
+        "article_id": 6,
         "en": {
             "question": "What is one method mentioned in the article to mitigate conflicts between wild dogs and humans?",
             "choose": [
@@ -580,6 +604,7 @@
     },
     {
         "id": 25,
+        "article_id": 7,
         "en": {
             "question": "What is the scientific name of the royal penguin?",
             "choose": [
@@ -604,6 +629,7 @@
     },
     {
         "id": 26,
+        "article_id": 7,
         "en": {
             "question": "What is the main distinguishing feature of juvenile royal penguins?",
             "choose": [
@@ -628,6 +654,7 @@
     },
     {
         "id": 27,
+        "article_id": 7,
         "en": {
             "question": "How many breeding pairs are estimated to be in the large colony near the southern tip of Macquarie Island?",
             "choose": [
@@ -652,6 +679,7 @@
     },
     {
         "id": 28,
+        "article_id": 7,
         "en": {
             "question": "What urgent conservation efforts are needed to protect royal penguins?",
             "choose": [

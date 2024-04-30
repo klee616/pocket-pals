@@ -7,13 +7,15 @@ import ProgressBar from '@/Components/ProgressBar';
 import Button from '@/Components/Button';
 import { useIntl } from "react-intl";
 
-export default function Qiiz({ category = "all" }) {
+export default function Qiiz({ category = "all", articleId }) {
     const intl = useIntl();
     const router = useRouter();
-    const data = [...questionData].filter((item) => item.category.toLowerCase() == category.toLowerCase());
+    console.log(articleId)
+    const data = [...questionData].filter((item) => item.article_id ==  articleId);
     const [resultData, setResultData] = useState({
         id: Math.ceil( Math.random() * 9999999999),
         category:category,
+        topic:articleId,
         current: 0,
         totalOfCorrectAnswers: 0,
         totalOfWrongAnswers: 0,
