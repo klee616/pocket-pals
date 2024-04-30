@@ -12,6 +12,7 @@ export default function Qiiz({ category = "all" }) {
     const router = useRouter();
     const data = [...questionData].filter((item) => item.category.toLowerCase() == category.toLowerCase());
     const [resultData, setResultData] = useState({
+        id: Math.ceil( Math.random() * 9999999999),
         category:category,
         current: 0,
         totalOfCorrectAnswers: 0,
