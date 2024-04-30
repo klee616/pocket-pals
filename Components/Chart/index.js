@@ -41,20 +41,20 @@ export default function Chart({ }) {
                 {
                     label: "Female Over All Size",
                     data: avgFemaleOverAllSizeList,
-                    borderColor: 'rgb(53, 162, 235)',
-                    backgroundColor: 'rgba(163, 5, 247, 0.5)'
+                    borderColor: 'rgb(19, 100, 77)',
+                    backgroundColor: 'rgb(19, 100, 77,0.9)'
                 },
                 {
                     label: "Total Over All Size",
                     data: avgTotalOverAllSizeList,
-                    borderColor: 'rgb(103, 162, 235)',
-                    backgroundColor: 'rgba(33, 5, 247, 0.8)'
+                    borderColor: 'rgb(255, 197, 58)',
+                    backgroundColor: 'rgb(255, 197, 58, 0.8)'
                 },
                 {
                     label: "Male Over All Size",
                     data: avgMaleOverAllSieList,
-                    borderColor: 'rgb(153, 162, 235)',
-                    backgroundColor: 'rgba(247, 5, 29, 0.8)'
+                    borderColor: 'rgb(228, 109, 5)',
+                    backgroundColor: 'rgb(228, 109, 5, 0.9)'
                 }
             ]
         });
