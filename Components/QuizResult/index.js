@@ -1,9 +1,24 @@
 import style from "./QuizResult.module.css";
 import QuizResultAnswer from "../QuizResultAnswer";
 import { useIntl } from "react-intl";
+import { setCookie, getCookie, hasCookie, deleteCookie } from 'cookies-next';
+import { useEffect,useState } from "react";
 
 export default function QuizResult({ resultData }) {
     const intl = useIntl();
+    const [nickName, setNickName] = useState("");
+
+
+    useEffect(() => {
+        setNickName(window.sessionStorage.getItem("nickname"));
+        saveResultInCookies();
+    }, []);
+    const saveResultInCookies = async () => {
+        let historyRecord = getCookie('historyRecord');
+        let historyRecordList = historyRecord ? JSON.parse(historyRecord) : [];
+        historyRecordList.push({ name: nickName, category: resultData.category, date: new Date(), scores: Math.round(resultData.totalOfCorrectAnswers / resultData.current * 100) })
+        setCookie('historyRecord', historyRecordList);
+    }
     return (<>
         {resultData && (<>
 
