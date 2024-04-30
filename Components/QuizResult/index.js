@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function QuizResult({ resultData }) {
     const intl = useIntl();
-    const [nickName, setNickName] = useState("");
+    const [nickName, setNickName] = useState(window.sessionStorage.getItem("nickname"));
 
 
     useEffect(() => {
