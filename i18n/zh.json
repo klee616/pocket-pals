@@ -50,5 +50,12 @@
     "page.quiz.question":"問題",
     "page.quiz.play.again":"再嚟多次 !",
     "page.quiz.next":"下一題",
-    "page.quiz.result":"遊戲分數"
+    "page.quiz.result":"遊戲分數",
+    "page.history.head.title":"遊戲記錄",
+    "page.history.head.description":"POCKET PALS - 遊戲記錄",
+    "page.history.title":"遊戲記錄",
+    "page.history.name":"玩家",
+    "page.history.category":"題目",
+    "page.history.date":"日期",
+    "page.history.scores":"成績"
 }
