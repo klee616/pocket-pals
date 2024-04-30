@@ -19,7 +19,7 @@
 
 # production
 /build
-
+/Components/TopicFilter
 # misc
 .DS_Store
 *.pem

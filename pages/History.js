@@ -3,25 +3,23 @@ import HeadArea from '@/Components/HeadArea';
 import Footer from '@/Components/Footer';
 import Header from '@/Components/Header';
 import { useState, useEffect } from 'react'
-import { useRouter } from "next/router";
-import articleData from '@/data/article.json';
 import Selector from '@/Components/Selector';
-import { FormattedMessage, useIntl } from "react-intl";
-import { setCookie, getCookie, hasCookie, deleteCookie } from 'cookies-next';
+import { useIntl } from "react-intl";
+import { getCookie } from 'cookies-next';
+import { ArticleUntil } from '@/utils/ArticleUtil';
 
 
 export default function History() {
-    const { locale } = useRouter();
     const intl = useIntl();
     const [categoryFilter, setCategoryFilter] = useState('all');
-    const [data, setData] = useState([...articleData])
+    const { getCategoryList } = ArticleUntil();
+    const [menuData, setMenuData] = useState(getCategoryList);
 
     const headTitle = intl.formatMessage({ id: "page.history.head.title" });
     const headDescription = intl.formatMessage({ id: "page.history.head.description" });
     const title = intl.formatMessage({ id: "page.history.title" });
     const [cookiesValue, setCookiesValue] = useState(getCookie('historyRecord'));
     const [historyRecord, setHistoryRecord] = useState([]);
-    const [menuData, setMenuData] = useState([]);
 
 
     const historyFilter = (item) => {
@@ -39,24 +37,7 @@ export default function History() {
     }
     useEffect(() => {
         readCookies();
-        setupMenuData();
     }, []);
-
-    const setupMenuData = () => {
-
-        let menuList = [{
-            value: "all",
-            displayValue: "All"}];
-        data.map((item) => {
-            let cate = {
-                value: item.category,
-                displayValue: item[locale].category_title
-            };
-            menuList.push(cate)
-        });
-        setMenuData(menuList);
-    }
-
 
     const changeFilter = (filter) => {
         setCategoryFilter(filter);
