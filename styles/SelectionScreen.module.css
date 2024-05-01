@@ -40,7 +40,7 @@
   border-radius: 20px;
   width: 40vh;
   height: 9vh;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .button:hover {
@@ -50,7 +50,7 @@
   border-radius: 20px;
   width: 40vh;
   height: 9vh;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .buttonContainer {
@@ -66,6 +66,8 @@
   animation-name: scale-in-out;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+ width: 30vh;
+ height: 33vh;
 }
 
 @keyframes scale-in-out {

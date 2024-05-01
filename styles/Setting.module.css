@@ -9,8 +9,8 @@
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.switch {
-    margin-left: 100px;
+.switchVol {
+    margin-left: 140px;
     position: relative;
     display: inline-block;
     width: 80px;
@@ -18,12 +18,26 @@
     margin-bottom: 20px;
   }
   
-  .switch input {
+  .switchVol input {
     opacity: 0;
     width: 0;
     height: 0;
   }
   
+  .switchSound {
+    margin-left: 90px;
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+    margin-bottom: 20px;
+  }
+  
+  .switchSound input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 
   .slider {
     position: absolute;
@@ -105,6 +119,10 @@
   }
 
   .button{
+    margin-top: 1vh;
     margin-right: 200px;
   }
 
+.langContainer {
+  margin-top: 3vh;
+}
