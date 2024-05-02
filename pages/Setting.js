@@ -52,8 +52,9 @@ export default function Quiz({ }) {
             <h1 className={style.title}>{title}</h1>
             <form action={`/`} onSubmit={(e) => e.preventDefault()}>
                 
+                
                     <label for="volume" className={style.text}>{intl.formatMessage({ id: "page.setting.volume" })}
-                    <div className={style.switch}>{sound}
+                    <div className={style.switchVol}>{sound}
                         <input type='checkbox' id='volume' name='volume' value='volume' checked={sound} onClick={(e) => { setSound(e.target.checked) }} />
                         <span className={style.slider}></span>
                     </div>
@@ -63,7 +64,7 @@ export default function Quiz({ }) {
                 <div>
                     
                     <label for="soundEffect" className={style.text}>{intl.formatMessage({ id: "page.setting.sound.effect" })}
-                    <div className={style.switch}>{soundEffect}
+                    <div className={style.switchSound}>{soundEffect}
                         <input type='checkbox' id='soundEffect' name='soundEffect' value='soundEffect' checked={soundEffect} onClick={(e) => { setSoundEffect(e.target.checked) }} />
                         <span className={style.slider}></span>
                     </div>
@@ -77,7 +78,7 @@ export default function Quiz({ }) {
                         <input type='radio' id='smallFontSize' name='fontSize' value='smallFontSize' checked={fontSize === "smallFontSize"} onClick={handleOptionChange} /> <label for="smallFontSize">{intl.formatMessage({ id: "page.setting.small" })}<h2>A</h2></label>
                     </div>
                 </div>
-                <div>
+                <div className={style.langContainer}>
                     <label for="language"> {intl.formatMessage({ id: "page.setting.language" })}</label>
                     <div className={style.button}>
                         <Selector value={settingLocale} defaultValue={locale} optionList={[{ value: "en", displayValue: "English" }, { value: "zh", displayValue: "繁體中文字" }]} tabIndex={`5`} onChange={setSettingLocale} />
