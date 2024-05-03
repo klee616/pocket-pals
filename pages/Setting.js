@@ -79,9 +79,9 @@ export default function Quiz({ }) {
                     </div>
                 </div>
                 <div className={style.langContainer}>
-                    <label for="language"> {intl.formatMessage({ id: "page.setting.language" })}</label>
+                    <label  className={style.head} for="language"> {intl.formatMessage({ id: "page.setting.language" })}</label>
                     <div className={style.button}>
-                        <Selector value={settingLocale} defaultValue={locale} optionList={[{ value: "en", displayValue: "English" }, { value: "zh", displayValue: "繁體中文字" }]} tabIndex={`15`} onChange={setSettingLocale} />
+                        <Selector value={settingLocale} defaultValue={locale} optionList={[{ value: "en", displayValue: "English" }, { value: "zh", displayValue: "繁體中文" }]} tabIndex={`15`} onChange={setSettingLocale} />
                     </div>
                 </div>
                 <Button name={intl.formatMessage({ id: "button.confirm" })} onClick={changeSetting} className={style.confirm}  tabIndex={16}/>
