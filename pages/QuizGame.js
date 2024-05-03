@@ -10,7 +10,7 @@ export default function Home() {
   const intl = useIntl();
 
   const title = intl.formatMessage({ id: "page.home.head.title" });
-  const metaDescription = intl.formatMessage({ id: "page.home.head.meta.description" });
+  const metaDescription = intl.formatMessage({ id: "page.home.head.description" });
 
   const router = useRouter();
   const category = router.query.category;
