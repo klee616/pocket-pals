@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   background-color: var(--main-color);
-  width: 430px;
+  width: 100%;
   row-gap: 80px;
   flex-wrap: nowrap;
   align-content: center;

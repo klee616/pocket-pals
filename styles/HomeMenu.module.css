@@ -7,6 +7,8 @@
     padding: 2rem 2rem;
     height: var(--main-height);
     text-align: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 

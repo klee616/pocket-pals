@@ -1,7 +1,7 @@
 .block{
     display: flex;
     background-color:var(--web-color-4);
-    width: 430px;
+    width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: nowrap;
