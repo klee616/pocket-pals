@@ -72,6 +72,7 @@
   
   input:focus + .slider {
     box-shadow: 0 0 1px var(--web-color-4);
+    border: 3px solid white;
   }
   
   input:checked + .slider:before {

@@ -49,7 +49,7 @@ export default function Question({ data, callBack }) {
                                     item={item}
                                     checked={item == option}
                                     callback={changeAnswer}
-                                    tabIndex={1}
+                                    tabIndex={9}
                                 />
                             </>
                         )

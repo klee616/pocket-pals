@@ -13,7 +13,7 @@ export default function Header() {
             <SideMenuBar setIsShowSideMenuBar={setIsShowSideMenuBar} />
         }
         <div className={style.bar}>
-            <Link href="/HomeMenu">
+            <Link href="/HomeMenu" tabIndex={1}>
             <Image
                 src="/image/Ellipse.svg"
                 alt="Logo"
@@ -23,18 +23,19 @@ export default function Header() {
             />
             </Link>
             <form className={style.bars}>
-          <input type="text" name='search' id='search' className={style.searchInputBox}/>
+          <input type="text" name='search' id='search' className={style.searchInputBox} tabIndex={2}/>
           
           </form>
 
+          <Link href="/" onClick={(e) => { e.preventDefault(); setIsShowSideMenuBar(true)}}  tabIndex={3}>
             <Image
                 src="/image/BurgerMenu.svg"
                 alt="Menu"
                 width={40}
                 height={40}
                 className={style.menu}
-                onClick={() => setIsShowSideMenuBar(true)}
             />
+            </Link>
 
 
         </div>

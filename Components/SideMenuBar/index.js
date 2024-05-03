@@ -25,23 +25,23 @@ export default function SideMenuBar({ setIsShowSideMenuBar }) {
             <div id='menu_container' className={style.sideMenubarContainer}>
                 <ul className={style.sideMenu}>
                 <li className={`menu-font-style ${style.menuClose}`}>
-                        <Link href="/" onClick={handleClick}>x</Link>
+                        <Link href="/" onClick={handleClick}  tabIndex={9}>x</Link> 
                     </li>
 
                     <li className={`menu-font-style ${style.menu}`}>
-                        <Link href="/Setting" locale={locale}>{intl.formatMessage({ id: "side.menu.setting" })}</Link>
+                        <Link href="/Setting" locale={locale}  tabIndex={4}>{intl.formatMessage({ id: "side.menu.setting" })}</Link>
                     </li>
                     <li className={`menu-font-style ${style.menu}`}>
-                        <Link href="/Developer" locale={locale}>{intl.formatMessage({ id: "side.menu.developer" })}</Link>
+                        <Link href="/Developer" locale={locale}  tabIndex={5}>{intl.formatMessage({ id: "side.menu.developer" })}</Link>
                     </li>
                     <li className={`menu-font-style ${style.menu}`}>
-                        <Link href="/History" locale={locale}>{intl.formatMessage({ id: "side.menu.history" })}</Link>
+                        <Link href="/History" locale={locale}  tabIndex={6}>{intl.formatMessage({ id: "side.menu.history" })}</Link>
                     </li>
                     <li className={`menu-font-style ${style.menu}`}>
-                        <Link href="/CallApi" locale={locale}>Call API</Link>
+                        <Link href="/CallApi" locale={locale} tabIndex={7}>Call API</Link>
                     </li>
                     <li className={`menu-font-style ${style.menu}`}>
-                        <Link href="/AnimalChart" locale={locale}>Chart</Link>
+                        <Link href="/AnimalChart" locale={locale} tabIndex={8}>Chart</Link>
                     </li>
                     
                 </ul>

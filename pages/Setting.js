@@ -55,7 +55,7 @@ export default function Quiz({ }) {
                 
                     <label for="volume" className={style.text}>{intl.formatMessage({ id: "page.setting.volume" })}
                     <div className={style.switchVol}>{sound}
-                        <input type='checkbox' id='volume' name='volume' value='volume' checked={sound} onClick={(e) => { setSound(e.target.checked) }} />
+                        <input type='checkbox' id='volume' name='volume' value='volume' checked={sound} onClick={(e) => { setSound(e.target.checked) }} tabIndex={10} />
                         <span className={style.slider}></span>
                     </div>
                     </label>
@@ -65,7 +65,7 @@ export default function Quiz({ }) {
                     
                     <label for="soundEffect" className={style.text}>{intl.formatMessage({ id: "page.setting.sound.effect" })}
                     <div className={style.switchSound}>{soundEffect}
-                        <input type='checkbox' id='soundEffect' name='soundEffect' value='soundEffect' checked={soundEffect} onClick={(e) => { setSoundEffect(e.target.checked) }} />
+                        <input type='checkbox' id='soundEffect' name='soundEffect' value='soundEffect' checked={soundEffect} onClick={(e) => { setSoundEffect(e.target.checked) }}  tabIndex={11}/>
                         <span className={style.slider}></span>
                     </div>
                     </label>
@@ -73,18 +73,18 @@ export default function Quiz({ }) {
                 <div>
                     <label className={style.head}>{intl.formatMessage({ id: "page.setting.font.size" })}</label>
                     <div className={style.fonts}>
-                        <input type='radio' id='biggerFontSize' name='fontSize' value='biggerFontSize' checked={fontSize === "biggerFontSize"} onClick={handleOptionChange} /> <label for="biggerFontSize">{intl.formatMessage({ id: "page.setting.big" })} <h2>A</h2></label>
-                        <input type='radio' id='middleFontSize' name='fontSize' value='middleFontSize' checked={fontSize === "middleFontSize"} onClick={handleOptionChange} /> <label for="middleFontSize">{intl.formatMessage({ id: "page.setting.middle" })} <h2>A</h2></label>
-                        <input type='radio' id='smallFontSize' name='fontSize' value='smallFontSize' checked={fontSize === "smallFontSize"} onClick={handleOptionChange} /> <label for="smallFontSize">{intl.formatMessage({ id: "page.setting.small" })}<h2>A</h2></label>
+                        <input type='radio' id='biggerFontSize' name='fontSize' value='biggerFontSize' checked={fontSize === "biggerFontSize"} onClick={handleOptionChange}  tabIndex={12} /> <label for="biggerFontSize">{intl.formatMessage({ id: "page.setting.big" })} <h2>A</h2></label>
+                        <input type='radio' id='middleFontSize' name='fontSize' value='middleFontSize' checked={fontSize === "middleFontSize"} onClick={handleOptionChange}  tabIndex={13} /> <label for="middleFontSize">{intl.formatMessage({ id: "page.setting.middle" })} <h2>A</h2></label>
+                        <input type='radio' id='smallFontSize' name='fontSize' value='smallFontSize' checked={fontSize === "smallFontSize"} onClick={handleOptionChange}  tabIndex={14} /> <label for="smallFontSize">{intl.formatMessage({ id: "page.setting.small" })}<h2>A</h2></label>
                     </div>
                 </div>
                 <div className={style.langContainer}>
                     <label for="language"> {intl.formatMessage({ id: "page.setting.language" })}</label>
                     <div className={style.button}>
-                        <Selector value={settingLocale} defaultValue={locale} optionList={[{ value: "en", displayValue: "English" }, { value: "zh", displayValue: "繁體中文字" }]} tabIndex={`5`} onChange={setSettingLocale} />
+                        <Selector value={settingLocale} defaultValue={locale} optionList={[{ value: "en", displayValue: "English" }, { value: "zh", displayValue: "繁體中文字" }]} tabIndex={`15`} onChange={setSettingLocale} />
                     </div>
                 </div>
-                <Button name={intl.formatMessage({ id: "button.confirm" })} onClick={changeSetting} className={style.confirm}/>
+                <Button name={intl.formatMessage({ id: "button.confirm" })} onClick={changeSetting} className={style.confirm}  tabIndex={16}/>
             </form>
         </div>
         <Footer />

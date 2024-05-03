@@ -48,7 +48,7 @@ export default function History() {
         <div key="-12" className={style.main}>
             <h1>{title}</h1>
 
-            <Selector value={categoryFilter} defaultValue={`all`} optionList={menuData} tabIndex={`2`} onChange={changeFilter} />
+            <Selector value={categoryFilter} defaultValue={`all`} optionList={menuData} tabIndex={`9`} onChange={changeFilter} />
             <table className={style.historyTable}>
                 <thead>
                     <tr>
