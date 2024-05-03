@@ -36,7 +36,7 @@ export default function Quiz({ }) {
         <div className={style.main}>
             <h1>{title}</h1>
             <p>{description}</p>
-            <Selector value={categoryFilter} defaultValue={`all`} optionList={menuData} tabIndex={`9`} onChange={changeFilter} />
+            <Selector  isNeedAddAllValue={true} value={categoryFilter} defaultValue={`all`} optionList={menuData} tabIndex={`9`} onChange={changeFilter} />
             {
                 menuData.filter(filter).map((item, index) => {
                     return (<>
