@@ -24,6 +24,10 @@ export default function SideMenuBar({ setIsShowSideMenuBar }) {
         <div id='overlap' className={style.overlap} onClick={closeSideMenuBar}>
             <div id='menu_container' className={style.sideMenubarContainer}>
                 <ul className={style.sideMenu}>
+                <li className={`menu-font-style ${style.menuClose}`}>
+                        <Link href="/" onClick={handleClick}>x</Link>
+                    </li>
+
                     <li className={`menu-font-style ${style.menu}`}>
                         <Link href="/Setting" locale={locale}>{intl.formatMessage({ id: "side.menu.setting" })}</Link>
                     </li>
@@ -39,9 +43,7 @@ export default function SideMenuBar({ setIsShowSideMenuBar }) {
                     <li className={`menu-font-style ${style.menu}`}>
                         <Link href="/AnimalChart" locale={locale}>Chart</Link>
                     </li>
-                    <li className={`menu-font-style ${style.menu}`}>
-                        <Link href="/" onClick={handleClick}>{intl.formatMessage({ id: "side.menu.close" })}</Link>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
