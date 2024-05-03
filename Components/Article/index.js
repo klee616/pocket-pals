@@ -51,7 +51,16 @@ export default function Article({ article }) {
         });
         setSpeechValue(text);
     }
-
+    
+    useEffect(() => {
+        const handleRouteChange = (url) => {
+            cancel();
+        }
+        router.events.on('routeChangeStart', handleRouteChange);
+        return ()=>{
+            router.events.off('routeChangeStart', handleRouteChange)
+        }
+    }, [router]);
 
     return (<>
         <Image src={article.cover_images} width={366} height={243.05} alt={`This is an image of ${displayObj.name}.`} className={style.articleImage} />
