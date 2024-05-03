@@ -54,7 +54,7 @@ export default function Article({ article }) {
 
 
     return (<>
-        <Image src={article.cover_images} width={366} height={243.05} alt={`This is an image of ${displayObj.name}.`} />
+        <Image src={article.cover_images} width={366} height={243.05} alt={`This is an image of ${displayObj.name}.`} className={style.articleImage} />
         <h1 className={`title-font-style  ${style.title}`}>{displayObj.name}</h1>
         <Selector value={filter} defaultValue={`all`} optionList={sections} tabIndex={`2`} onChange={changeFilter} />
         <button onClick={() => speak({ text: speechValue })} style={{    background: 'none', border: '0px'}} ><Image src="/icon/Hearing.png" height={20} width={20} alt={`speech to text`} /></button>

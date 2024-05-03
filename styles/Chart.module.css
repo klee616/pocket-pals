@@ -4,8 +4,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--main-color);
-    width: 430px;
-    height: calc(934px - 177px);
+    width: 100%;
+    height: var( --main-height);
     overflow-y: scroll;
     overflow-x: hidden;
   }
