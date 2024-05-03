@@ -54,10 +54,9 @@
 .menuClose a {
     display: block;
     width: 100%;
-    margin-left:18vh;
-    margin-bottom: 4vh;
     text-decoration: none;
     color: var(--white);
+    margin-top: -20px;
 }
 
 .menuClose a:hover{
