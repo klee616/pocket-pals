@@ -41,7 +41,7 @@ export default function SelectionScreen({ dir }) {
         
           <Button name={intl.formatMessage({id: "page.selection.screen.learn"})} onClick={()=>buttonSubmit('/Learn')} />
           <Button name={intl.formatMessage({id: "page.selection.screen.quiz"})} onClick={()=>buttonSubmit('/Quiz')} />
-          <Button name={intl.formatMessage({id: "page.selection.screen.mix.and.match"})} onClick={()=>buttonSubmit('/MixMatch')} />
+          <Button name={intl.formatMessage({id: "page.selection.screen.mix.and.match"})} onClick={()=>buttonSubmit('/MixMatchIntroduction')} />
 
         </div>
       </main>
