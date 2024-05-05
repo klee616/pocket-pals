@@ -2,7 +2,7 @@ import matchifyData from '@/data/matchify.json';
 import { useEffect, useState } from 'react';
 import MatchifyCard from '@/Components/MatchifyCard';
 import style from './matchify.module.css';
-import ProgressBar from '../ProgressBar';
+import ProgressBar from '@Components/ProgressBar';
 
 export default function Matchify() {
     const [data, setData] = useState(matchifyData);
