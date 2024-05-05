@@ -22,7 +22,8 @@ export default function MixMatchIntroduction() {
       <HeadArea title={metatitle} description={metaDescription} />
       <Header />
       <div className={style.main}>
-      <Image src="/image/pocketpalsgame.svg" width={300} height={150}/>
+        <div className={style.imageDiv}><Image src="/image/pocketpalsgame.svg" width={300} height={150} alt="pocket pals game"/></div>
+      
         <h1>{title}</h1>
         <div className={style.content}>
         

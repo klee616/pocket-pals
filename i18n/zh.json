@@ -33,6 +33,9 @@
     "page.quiz.game.introduction.head.description": "An Animal Learning App For Kids - 遊戲簡介",
     "page.quiz.game.introduction.title": "遊戲簡介",
     "page.quiz.game.introduction.description": "An Animal Learning App For Kids -  遊戲簡介",
+    "page.quiz.game.rule.1":"你必須回答四個問題。",
+    "page.quiz.game.rule.2":"每題有四個答案，但只有一個是正確的。",
+    "page.quiz.game.rule.3":"正確回答所有四個問題，展現您的聰明才智！",
     "side.menu.setting":"設定",
     "side.menu.developer":"開發人員",
     "side.menu.about":"關於我們",
@@ -66,5 +69,9 @@
     "page.history.scores":"成績",
     "page.mix.match.introduction.game.introduction.head.title": "配對遊戲說明",
     "page.mix.match.introduction.game.introduction.head.description":"配對遊戲說明",
-    "page.mix.match.introduction.game.introduction.title":"配對遊戲說明"
+    "page.mix.match.introduction.game.introduction.title":"配對遊戲說明",
+    "page.mix.match.introduction.game.rule.1":"選擇兩張卡。",
+    "page.mix.match.introduction.game.rule.2":"如果所選的卡牌組合在一起，則配對。",
+    "page.mix.match.introduction.game.rule.3":"在時間用完之前匹配所有卡片！"
 }
+

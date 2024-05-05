@@ -54,12 +54,10 @@ export default function Article({ article }) {
 
     useEffect(() => {
         const handleRouteChange = (url) => {
-            console.log("asdf");
             cancel();  changeFilter('all');
-            console.log("asdf");
         }
         router.events.on('routeChangeStart', handleRouteChange);
-       
+    
     }, [router]);
     return (<>
         <Image src={article.cover_images} width={366} height={243.05} alt={`This is an image of ${displayObj.name}.`} className={style.articleImage} />
