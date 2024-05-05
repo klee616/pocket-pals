@@ -28,7 +28,7 @@ export default function HomeMenu({ dir }) {
          <Link href={`/Quiz`}>
         <Image src="./image/Buttons/Quiz.svg" width={200} height={200} className={styles.button} alt='Quiz'/>
         </Link>
-         <Link href={`/MixMatcIntroduction`}>
+         <Link href={`/MixMatchIntroduction`}>
         <Image src="./image/Buttons/MixMatch.svg" width={200} height={200} className={styles.button}  alt='MixMatch' />
         </Link>
         </div>
