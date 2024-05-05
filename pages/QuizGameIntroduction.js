@@ -22,14 +22,14 @@ export default function Home() {
       <HeadArea title={metatitle} description={metaDescription} />
       <Header />
       <div className={style.main}>
-      <Image src="/image/pocketpalsgame.svg" width={300} height={150}/>
+        <div className={style.imageDiv}><Image src="/image/pocketpalsgame.svg" width={300} height={150} alt="pocket pals game"/></div>
         <h1>{title}</h1>
         <div className={style.content}>
       
           <ul className={style.listed}>
-            <li className={style.list}>You have to answer four questions.</li>
-            <li className={style.list}>Each question has four answers but only one is right.</li>
-            <li className={style.list}>Show how smart you are by getting all four questions correct!</li>
+            <li className={style.list}>{intl.formatMessage({ id: "page.quiz.game.rule.1" })}</li>
+            <li className={style.list}>{intl.formatMessage({ id: "page.quiz.game.rule.2" })}</li>
+            <li className={style.list}>{intl.formatMessage({ id: "page.quiz.game.rule.3" })}</li>
           </ul>
         </div>
         <Button name='Start' onClick={() => router.push({ pathname: "QuizGame", query: router.query })} />

@@ -33,6 +33,9 @@
     "page.quiz.game.introduction.head.description": "An Animal Learning App For Kids -  Game Introduction",
     "page.quiz.game.introduction.title": " How to Play",
     "page.quiz.game.introduction.description": "An Animal Learning App For Kids -  Game Introduction",
+    "page.quiz.game.rule.1":"You have to answer four questions.",
+    "page.quiz.game.rule.2":"Each question has four answers but only one is right.",
+    "page.quiz.game.rule.3":"Show how smart you are by getting all four questions correct!",
     "side.menu.setting":"Settings",
     "side.menu.developer":"Developer",
     "side.menu.about":"About Us",
@@ -66,5 +69,8 @@
     "page.history.scores":"Scores",
     "page.mix.match.introduction.game.introduction.head.title": "Mix and Match introduction",
     "page.mix.match.introduction.game.introduction.head.description":"Mix and Match introduction",
-    "page.mix.match.introduction.game.introduction.title":"How to Play"
+    "page.mix.match.introduction.game.introduction.title":"How to Play",
+    "page.mix.match.introduction.game.rule.1":"Select two cards.",
+    "page.mix.match.introduction.game.rule.2":"If the cards selected go together then it's a match.",
+    "page.mix.match.introduction.game.rule.3":"Match all the cards before the time runs out!"
 }
