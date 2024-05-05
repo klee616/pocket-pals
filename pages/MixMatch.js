@@ -10,8 +10,6 @@ export default function MixMatch({ }) {
 
     const headTitle = intl.formatMessage({ id: "page.quiz.head.title" });
     const headDescription = intl.formatMessage({ id: "page.quiz.head.description" });
-    const title = intl.formatMessage({ id: "page.quiz.title" });
-    const description = intl.formatMessage({ id: "page.quiz.description" });
 
     return (<>
         <HeadArea title={headTitle} description={headDescription} />
