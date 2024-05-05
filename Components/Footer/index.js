@@ -7,7 +7,7 @@ export default function Footer(){
  <div className={style.block}>
   <Link  href={`/Learn`}>
  <Image
-      src="/image/numbat.svg"
+      src="/image/Buttons/ArticleFooter.svg"
       alt="Picture of the author"
       width={70}
       height={70}
@@ -15,18 +15,18 @@ export default function Footer(){
     />
     </Link>
 
-    <Link href={`/SelectionScreen`}>
+    <Link href={`/HomeMenu`}>
     <Image
-      src="/image/beaver.svg"
+      src="/image/Buttons/Home.svg"
       alt="Picture of the author"
       width={70}
       height={70}
       className={style.logo}
     />
     </Link>
-     <Link href={`/Quiz`}>
+     <Link href={`/SelectGames`}>
     <Image
-      src="/image/dog.svg"
+      src="/image/Buttons/Game.svg"
       alt="Picture of the author"
       width={70}
       height={70}

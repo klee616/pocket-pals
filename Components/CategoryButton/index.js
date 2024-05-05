@@ -9,6 +9,7 @@ export default function ({ category, name, image, href }) {
                 height={120}
                 width={136}
                 className={style.categoryImage}
+                alt={name}
             />
             <div className={style.information}>
                 <div className={`button-font-style-2 ${style.category}`}>{category}</div>

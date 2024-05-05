@@ -46,6 +46,23 @@
     color: #cccccc;
 }
 
+.menuClose{
+    display: block;
+    width: 100%;
+}
+
+.menuClose a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: var(--white);
+    margin-top: -20px;
+    text-align: right;
+}
+
+.menuClose a:hover{
+    color: #cccccc;
+}
 
 @keyframes slide-in {
     from {

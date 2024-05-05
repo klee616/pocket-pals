@@ -22,13 +22,15 @@ export default function HomeMenu({ dir }) {
         <h1 className={styles.title}>
           Play
         </h1>
-        <p className={styles.subtitle}>Quiz Yourself Or Match The Answers!</p>
+        <p className={styles.subtitle}>Quiz Yourself Or Mix and Match!</p>
         </div>
         <div className={styles.options}>
-        <Image src="./image/Buttons/Quiz.svg" width={200} height={200} className={styles.button}/>
-        <Image src="./image/Buttons/MixMatch.svg" width={200} height={200} className={styles.button}/>
-        <Image src="./image/Buttons/Article.svg" width={200} height={200} className={styles.button} style={{visibility: 'hidden'}}/>
-        <Image src="./image/Buttons/Settings.svg" width={200} height={200} className={styles.button} style={{visibility: 'hidden'}}/>
+         <Link href={`/Quiz`}>
+        <Image src="./image/Buttons/Quiz.svg" width={200} height={200} className={styles.button} alt='Quiz'/>
+        </Link>
+         <Link href={`/MixMatchIntroduction`}>
+        <Image src="./image/Buttons/MixMatch.svg" width={200} height={200} className={styles.button}  alt='MixMatch' />
+        </Link>
         </div>
       </main>
         <Footer />    

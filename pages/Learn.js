@@ -3,47 +3,45 @@ import HeadArea from '@/Components/HeadArea';
 import Footer from '@/Components/Footer';
 import Header from '@/Components/Header';
 import CategoryButton from '@/Components/CategoryButton';
-import articleData from '@/data/article.json';
 import { useState, useEffect } from 'react'
-import { useRouter } from "next/router";
-import { FormattedMessage, useIntl } from "react-intl";
+import { useIntl } from "react-intl";
+import { ArticleUntil } from '@/utils/ArticleUtil'
+import Selector from '@/Components/Selector';
 
 export default function Learn({ }) {
-    const { locale } = useRouter();
     const intl = useIntl();
-
-    const [data, setData] = useState([...articleData])
-    const [menuData, setMenuData] = useState([]);
+    const { getCategoryList } = ArticleUntil();
+    const [menuData, setMenuData] = useState(getCategoryList);
+    const [categoryFilter, setCategoryFilter] = useState('all');
 
     const headTitle = intl.formatMessage({ id: "page.learn.head.title" });
     const headDescription = intl.formatMessage({ id: "page.learn.head.description" });
     const title = intl.formatMessage({id: "page.learn.title"});
     const description = intl.formatMessage({ id: "page.learn.description" });
-    useEffect(() => {
-        let menuList = [];
-        data.map((item) => {
-            let cate = {
-                category: item.category,
-                image: item.categoryMenuImage,
-                name: item[locale].name,
-                region: item[locale].category_title
-            };
-            menuList.push(cate)
-        });
-
-        setMenuData(menuList);
-    }, []);
     
+
+    const filter = (item) => {
+        if (item.category == categoryFilter || categoryFilter == "all") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    const changeFilter = (filter) => {
+        setCategoryFilter(filter);
+    }
     return (<>
         <HeadArea title={headTitle} description={headDescription} />
         <Header />
         <div className={style.main}>
             <h1>{title}</h1>
             <p>{description}</p>
+            <Selector isNeedAddAllValue={true} value={categoryFilter} defaultValue={`all`} optionList={menuData} tabIndex={`10`} onChange={changeFilter} />
             {
-                menuData.map((item, index) => {
+                menuData.filter(filter).map((item, index) => {
                     return (<>
-                        <CategoryButton key={index} name={item.name} category={item.category} image={item.image} href={{ pathname: '/AnimalArticle', query: { category: item.category } }} />
+                        <CategoryButton key={index} name={item.name} category={item.region} image={item.image} href={{ pathname: '/AnimalArticle', query: { articleId: item.id } }} />
                     </>);
                 })}
         </div>

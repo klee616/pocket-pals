@@ -11,6 +11,7 @@
   --web-color-8: #79C392;
   --white: #FFFFFF;
   --gray: #D9D9D9;
+  --dark-gray: #4d4d4d;
   --black: #000000;
 
   --main-color:var(--web-color-1);
@@ -19,18 +20,20 @@
   --correct-answer-background-color: var(--web-color-5);
   --wrong-answer-background-color: var(--web-color-6);
 
-  --main-height: 703px;
+  --main-height: calc(100vh - 242px);
 
 }
 
 
 body {
-  width: 430px;
-  height: 932px;
+  max-width: 430px;
+  max-height: 932px;
+  width: 100vw;
+  height:100vh;
   margin: auto;
   padding:0px 0px;
   background-color: var(--main-color);
-  border: 1px solid #fff;
+  /*border: 1px solid #fff;*/
   font-family: "Sarabun", sans-serif;
   font-weight: 100;
   font-style: normal;

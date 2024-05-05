@@ -1,43 +1,30 @@
 import { useState, useEffect } from "react";
 import style from './Question.module.css';
 import { useRouter } from 'next/router';
-import { Patrick_Hand } from 'next/font/google';
-import { Sarabun } from "next/font/google";
 import QuestionSelection from "../QuestionSelection";
 import Button from "@/Components/Button";
-const patrickHand = Patrick_Hand({
-    weight: '400',
-    subsets: ['latin'],
-});
-
-const sarabun = Sarabun({
-    weight: '400',
-    subsets: ['latin'],
-});
+import { useIntl } from "react-intl";
 
 export default function Question({ data, callBack }) {
+    const intl = useIntl();
     const [option, setOption] = useState(null);
     const { locale } = useRouter();
     const [isEnable, setIsEnable] = useState(false);
 
-    const submitAnswer = () => {
+    const submitAnswer = () => {console.log(data);
+
         callBack(option);
         setIsEnable(false);
         setOption(null);
-
+        OnFocusOut();
     }
 
     const OnFocusOut = () => {
-        let currentElement = $get(currentElementId); // ID set by OnFocusIn 
-        let currentIndex = currentElement.tabIndex;
-        let setIndex = currentIndex - 1;
-        let tabbables = document.querySelectorAll(".tabable");
-        for(let i=0; i<tabbables.length; i++) { //loop through each element
-            if(tabbables[i].tabIndex == (setIndex)) { //check the tabindex to see if it's the element we want
-                tabbables[i].focus(); //if it's the one we want, focus it and exit the loop
-                break;
-            }
+        const nextfield = document.querySelector(`#questionanswer0`)
+        if (nextfield !== null) {
+            nextfield.focus();
         }
+
     }
     const changeAnswer = (item) => {
         setOption(item);
@@ -46,7 +33,7 @@ export default function Question({ data, callBack }) {
 
     return (
         <>
-            { (<>
+            {(<>
                 <div className={`content-font-style ${style.question}`}>{data[locale].question}</div>
                 <form onSubmit={(e) => { e.preventDefault() }} id="quizForm" className={style.questionForm}>
                     {data[locale].choose.map((item, inx) => {
@@ -58,14 +45,14 @@ export default function Question({ data, callBack }) {
                                     item={item}
                                     checked={item == option}
                                     callback={changeAnswer}
-                                    tabIndex={1}
+                                    tabIndex={9}
                                 />
                             </>
                         )
                     })
                     }
                 </form>
-                <Button name="Next !" onClick={submitAnswer} disabled={!isEnable} />
+                <Button name={intl.formatMessage({ id: "page.quiz.next" })} onClick={submitAnswer} disabled={!isEnable} />
             </>)}
 
         </>

@@ -1,32 +1,36 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--main-color);
-  width: 430px;
-  row-gap: 60px;
+  width: 100%;
+  row-gap: 20px;
   flex-wrap: nowrap;
   align-content: center;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100vh;
+  max-height: 932px;
 
 }
 
 .title {
   font-family: Heavitas;
-  color: var( --web-color-2);
+  color: var(--web-color-2);
   text-align: center;
   font-size: 50px;
   margin-bottom: 0;
 }
 
 .subtitle {
- text-align: center;
- align-items: center;
- width: 80%;
- margin-top: 0;
- color: var( --web-color-2);
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 0;
+  color: var(--web-color-2);
 }
+
 .subtitleContainer {
   display: flex;
   justify-content: center;
@@ -34,22 +38,22 @@
 
 .button {
   border: transparent;
-  background-color: var(  --web-color-4);
+  background-color: var(--web-color-4);
   color: white;
   border-radius: 20px;
   width: 40vh;
   height: 9vh;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .button:hover {
   border: transparent;
-  background-color:#e44c05;
+  background-color: #e44c05;
   color: white;
   border-radius: 20px;
   width: 40vh;
   height: 9vh;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .buttonContainer {
@@ -58,4 +62,30 @@
   flex-direction: column;
   row-gap: 20px;
   width: 100%;
+}
+
+
+.mascot {
+  animation-name: scale-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  width: 350px;
+}
+
+@keyframes scale-in-out {
+  0% {
+    scale: 100%;
+  }
+
+  48% {
+    scale: 120%;
+  }
+
+  52% {
+    scale: 120%;
+  }
+
+  100% {
+    scale: 100%;
+  }
 }
