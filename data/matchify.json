@@ -27,7 +27,7 @@
     },
     {
         "id": 3,
-        "image":"/image/Topics/hamster.png",
+        "image":"/image/Topics/Hamster.png",
         "groupName": "C",
         "parent": {
             "en": "c",
