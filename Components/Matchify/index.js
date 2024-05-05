@@ -3,8 +3,14 @@ import { useEffect, useState } from 'react';
 import MatchifyCard from '@/Components/MatchifyCard';
 import style from './Matchify.module.css';
 import ProgressBar from '@/Components/ProgressBar';
+import { setCookie, getCookie, hasCookie, deleteCookie } from 'cookies-next';
+import MatchifyResult from '@/Components/MatchifyResult';
+import Button from '@/Components/Button';
+import Image from 'next/image';
+import { useIntl } from "react-intl";
 
 export default function Matchify() {
+    const intl = useIntl();
     const [data, setData] = useState(matchifyData);
     const [gameData, setGameData] = useState([]);
     const [flippedCards, setFlippedCards] = useState([]);
@@ -12,6 +18,8 @@ export default function Matchify() {
     const [move, setMove] = useState(0);
     const [timeLeft, setTimeLeft] = useState(240);
     const [endGame, setEndGame] = useState(false);
+    const [nickName, setNickName] = useState();
+    const [gameResult, setGameResult] = useState({});
 
 
     const initGame = () => {
@@ -21,7 +29,7 @@ export default function Matchify() {
         setEndGame(false);
         setTimeLeft(240);
         setMove(0);
-        setTimeLeft(240);
+        setGameResult({});
     }
 
     const gameStart = () => {
@@ -52,13 +60,36 @@ export default function Matchify() {
                 clearTimeout(interval);
             }
         } else {
-            setEndGame(true)
+            setEndGame(true);
+
+            //Save record
+            saveResultInCookies();
         }
     }, [timeLeft]);
 
     useEffect(() => {
         initGame();
+        setNickName(window.sessionStorage.getItem("nickname"));
     }, []);
+
+    const saveResultInCookies = async () => {
+        let result = {};
+
+
+        let historyRecord = getCookie('mixMatchhistoryRecord');
+        let historyRecordList = historyRecord ? JSON.parse(historyRecord) : [];
+
+        result.id = Math.floor(Math.random() * 100000);
+        result.name = window.sessionStorage.getItem("nickname");
+        result.date = new Date();
+        result.time = Math.round(240 - timeLeft);
+        result.move = move;
+        setGameResult(result);
+        historyRecordList.push({ id: result.id, name: result.name, date: result.date, time: Math.round(240 - timeLeft), move: move });
+
+        setCookie('mixMatchhistoryRecord', historyRecordList);
+
+    }
 
     const updateActiveCards = (item) => {
         let preItemList = gameData.filter((i) => { return i.flipped == true });
@@ -95,11 +126,15 @@ export default function Matchify() {
         setMove(move + 1);
     }
     return (
-        <>
-            <ProgressBar current={timeLeft} total={`240`} type="" />
+        <>   {
+            !endGame && <>
+                <ProgressBar current={timeLeft} total={`240`} type="" />
+            </>
+        }
+
             <div className={style.gameBoard}>
                 {
-                    gameData && gameData.map((item, index) => {
+                    (gameData && !endGame) && gameData.map((item, index) => {
                         return (
                             <>
                                 <MatchifyCard key={index} item={item} endGame={endGame} image={item.image} callback={updateActiveCards} />
@@ -108,6 +143,17 @@ export default function Matchify() {
                     })
                 }
             </div>
+
+            {
+                endGame &&
+
+                <>
+                    <MatchifyResult result={gameResult} />
+
+                    <Image className={style.mascot} src="/image/Mascot.svg" width={200} height={300} alt="POCKET PALS" />
+                    <Button name={intl.formatMessage({ id: "page.quiz.play.again" })} onClick={() => { initGame() }} />
+                </>
+            }
         </>
     )
 }

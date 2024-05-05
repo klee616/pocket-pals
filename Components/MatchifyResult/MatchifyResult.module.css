@@ -1,0 +1,54 @@
+.answer {
+    font-family: arial;
+    font-weight: 100;
+    margin-bottom: 5vh;
+}
+
+.question {
+    margin-bottom: 1vh;
+    font-size: 45px;
+    margin-left: 2vh;
+}
+
+.correct {
+    font-family: arial;
+    font-style: italic;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.quizResults {
+    font-size: 25px;
+      display: flex;
+      margin-left: 2vh;
+      width: 90%;
+}
+
+.answerResults {
+    display: flex;
+    margin-left: 2vh;
+    width: fit-content;
+    font-size: 20px;
+}
+
+.results {
+    font-family: arial;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.scores{
+    margin: auto;
+    padding: 15px;
+    border: 1px solid;
+}
+
+.header{
+
+    text-align: center;
+    display: block;
+    width: 100%;
+
+}
