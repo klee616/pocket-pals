@@ -1,11 +1,11 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--main-color);
   width: 100%;
-  row-gap: 60px;
+  row-gap: 20px;
   flex-wrap: nowrap;
   align-content: center;
   overflow-y: hidden;
@@ -17,19 +17,20 @@
 
 .title {
   font-family: Heavitas;
-  color: var( --web-color-2);
+  color: var(--web-color-2);
   text-align: center;
   font-size: 50px;
   margin-bottom: 0;
 }
 
 .subtitle {
- text-align: center;
- align-items: center;
- width: 80%;
- margin-top: 0;
- color: var( --web-color-2);
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 0;
+  color: var(--web-color-2);
 }
+
 .subtitleContainer {
   display: flex;
   justify-content: center;
@@ -37,7 +38,7 @@
 
 .button {
   border: transparent;
-  background-color: var(  --web-color-4);
+  background-color: var(--web-color-4);
   color: white;
   border-radius: 20px;
   width: 40vh;
@@ -47,7 +48,7 @@
 
 .button:hover {
   border: transparent;
-  background-color:#e44c05;
+  background-color: #e44c05;
   color: white;
   border-radius: 20px;
   width: 40vh;
@@ -68,13 +69,23 @@
   animation-name: scale-in-out;
   animation-duration: 2s;
   animation-iteration-count: infinite;
- width: 30vh;
- height: 33vh;
+  width: 350px;
 }
 
 @keyframes scale-in-out {
-  0% {scale:100%;}
-  48% {scale:120%;}
-  52% {scale:120%;}
-  100% {scale:100%;}
+  0% {
+    scale: 100%;
+  }
+
+  48% {
+    scale: 120%;
+  }
+
+  52% {
+    scale: 120%;
+  }
+
+  100% {
+    scale: 100%;
+  }
 }

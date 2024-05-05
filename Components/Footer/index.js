@@ -24,7 +24,7 @@ export default function Footer(){
       className={style.logo}
     />
     </Link>
-     <Link href={`/Quiz`}>
+     <Link href={`/SelectGames`}>
     <Image
       src="/image/Buttons/Game.svg"
       alt="Picture of the author"

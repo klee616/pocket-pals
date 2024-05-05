@@ -23,9 +23,10 @@ export default function ProgressBar({ current, total, type = 'step' }) {
                 <div className={style.progressStatus} style={{ width: `${persent}%` }}>
                 </div>
             </div>
+            <div>
             {
                 type == 'step' ? `${current}/${total}` : `${current} S`
-            }
+            }</div>
         </div>
 
     </>);

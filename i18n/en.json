@@ -63,5 +63,8 @@
     "page.history.name":"Player",
     "page.history.category":"Topic",
     "page.history.date":"Date",
-    "page.history.scores":"Scores"
+    "page.history.scores":"Scores",
+    "page.mix.match.introduction.game.introduction.head.title": "Mix and Match introduction",
+    "page.mix.match.introduction.game.introduction.head.description":"Mix and Match introduction",
+    "page.mix.match.introduction.game.introduction.title":"Mix and Match introduction"
 }
