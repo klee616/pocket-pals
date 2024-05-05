@@ -5,11 +5,13 @@
   align-items: center;
   background-color: var(--main-color);
   width: 100%;
-  row-gap: 80px;
+  row-gap: 20px;
   flex-wrap: nowrap;
   align-content: center;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
+  height: 100vh;
+  max-height: 932px;
 
 }
 

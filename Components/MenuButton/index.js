@@ -10,6 +10,7 @@ export default function MenuButton({ name, image, href }) {
                     height={120}
                     width={136}
                     className={style.categoryImage}
+                    alt={name}
                 />
                 <div className={style.information}>
                     <div className={`button-font-style-1  ${style.name}`}>{name}</div>
