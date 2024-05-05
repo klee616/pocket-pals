@@ -38,6 +38,18 @@ export default function Article({ article }) {
         router.push(locale + target);
     }
 
+    useEffect(() => {
+        const handleRouteChange = (url) => {
+            changeFilter('all');
+        }
+        router.events.on('routeChangeStart', handleRouteChange);
+        return () => {
+            setTimeout(
+                () => router.events.off('routeChangeStart', handleRouteChange),
+                10)
+        }
+    }, [router]);
+
     return (<>
         <Image src={article.cover_images} width={366} height={243.05} alt={`This is an image of ${displayObj.name}.`} />
         <h1 className={`title-font-style  ${style.title}`}>{displayObj.name}</h1>
