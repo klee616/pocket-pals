@@ -19,7 +19,7 @@ export default function Home({ dir }) {
       setErrorMessage(intl.formatMessage({ id: "page.home.nickname.error.message" }));
       return;
     }
-    if(!nickname.match(/^[A-Z]+$/i)){
+    if(!nickname.match(/^[A-Z ]+$/i)){
       setErrorMessage(intl.formatMessage({ id: "page.home.nickname.invalid.error.message" }));
       return;
 
