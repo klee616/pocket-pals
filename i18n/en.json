@@ -75,5 +75,9 @@
     "page.mix.match.introduction.game.rule.3":"Match all the cards before the time runs out!",
     "page.mix.match.introduction.game.result.player":"Player : ",
     "page.mix.match.introduction.game.result.time":"Finish Time : ",
-    "page.mix.match.introduction.game.result.move":"Total of Move : "
+    "page.mix.match.introduction.game.result.move":"Total of Move : ",
+    "page.select.game.head.title":"POCKET PALS - Game Selection",
+    "page.select.game.head.description":"POCKET PALS - Game Selection - select the game you want to play",
+    "page.select.game.title": "Game Selection",
+    "page.select.game.description":"select the game you want to play"
 }

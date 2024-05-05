@@ -28,12 +28,12 @@ export default function MixMatchIntroduction() {
         <div className={style.content}>
         
           <ul className={style.listed}>
-            <li className={style.list}>Select two cards.</li>
-            <li className={style.list}>If the cards selected go together then it's a match.</li>
-            <li className={style.list}>Match all the cards before the time runs out!</li>
+            <li className={style.list}>{intl.formatMessage({ id: "page.mix.match.introduction.game.rule.1" })}</li>
+            <li className={style.list}>{intl.formatMessage({ id: "page.mix.match.introduction.game.rule.2" })}</li>
+            <li className={style.list}>{intl.formatMessage({ id: "page.mix.match.introduction.game.rule.3" })}</li>
           </ul>
         </div>
-        <Button name='Start' onClick={() => router.push({ pathname: "MixMatch", query: router.query })} />
+        <Button name={intl.formatMessage({ id: "page.mix.match.introduction.game.start" })} onClick={() => router.push({ pathname: "MixMatch", query: router.query })} />
 
       </div>
       <Footer />

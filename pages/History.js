@@ -54,7 +54,6 @@ export default function History() {
                     <tr>
                         <th>{intl.formatMessage({ id: "page.history.name" })}</th>
                         <th>{intl.formatMessage({ id: "page.history.category" })}</th>
-                        <th>{intl.formatMessage({ id: "page.history.date" })}</th>
                         <th>{intl.formatMessage({ id: "page.history.scores" })}</th>
                     </tr>
                 </thead>
@@ -65,7 +64,6 @@ export default function History() {
                                 <tr key={index}>
                                     <td>{item.name}</td>
                                     <td>{getTopicNamebyId(item.topic)}</td>
-                                    <td>{item.date.substring(0, 10)}</td>
                                     <td>{item.scores}</td>
                                 </tr>
                             </>)

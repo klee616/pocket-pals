@@ -21,6 +21,7 @@
   --wrong-answer-background-color: var(--web-color-6);
 
   --main-height: calc(100vh - 242px);
+  --main-max-height: calc(932px - 242px);
 
 }
 
