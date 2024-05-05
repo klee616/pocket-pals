@@ -22,13 +22,14 @@ export default function MixMatchIntroduction() {
       <HeadArea title={metatitle} description={metaDescription} />
       <Header />
       <div className={style.main}>
+      <Image src="/image/pocketpalsgame.svg" width={300} height={150}/>
         <h1>{title}</h1>
         <div className={style.content}>
-        <Image />
+        
           <ul className={style.listed}>
-            <li className={style.list}>MixMatchIntroduction </li>
-            <li className={style.list}>MixMatchIntroduction</li>
-            <li className={style.list}>MixMatchIntroduction</li>
+            <li className={style.list}>Select two cards.</li>
+            <li className={style.list}>If the cards selected go together then it's a match.</li>
+            <li className={style.list}>Match all the cards before the time runs out!</li>
           </ul>
         </div>
         <Button name='Start' onClick={() => router.push({ pathname: "MixMatch", query: router.query })} />
