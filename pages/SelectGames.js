@@ -6,31 +6,25 @@ import Footer from "@/Components/Footer/"
 import Header from "@/Components/Header/"
 import HeadArea from "@/Components/HeadArea";
 import Image from "next/image";
+import MenuButton from "@/Components/MenuButton";
 
 export default function HomeMenu({ dir }) {
   const { locales } = useRouter();
   const intl = useIntl();
-
-  const title = intl.formatMessage({ id: "page.home.head.title" });
-  const description = intl.formatMessage({ id: "page.home.head. description" });
+  const headTitle = intl.formatMessage({ id: "page.select.game.head.title" });
+  const headDescription = intl.formatMessage({ id: "page.select.game.head.description" });
+  const title = intl.formatMessage({ id: "page.select.game.title" });
+  const description = intl.formatMessage({ id: "page.select.game.description" });
   return (
     <>
-      <HeadArea title={title} description={description} />
+    <HeadArea title={headTitle} description={headDescription} />
       <Header />
       <main className={`${styles.main}`}>
-        <div className={styles.headingContainer}>
-          <h1 className={styles.title}>
-            Play
-          </h1>
-          <p className={styles.subtitle}>Quiz Yourself Or Mix and Match!</p>
-        </div>
+        <h1>{title}</h1>
+        <p>{description}</p>
         <div className={styles.options}>
-          <Link href={`/Quiz`}>
-            <Image src="/image/Buttons/Quiz.svg" width={200} height={200} className={styles.button} alt='Quiz' />
-          </Link>
-          <Link href={`/MixMatchIntroduction`}>
-            <Image src="/image/Buttons/MixMatch.svg" width={200} height={200} className={styles.button} alt='MixMatch' />
-          </Link>
+          <MenuButton name={intl.formatMessage({id: "page.selection.screen.quiz"})} image="/image/Topics/Panda.png" href="/Quiz" />
+          <MenuButton name={intl.formatMessage({id: "page.selection.screen.mix.and.match"})} image="/image/Topics/Hamster.png" href="/MixMatchIntroduction" />
         </div>
       </main>
       <Footer />

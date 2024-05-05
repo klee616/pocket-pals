@@ -5,7 +5,8 @@
     align-items: center;
     background-color: var(--main-color);
     width: 100%;
-    height: calc(934px - 177px);
+    height: calc(--main-height);
+    max-height: var(--main-max-height);
     overflow-y: scroll;
     overflow-x: hidden;
   }

@@ -23,7 +23,7 @@ export default function HomeMenu({ dir }) {
 
         <div className={styles.options}>
           <MenuButton name={intl.formatMessage({id: "page.selection.screen.quiz"})} image="/image/Topics/Panda.png" href="/Quiz" />
-          <MenuButton name={intl.formatMessage({id: "page.selection.screen.mix.and.match"})} image="/image/Topics/Hamster.png" href="/HomeMenu" />
+          <MenuButton name={intl.formatMessage({id: "page.selection.screen.mix.and.match"})} image="/image/Topics/Hamster.png" href="/MixMatchIntroduction" />
           <MenuButton name={intl.formatMessage({id: "page.selection.screen.learn"})} image="/image/Topics/Bear.png" href="/Learn" />
           <MenuButton name={intl.formatMessage({id: "side.menu.setting"})} image="/image/Topics/numbat.png" href="/Setting" />
         </div>
