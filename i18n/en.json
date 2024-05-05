@@ -72,5 +72,8 @@
     "page.mix.match.introduction.game.introduction.title":"How to Play",
     "page.mix.match.introduction.game.rule.1":"Select two cards.",
     "page.mix.match.introduction.game.rule.2":"If the cards selected go together then it's a match.",
-    "page.mix.match.introduction.game.rule.3":"Match all the cards before the time runs out!"
+    "page.mix.match.introduction.game.rule.3":"Match all the cards before the time runs out!",
+    "page.mix.match.introduction.game.result.player":"Player : ",
+    "page.mix.match.introduction.game.result.time":"Finish Time : ",
+    "page.mix.match.introduction.game.result.move":"Total of Move : "
 }

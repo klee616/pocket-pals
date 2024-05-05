@@ -72,6 +72,9 @@
     "page.mix.match.introduction.game.introduction.title":"配對遊戲說明",
     "page.mix.match.introduction.game.rule.1":"選擇兩張卡。",
     "page.mix.match.introduction.game.rule.2":"如果所選的卡牌組合在一起，則配對。",
-    "page.mix.match.introduction.game.rule.3":"在時間用完之前匹配所有卡片！"
+    "page.mix.match.introduction.game.rule.3":"在時間用完之前匹配所有卡片！",
+    "page.mix.match.introduction.game.result.player":"玩家 : ",
+    "page.mix.match.introduction.game.result.time":"完成時間 : ",
+    "page.mix.match.introduction.game.result.move":"步數 : "
 }
 

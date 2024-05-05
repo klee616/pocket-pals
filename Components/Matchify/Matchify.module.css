@@ -9,3 +9,19 @@
     row-gap: 20px;
    
   }
+
+  .mascot {
+    align-self: center;
+    margin: 40px auto;
+    animation-name: scale-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+
+@keyframes scale-in-out {
+  0% {scale:100%;}
+  48% {scale:120%;}
+  52% {scale:120%;}
+  100% {scale:100%;}
+}
