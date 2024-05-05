@@ -27,7 +27,7 @@ export default function Article({ article }) {
     const buttonLabel = intl.formatMessage({ id: "page.article.button1" });
 
     useEffect(() => {
-       
+
 
         let tempSection = [{ value: "all", displayValue: defaultValueLabel }];
         displayObj.article.map((sectionList, index) => {
@@ -54,23 +54,20 @@ export default function Article({ article }) {
 
     useEffect(() => {
         const handleRouteChange = (url) => {
-            changeFilter('all');
+            console.log("asdf");
+            cancel();  changeFilter('all');
+            console.log("asdf");
         }
         router.events.on('routeChangeStart', handleRouteChange);
-        return () => {
-            setTimeout(
-                () => router.events.off('routeChangeStart', handleRouteChange),
-                10)
-        }
+       
     }, [router]);
-
     return (<>
         <Image src={article.cover_images} width={366} height={243.05} alt={`This is an image of ${displayObj.name}.`} className={style.articleImage} />
         <h1 className={`title-font-style  ${style.title}`}>{displayObj.name}</h1>
         <Selector value={filter} defaultValue={`all`} optionList={sections} tabIndex={`2`} onChange={changeFilter} />
-        <button onClick={() => speak({ text: speechValue })} style={{    background: 'none', border: '0px'}} ><Image src="/icon/Hearing.png" height={20} width={20} alt={`speech to text`} /></button>
-        <button onClick={cancel} style={{    background: 'none', border: '0px'}} ><Image src="/icon/Hearing_disabled.png" height={20} width={20} alt={`speech to text`} /></button>
-        
+        <button onClick={() => speak({ text: speechValue })} style={{ background: 'none', border: '0px' }} ><Image src="/icon/Hearing.png" height={20} width={20} alt={`speech to text`} /></button>
+        <button onClick={cancel} style={{ background: 'none', border: '0px' }} ><Image src="/icon/Hearing_disabled.png" height={20} width={20} alt={`speech to text`} /></button>
+
         {
             displayObj.article.filter(filterObj).map((sectionList, index) => {
                 return (<>
