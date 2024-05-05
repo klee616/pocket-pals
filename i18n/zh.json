@@ -17,6 +17,10 @@
     "page.selection.screen.mix.and.match": "配對遊戲 !",
     "page.article.label":"顯示所有顯目",
     "page.article.button1":"小測驗 !",
+    "page.article.head.title": "學習  -  ",
+    "page.article.head.description": "針對兒童的動物學習應用程序，本文是關於",
+    "page.article.title": "學習 Article - ",
+    "page.article.description": "針對兒童的動物學習應用程序，本文是關於",
     "page.learn.head.title": "POCKET PALS - 選擇學習主題",
     "page.learn.head.description": "An Animal 兒童動物學習應用程式 - 選擇學習主題",
     "page.learn.title": "選擇學習主題",
@@ -59,5 +63,8 @@
     "page.history.name":"玩家",
     "page.history.category":"題目",
     "page.history.date":"日期",
-    "page.history.scores":"成績"
+    "page.history.scores":"成績",
+    "page.mix.match.introduction.game.introduction.head.title": "配對遊戲說明",
+    "page.mix.match.introduction.game.introduction.head.description":"配對遊戲說明",
+    "page.mix.match.introduction.game.introduction.title":"配對遊戲說明"
 }

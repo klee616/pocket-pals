@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;;
+    align-items: flex-start;
+    padding: 2rem 2rem;
+    height: var(--main-height);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.listed {
+    list-style-type: none;
+}
+
+.list {
+    margin-top: 2vh;
+}
+
+.content{
+    height: 530px;
+}

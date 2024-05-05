@@ -2,6 +2,7 @@ import matchifyData from '@/data/matchify.json';
 import { useEffect, useState } from 'react';
 import MatchifyCard from '@/Components/MatchifyCard';
 import style from './matchify.module.css';
+import ProgressBar from '../ProgressBar';
 
 export default function Matchify() {
     const [data, setData] = useState(matchifyData);
@@ -27,8 +28,8 @@ export default function Matchify() {
         const startGameData = [];
         let id = 0;
         data.map((item) => {
-            let parent = { id: id++, group: item.groupName, display: item.parent.en, flipped: false, matched: false };
-            let child = { id: id++, group: item.groupName, display: item.child.en, flipped: false, matched: false };
+            let parent = { id: id++, group: item.groupName, image: item.image, display: item.parent.en, flipped: false, matched: false };
+            let child = { id: id++, group: item.groupName, image: item.image, display: item.child.en, flipped: false, matched: false };
             startGameData.push(parent);
             startGameData.push(child);
         });
@@ -95,23 +96,18 @@ export default function Matchify() {
     }
     return (
         <>
-            Time: {timeLeft}, Move: {move}
-
+            <ProgressBar current={timeLeft} total={`240`} type="" />
             <div className={style.gameBoard}>
                 {
                     gameData && gameData.map((item, index) => {
                         return (
                             <>
-                                <MatchifyCard key={index} item={item} endGame={endGame} callback={updateActiveCards} />
+                                <MatchifyCard key={index} item={item} endGame={endGame} image={item.image} callback={updateActiveCards} />
                             </>
                         )
                     })
                 }
             </div>
-
-            <button onClick={() => { initGame() }}>Game Start</button>
-
-            End Game: {`${endGame}`}
         </>
     )
 }
