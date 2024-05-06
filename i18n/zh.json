@@ -80,6 +80,12 @@
     "page.select.game.head.title":"POCKET PALS - 選擇遊戲",
     "page.select.game.head.description":"POCKET PALS - 選擇遊戲 ",
     "page.select.game.title": "選擇遊戲",
-    "page.select.game.description":"選一款啱心水的遊戲"
+    "page.select.game.description":"選一款啱心水的遊戲",
+    "page.chart.head.title":"Chart",
+    "page.chart.head.description":"Chart",
+    "page.chart.title":"Chart",
+    "page.call.api.head.title":"Animal API",
+    "page.call.api.head.description":"Animal API",
+    "page.call.api.title":"Animal API"
 }
 

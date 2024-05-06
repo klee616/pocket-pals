@@ -3,14 +3,21 @@ import style from '@/styles/Chart.module.css';
 import Header from "@/Components/Header";
 import Footer from "@/Components/Footer";
 import Chart from "@/Components/Chart";
+import {  useIntl } from "react-intl";
 
-export default function AnimalChart({ dir }) {
+export default function AnimalChart() {
+  const intl = useIntl();
+
+  const headTitle = intl.formatMessage({ id: "page.chart.head.title" });
+  const headDescription = intl.formatMessage({ id: "page.chart.head.description" });
+  const title = intl.formatMessage({ id: "page.chart.title" });
+
   return (
     <>
-      <HeadArea title="123" description="21" />
+      <HeadArea title={headTitle} description={headDescription} />
       <Header/>
       <main className={style.main} >
-        <Chart />
+        <Chart title={title} />
       </main>
       <Footer/>
     </>
