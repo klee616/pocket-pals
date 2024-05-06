@@ -59,7 +59,7 @@ export default function History() {
                 </thead>
                 <tbody>
                     {
-                        historyRecord && historyRecord.filter(historyFilter).sort((a, b) => b.scores - a.scores).map((item, index) => {
+                        historyRecord && historyRecord.filter(historyFilter).sort((a, b) => b.scores - a.scores).slice(0, 10).map((item, index) => {
                             return (<>
                                 <tr key={index}>
                                     <td>{item.name}</td>
