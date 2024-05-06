@@ -137,7 +137,7 @@ export default function Matchify() {
                     (gameData && !endGame) && gameData.map((item, index) => {
                         return (
                             <>
-                                <MatchifyCard key={index} item={item} endGame={endGame} image={item.image} callback={updateActiveCards} tabIndex={`0`}/>
+                                <MatchifyCard key={index} item={item} endGame={endGame} image={item.image} callback={updateActiveCards} />
                             </>
                         )
                     })
