@@ -26,6 +26,11 @@ export default function History2() {
         readCookies();
     }, []);
 
+    const sorting = (a, b) => {
+        if(b.move !== a.move) return  a.move - b.move;
+        else return a.time - b.time;
+    }
+
     return (<>
         <HeadArea title={headTitle} description={headDescription} />
         <Header />
@@ -42,7 +47,7 @@ export default function History2() {
                 </thead>
                 <tbody>
                     {
-                        historyRecord && historyRecord.sort((a, b) => b.move == a.move? a.time - b.time : b.move - a.move).slice(0, 10).map((item, index) => {
+                        historyRecord && historyRecord.sort(sorting).slice(0, 10).map((item, index) => {
                             return (<>
                                 <tr key={index}>
                                     <td>{item.name}</td>
