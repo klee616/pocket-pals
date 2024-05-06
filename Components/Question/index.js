@@ -11,7 +11,8 @@ export default function Question({ data, callBack }) {
     const { locale } = useRouter();
     const [isEnable, setIsEnable] = useState(false);
 
-    const submitAnswer = () => {console.log(data);
+    const submitAnswer = () => {
+        console.log(data);
 
         callBack(option);
         setIsEnable(false);
@@ -52,7 +53,9 @@ export default function Question({ data, callBack }) {
                     })
                     }
                 </form>
-                <Button name={intl.formatMessage({ id: "page.quiz.next" })} onClick={submitAnswer} disabled={!isEnable} />
+                {
+                    isEnable && <><Button name={intl.formatMessage({ id: "page.quiz.next" })} onClick={submitAnswer} /></>
+                }
             </>)}
 
         </>
