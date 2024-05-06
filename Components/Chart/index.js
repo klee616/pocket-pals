@@ -75,9 +75,9 @@ export default function Chart({ title}) {
     }, []);
 
     return (<>
-    
+    <h1 className={style.text}>{title}</h1>  
     <div className={style.Container}>
-    <h2 className={style.text}>{title}</h2>
+  
     <div className={style.chart}>
         <Bar data={chartData} options={chartOptions} style={{ width: '80%', height: '500px' }} />
         </div>

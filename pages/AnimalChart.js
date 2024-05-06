@@ -1,5 +1,5 @@
 import HeadArea from "@/Components/HeadArea";
-import style from '@/styles/Chart.module.css';
+import style from '@/styles/AnimalChart.module.css';
 import Header from "@/Components/Header";
 import Footer from "@/Components/Footer";
 import Chart from "@/Components/Chart";
@@ -15,10 +15,10 @@ export default function AnimalChart() {
   return (
     <>
       <HeadArea title={headTitle} description={headDescription} />
-      <Header/>
-      <main className={style.main} >
+    <Header />
+    <div className={style.main}>
         <Chart title={title} />
-      </main>
+      </div>
       <Footer/>
     </>
   );
