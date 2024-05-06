@@ -80,5 +80,11 @@
     "page.select.game.head.title":"POCKET PALS - Game Selection",
     "page.select.game.head.description":"POCKET PALS - Game Selection - select the game you want to play",
     "page.select.game.title": "Game Selection",
-    "page.select.game.description":"select the game you want to play"
+    "page.select.game.description":"select the game you want to play",
+    "page.chart.head.title":"Charts",
+    "page.chart.head.description":"Charts",
+    "page.chart.title":"Charts",
+    "page.call.api.head.title":"Animal API",
+    "page.call.api.head.description":"Animal API",
+    "page.call.api.title":"Animal API"
 }

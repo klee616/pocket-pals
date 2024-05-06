@@ -3,7 +3,14 @@ import { useState, useEffect } from "react";
 import Footer from "@/Components/Footer/"
 import Header from "@/Components/Header/"
 import HeadArea from "@/Components/HeadArea";
+import {  useIntl } from "react-intl";
+
 export default function CallAPI() {
+  const intl = useIntl();
+  const headTitle = intl.formatMessage({ id: "page.call.api.head.title" });
+  const headDescription = intl.formatMessage({ id: "page.call.api.head.description" });
+  const title = intl.formatMessage({ id: "page.call.api.title" });
+
   const [animals, setAnimals] = useState(["Marmot", "Spectacled Bear", "Teddy Bear Hamster", "Giant panda", "Numbat", "African Wild Dog", "Royal Penguin"]);
   const [resultList, setResultList] = useState([]);
   const apiKey =  process.env.NEXT_PUBLIC_API_KEY;
@@ -24,10 +31,10 @@ export default function CallAPI() {
   }
   return (
     <>
-    <HeadArea title="Animals API" description="Animals informaiton" />
+    <HeadArea title={headTitle} description={headDescription} />
     <Header />
     <div className={style.main}>
-        <h1>Animals API</h1>
+        <h1>{title}</h1>
        <div className={style.buttonList}>
         {animals.map((animal, index) => {
           return (<><button className={style.filterButton} onClick={() => callAPI(animal)} key={index}>{animal}</button></>);

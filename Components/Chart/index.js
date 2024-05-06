@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2'
 import { Chart as ChartJs, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js'
 
-export default function Chart({ }) {
+export default function Chart({ title}) {
     const [dataSet, setDataSet] = useState([...questionData]); 
     const [chartData, setChartData] = useState({ datasets: [] })
     const [chartOptions, setChartOptions] = useState({});
@@ -15,16 +15,16 @@ export default function Chart({ }) {
 
     useEffect(() => {
         // data perpare
-        const groupByData = Object.groupBy(dataSet, (data) => data['TaxonClass']);
+        const groupByData = Object.groupBy(dataSet, (data) => data['taxon_class']);
         let label = [];
         let avgTotalOverAllSizeList = [];
         let avgFemaleOverAllSizeList = [];
         let avgMaleOverAllSieList = [];
         for (const obj in groupByData) {
             const arr = groupByData[obj];
-            const totalOverallSize = arr.reduce((total, num) => total + num['Overall Sample Size'], 0);
-            const totalFemaleSize = arr.reduce((total, num) => total + num['Female Sample Size'], 0);
-            const totalMaleSize = arr.reduce((total, num) => total + num['Male Sample Size'], 0);
+            const totalOverallSize = arr.reduce((total, num) => total + num['overall_sample_size'], 0);
+            const totalFemaleSize = arr.reduce((total, num) => total + num['female_sample_size'], 0);
+            const totalMaleSize = arr.reduce((total, num) => total + num['male_sample_size'], 0);
             const avgTotalOverAllSize = (totalOverallSize / arr.length).toFixed(2);
             const avgFemaleOverAllSize = (totalFemaleSize / arr.length).toFixed(2);
             const avgMaleOverAllSize = (totalMaleSize / arr.length).toFixed(2);
@@ -77,7 +77,7 @@ export default function Chart({ }) {
     return (<>
     
     <div className={style.Container}>
-    <h2 className={style.text}>Charts</h2>
+    <h2 className={style.text}>{title}</h2>
     <div className={style.chart}>
         <Bar data={chartData} options={chartOptions} style={{ width: '80%', height: '500px' }} />
         </div>
