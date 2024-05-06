@@ -15,7 +15,7 @@ export default function MixMatch({ }) {
         <HeadArea title={headTitle} description={headDescription} />
         <Header />
         <div className={style.main}>
-            <Matchify />
+            <Matchify tabIndex={`1`} />
         </div>
         <Footer />
     </>);
