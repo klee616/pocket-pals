@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function ({ category, name, image, href }) {
     return (<>
-        <Link href={href} className={style.category_link}>
+        <Link href={href} className={style.categoryLink}>
             <Image src={image}
                 height={120}
                 width={136}
