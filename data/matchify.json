@@ -24,5 +24,57 @@
             "en": "B description",
             "zh": "B description"
         }
+    },
+    {
+        "id": 3,
+        "image":"/image/Topics/Hamster.png",
+        "groupName": "C",
+        "parent": {
+            "en": "c",
+            "zh": "c"
+        },
+        "child": {
+            "en": "C description",
+            "zh": "C description"
+        }
+    },
+    {
+        "id": 4,
+        "image":"/image/Topics/Panda.png",
+        "groupName": "D",
+        "parent": {
+            "en": "d",
+            "zh": "d"
+        },
+        "child": {
+            "en": "D description",
+            "zh": "D description"
+        }
+    },
+    {
+        "id": 5,
+        "image":"/image/Topics/numbat.png",
+        "groupName": "E",
+        "parent": {
+            "en": "E",
+            "zh": "E"
+        },
+        "child": {
+            "en": "E description",
+            "zh": "E description"
+        }
+    },
+    {
+        "id": 6,
+        "image":"/image/Topics/Africandogs.png",
+        "groupName": "F",
+        "parent": {
+            "en": "f",
+            "zh": "f"
+        },
+        "child": {
+            "en": "F description",
+            "zh": "F description"
+        }
     }
 ]
