@@ -21,7 +21,7 @@ export default function HomeMenu({ dir }) {
       <Header />
       <main className={`${styles.main}`}>
         <h1>{title}</h1>
-        <p>{description}</p>
+        <p className={styles.subtitle}>{description}</p>
         <div className={styles.options}>
           <MenuButton name={intl.formatMessage({id: "page.selection.screen.quiz"})} image="/image/Topics/Panda.png" href="/Quiz" />
           <MenuButton name={intl.formatMessage({id: "page.selection.screen.mix.and.match"})} image="/image/Topics/Hamster.png" href="/MixMatchIntroduction" />

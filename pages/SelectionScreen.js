@@ -40,8 +40,8 @@ export default function SelectionScreen({ dir }) {
         <div className={styles.buttonContainer}>
         
           <Button name={intl.formatMessage({id: "page.selection.screen.learn"})} onClick={()=>buttonSubmit('/Learn')} />
-          <Button name={intl.formatMessage({id: "page.selection.screen.quiz"})} onClick={()=>buttonSubmit('/Quiz')} />
-          <Button name={intl.formatMessage({id: "page.selection.screen.mix.and.match"})} onClick={()=>buttonSubmit('/MixMatchIntroduction')} />
+          <Button name={intl.formatMessage({id: "page.selection.screen.games"})} onClick={()=>buttonSubmit('/Quiz')} />
+          <Button className={styles.button} name={intl.formatMessage({id: "page.selection.screen.home.menu"})} onClick={()=>buttonSubmit('/HomeMenu')} />
 
         </div>
       </main>

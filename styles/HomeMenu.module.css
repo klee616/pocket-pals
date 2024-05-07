@@ -22,6 +22,8 @@
 }
 .subtitle {
     text-align: center;
+    margin-top: -10px;
+    margin-bottom: 5vh;
 }
 .button {
     border: transparent;

@@ -30,7 +30,7 @@
     position: relative;
     display: inline-block;
     width: 80px;
-    height: 34px;
+    height: 35px;
     margin-bottom: 20px;
   }
   
@@ -47,7 +47,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--dark-gray);
+    background-color: rgb(146, 35, 13);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 100px;
@@ -58,7 +58,7 @@
     content: "";
     height: 26px;
     width: 26px;
-    left: 12px;
+    left: 17px;
     bottom: 4px;
     background-color: var(--black);
     -webkit-transition: .4s;
@@ -72,8 +72,8 @@
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px var(--web-color-4);
-    border: 3px solid white;
+ 
+    height: 35px;
   }
   
   input:checked + .slider:before {

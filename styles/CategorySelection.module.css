@@ -10,3 +10,9 @@
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
+.subtitle {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 5vh;
+}
