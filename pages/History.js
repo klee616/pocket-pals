@@ -32,7 +32,7 @@ export default function History() {
 
     const readCookies = async () => {
         setCookiesValue(await getCookie('historyRecord'));
-        let arr = JSON.parse(cookiesValue);
+        let arr = JSON.parse(cookiesValue?cookiesValue:"[]");
         setHistoryRecord(arr);
     }
     useEffect(() => {
