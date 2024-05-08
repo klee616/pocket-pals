@@ -19,7 +19,7 @@ export default function History2() {
 
     const readCookies = async () => {
         setCookiesValue(await getCookie('mixMatchhistoryRecord'));
-        let arr = JSON.parse(cookiesValue);
+        let arr = JSON.parse(cookiesValue?cookiesValue:"[]");
         setHistoryRecord(arr);
     }
     useEffect(() => {
@@ -47,7 +47,7 @@ export default function History2() {
                 </thead>
                 <tbody>
                     {
-                        historyRecord && historyRecord.sort(sorting).slice(0, 10).map((item, index) => {
+                        historyRecord && historyRecord.filter(item=>item.time < 240).sort(sorting).slice(0, 10).map((item, index) => {
                             return (<>
                                 <tr key={index}>
                                     <td>{item.name}</td>
