@@ -32,7 +32,7 @@ export default function Home() {
             <li className={style.list}>{intl.formatMessage({ id: "page.quiz.game.rule.3" })}</li>
           </ul>
         </div>
-        <Button name='Start' onClick={() => router.push({ pathname: "QuizGame", query: router.query })} />
+        <Button name={intl.formatMessage({ id: "page.mix.match.introduction.game.start" })} onClick={() => router.push({ pathname: "QuizGame", query: router.query })} />
 
       </div>
       <Footer />
