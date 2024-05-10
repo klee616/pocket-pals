@@ -18,7 +18,7 @@ export default function ProgressBar({ current, total, type = 'step' }) {
 
     return (<>
         <div className={style.progressBarContainer}>
-            <Image src={imagePath} className='Icon' width="30" height="30" alt={alt} />
+            <Image src='/image/Alarmclock.svg' className='Icon' width="30" height="30" alt={alt} />
             <div className={style.progressBarBackground}>
                 <div className={style.progressStatus} style={{ width: `${persent}%` }}>
                 </div>
