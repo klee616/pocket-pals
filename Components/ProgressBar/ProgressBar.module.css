@@ -1,12 +1,12 @@
 .progressBarBackground{
-    background-color: #D9D9D9;
+    background-color: #ffffff;
     width: 237px;
     height: 15px;
     border-radius: 15px;
 }
 
 .progressStatus{
-    background-color: #fd0303;
+    background-color: #214e1b;
     height: 15px;
     border-radius: 15px;
 }
