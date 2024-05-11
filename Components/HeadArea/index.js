@@ -1,6 +1,19 @@
 import Head from "next/head";
-
+import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/router";
 export default function HeadArea({ title, description }) {
+  const router = useRouter();
+  const backgroundMusicRef = useRef();
+
+  const playBackgroundMusic = () => {
+    if (backgroundMusicRef.current && router.pathname != "/AnimalArticle") {
+      backgroundMusicRef.current.play();
+    }
+  }
+
+  useEffect(() => {
+    playBackgroundMusic();
+  }, []);
 
   return (<>
     <Head>
@@ -12,5 +25,6 @@ export default function HeadArea({ title, description }) {
       <link rel="icon" href="/favicon.ico" hrefLang="en" />
       <link rel="icon" href="/favicon.ico" hrefLang="zh" />
     </Head>
+            <audio ref={backgroundMusicRef} src='/sound/background2.mp3' />
   </>)
 }
