@@ -11,14 +11,14 @@ export default function ProgressBar({ current, total, type = 'step' }) {
         imagePath = "/icon/object.png";
         alt = "Step";
     } else {
-        imagePath = "/icon/timer.png";
+        imagePath = /image/Alarmclock.svg";
         alt = "Timer";
 
     }
 
     return (<>
         <div className={style.progressBarContainer}>
-            <Image src='/image/Alarmclock.svg' className='Icon' width="30" height="30" alt={alt} />
+            <Image src={imagePath} className='Icon' width="30" height="30" alt={alt} />
             <div className={style.progressBarBackground}>
                 <div className={style.progressStatus} style={{ width: `${persent}%` }}>
                 </div>
