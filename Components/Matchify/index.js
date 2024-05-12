@@ -1,5 +1,5 @@
 import matchifyData from '@/data/matchify.json';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import MatchifyCard from '@/Components/MatchifyCard';
 import style from './Matchify.module.css';
 import ProgressBar from '@/Components/ProgressBar';
@@ -20,6 +20,7 @@ export default function Matchify() {
     const [endGame, setEndGame] = useState(false);
     const [nickName, setNickName] = useState();
     const [gameResult, setGameResult] = useState({});
+    const matchSuccessSoundEffect = useRef();
 
 
     const initGame = () => {
@@ -30,6 +31,12 @@ export default function Matchify() {
         setTimeLeft(240);
         setMove(0);
         setGameResult({});
+    }
+
+    const matchSuccessSoundPlayer = () => {
+        if (matchSuccessSoundEffect.current) {
+            matchSuccessSoundEffect.current.play();
+        }
     }
 
     const gameStart = () => {
@@ -117,6 +124,7 @@ export default function Matchify() {
                 if ((preItemList[0].group == item.group && preItemList[0].id == i.id) || (preItemList[0].group == item.group && item.id == i.id)) {
                     i.matched = true;
                     i.flipped = true;
+                    matchSuccessSoundPlayer();
                 } else if (item.id == i.id) {
                     i.flipped = true;
                 }
@@ -154,6 +162,8 @@ export default function Matchify() {
                     <Button name={intl.formatMessage({ id: "page.quiz.play.again" })} onClick={() => { initGame() }} />
                 </>
             }
+
+            <audio ref={matchSuccessSoundEffect} src='/sound/matchsuccess.mp3' />
         </>
     )
 }

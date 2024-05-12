@@ -11,7 +11,7 @@ export default function ProgressBar({ current, total, type = 'step' }) {
         imagePath = "/icon/object.png";
         alt = "Step";
     } else {
-        imagePath = "/icon/timer.png";
+        imagePath = "/image/Alarmclock.svg";
         alt = "Timer";
 
     }

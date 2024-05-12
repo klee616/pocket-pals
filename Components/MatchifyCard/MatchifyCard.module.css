@@ -23,8 +23,8 @@
     transform: rotateY(180deg);
   }
   .card.matched .cardFront {
-    background-color:#41411e;
-    color: white;
+    background-color: var(--web-color-4);
+    color:var(--white);
   }
   .cardFront,
   .cardBack {
@@ -37,7 +37,7 @@
   }
   .cardFront {
     transform: rotateY(180deg);
-    background-color: #eee;
+    background-color: var(--web-color-2);
     line-height: 70px;
     vertical-align: middle;
     text-align: center;
@@ -48,7 +48,7 @@
     justify-content: center;
   }
   .cardBack {
-    background-color: #ddd;
+    background-color: var(--web-color-3);
   
     transform: rotateY(0);
     z-index: 1;

@@ -46,7 +46,7 @@ export default function Home({ dir }) {
         </div>
 
         <form className={styles.formContainer} onSubmit={handleFormSubmit}>
-          <label className={`label-font-style ${styles.label}`} for="nickName">{intl.formatMessage({ id: "page.home.label.nickname" })}</label>
+          <label className={`label-font-style ${styles.label}`} htmlFor="nickName">{intl.formatMessage({ id: "page.home.label.nickname" })}</label>
           <input
             id="nickName"
             type="text"
