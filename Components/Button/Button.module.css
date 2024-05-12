@@ -9,3 +9,16 @@
     cursor: pointer;
     display: block;
 }
+
+.button1:hover {
+    width: clamp(250px, 100%, 302px);
+    background-color: #c94000;
+    color: var(--button-font-color);
+    border: 0px;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 5px 0;
+    cursor: pointer;
+    display: block;
+}
+

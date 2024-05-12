@@ -36,7 +36,7 @@ export default function Learn({ }) {
         <Header />
         <div className={style.main}>
             <h1>{title}</h1>
-            <p>{description}</p>
+            <p className={style.subtitle}>{description}</p>
             <Selector isNeedAddAllValue={true} value={categoryFilter} defaultValue={`all`} optionList={menuData} tabIndex={`10`} onChange={changeFilter} />
             {
                 menuData.filter(filter).map((item, index) => {

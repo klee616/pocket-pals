@@ -19,7 +19,7 @@ export default function HomeMenu({ dir }) {
       <Header />
       <div className={styles.main}>
         <h1>{title}</h1>
-        <p>{description}</p>
+        <p className={styles.subtitle}>{description}</p>
 
         <div className={styles.options}>
           <MenuButton name={intl.formatMessage({id: "page.selection.screen.quiz"})} image="/image/Topics/Panda.png" href="/Quiz" />
