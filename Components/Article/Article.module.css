@@ -13,3 +13,21 @@
 .articleImage{
     width: 100%;
 }
+
+.controlList{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    width: 100%;
+}
+
+.iconList{
+    display: flex;
+}
+.iconList button{
+    cursor: pointer;
+}
