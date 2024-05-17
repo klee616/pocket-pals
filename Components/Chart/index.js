@@ -39,19 +39,13 @@ export default function Chart({ title}) {
             labels: label,
             datasets: [
                 {
-                    label: "Female Over All Size",
+                    label: "Female Population Size",
                     data: avgFemaleOverAllSizeList,
                     borderColor: 'rgb(19, 100, 77)',
                     backgroundColor: 'rgb(19, 100, 77,0.9)'
                 },
                 {
-                    label: "Total Over All Size",
-                    data: avgTotalOverAllSizeList,
-                    borderColor: 'rgb(255, 197, 58)',
-                    backgroundColor: 'rgb(255, 197, 58, 0.8)'
-                },
-                {
-                    label: "Male Over All Size",
+                    label: "Male Population Size",
                     data: avgMaleOverAllSieList,
                     borderColor: 'rgb(228, 109, 5)',
                     backgroundColor: 'rgb(228, 109, 5, 0.9)'
@@ -66,7 +60,7 @@ export default function Chart({ title}) {
                 },
                 title: {
                     display: true,
-                    text: "Average Sizes"
+                    text: "Total Size of All Group Genders"
                 }
             },
             maintainAspectRatio: true,
@@ -79,7 +73,7 @@ export default function Chart({ title}) {
     <div className={style.Container}>
   
     <div className={style.chart}>
-        <Bar data={chartData} options={chartOptions} style={{ width: '80%', height: '500px' }} />
+        <Bar data={chartData} options={chartOptions} style={{ width: '80%', height: '800px' }} />
         </div>
         </div>
     </>)
